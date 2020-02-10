@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1="Lãi suất ngân hàng Việt Nam"
+  ul
+    each val in banks
+      li= val.code

@@ -1,6 +1,20 @@
 {
+  "author": {
+    "name": "Khang Duy",
+    "email": "trinhduykhang1313@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "email": "trinhduykhang1313@gmail.com"
+  },
+  "keywords": [
+    "interest rate",
+    "interst",
+    "rate",
+    "interest-rate"
+  ],
   "name": "interest-rate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
