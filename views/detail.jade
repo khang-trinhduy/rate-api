@@ -18,4 +18,23 @@ block content
             td #{val.period} tháng
           td=val.value
           td=val.monthly
-  a(href="/") Quay lại
+
+  h1 Thông tin lãi suất vay ngân hàng !{bank.code}
+  i Cập nhật vào lúc !{bank.lastUpdate}
+  table
+    thead
+      tr
+        th Kỳ hạn
+        th Cuối kỳ
+        th Hằng tháng
+    tbody
+      each val in bank.loanRates
+        tr
+          if val.period === 0
+            td Không kỳ hạn
+          else
+            td #{val.period} tháng
+          td=val.value
+          td=val.monthly
+
+  a(href="javascript:history.back()") Quay lại

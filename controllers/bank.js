@@ -21,6 +21,16 @@ exports.list = (req, res, next) => {
   });
 };
 
+exports.listV2 = (req, res, next) => {
+  banks.find({}, (error, banks) => {
+    if (error) {
+      render(res, "error", error);
+    } else {
+      render(res, "loan", { banks: banks });
+    }
+  });
+};
+
 exports.show = (req, res, next) => {
   if (!req.query.c) {
     render(res, "error", { error: "id required" });
