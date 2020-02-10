@@ -2,6 +2,34 @@ extends layout
 
 block content
   h1="Lãi suất ngân hàng Việt Nam"
-  ul
-    each val in banks
-      li= val.code
+  table
+    caption
+      code=""
+    thead
+      tr
+        th(rowspan='2')="Ngân hàng"
+        th(colspan='9')="Kỳ hạn"
+      tr
+        th="Không kỳ hạn"
+        th="1 tháng"
+        th="3 tháng"
+        th="6 tháng"
+        th="9 tháng"
+        th="12 tháng"
+        th="18 tháng"
+        th="24 tháng"
+        th="36 tháng"
+    tbody
+      each val in banks
+        tr
+          td
+            a(href="/detail?c=#{val.code}")=val.code
+          td= val.interestRates[0].value
+          td= val.interestRates[1].value
+          td= val.interestRates[2].value
+          td= val.interestRates[3].value
+          td= val.interestRates[4].value
+          td= val.interestRates[5].value
+          td= val.interestRates[6].value
+          td= val.interestRates[7].value
+          td= val.interestRates[8].value

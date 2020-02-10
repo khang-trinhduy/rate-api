@@ -22,10 +22,10 @@ exports.list = (req, res, next) => {
 };
 
 exports.show = (req, res, next) => {
-  if (!req.params.id) {
+  if (!req.query.c) {
     render(res, "error", { error: "id required" });
   } else {
-    banks.findById(req.params.id, (error, bank) => {
+    banks.findOne({ code: req.query.c }, (error, bank) => {
       if (error) {
         render(res, "error", { error: error });
       } else if (!bank) {
