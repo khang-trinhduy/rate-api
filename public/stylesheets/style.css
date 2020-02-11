@@ -11,8 +11,13 @@ a {
   text-align: right;
 }
 
+table {
+  border: 1px solid #d3d3d3;
+}
+
 td {
   text-align: center;
+  border: 1px solid #d3d3d3;
 }
 
 .flex-chart {
@@ -23,7 +28,30 @@ td {
 }
 
 .horizon-bar {
-  text-overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 20px;
+  padding: 0.3vh;
+  margin: 0.2vh 0;
+  position: relative;
+}
+
+.horizon-bar:hover {
+  opacity: 0.7;
+}
+
+.horizon-bar:hover > .percent-line {
+  display: inline;
+  color: white;
+}
+
+.percent-line {
+  display: none;
+  position: absolute;
+  width: 70px;
+  margin-left: -35px;
+  text-align: center;
 }
 
 @keyframes increase {

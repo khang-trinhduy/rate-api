@@ -39,3 +39,4 @@ block content
     each val in banks
       div(class="b-#{val.index} bar-area" style="width: #{val.width};")
         div(class="horizon-bar #{val.code.toLowerCase()}" style="animation: #{val.duration}s ease-in 1s 1 forwards increase") #{val.code}
+          span(class="percent-line" style="left: 50%") #{val.rate}

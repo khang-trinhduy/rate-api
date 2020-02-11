@@ -23,6 +23,8 @@ exports.list = (req, res, next) => {
         let rate = bank.interestRates.find(e => e.period === period).value || 0;
         bank.width = `${rate * 10}%`;
         bank.duration = (rate || 5) / 1.5;
+        bank.rate = `${rate}%`;
+        bank.margin = rate / 2;
       }
       banks.sort((a, b) => {
         let i1, i2;
