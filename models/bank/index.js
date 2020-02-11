@@ -2,12 +2,14 @@ var mongoose = require("mongoose");
 
 const { rate_schema } = require("../rate");
 
+const { loan_schema } = require("../loan");
+
 var Schema = mongoose.Schema;
 
 var bankSchema = new Schema({
   name: { type: String, required: true },
   interestRates: [rate_schema],
-  loanRates: [rate_schema],
+  loanRates: [loan_schema],
   code: { type: String, required: false },
   link: { type: String, required: false }
 });

@@ -4,7 +4,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
 .right-link {
@@ -13,4 +13,92 @@ a {
 
 td {
   text-align: center;
+}
+
+.flex-chart {
+  width: 80%;
+  min-width: 350px;
+  max-width: 1280px;
+  position: relative;
+}
+
+.horizon-bar {
+  text-overflow: hidden;
+}
+
+@keyframes increase {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.shb {
+  background-color: #f47c35;
+}
+
+.vietinbank {
+  background-color: #cf0228;
+}
+
+.dongabank {
+  background-color: #015498;
+}
+
+.maritimebank {
+  background-color: #e51b23;
+}
+
+.baca {
+  background-color: #c88b02;
+}
+
+.baoviet {
+  background-color: #0075c0;
+}
+
+.nam.a {
+  background-color: #f8da01;
+}
+
+.vib {
+  background-color: #014f94;
+}
+
+.ncb {
+  background-color: #004a94;
+}
+
+.scb {
+  background-color: #c01224;
+}
+
+.msb {
+  background-color: #ea6d21;
+}
+
+.bidv {
+  background-color: #213a99;
+}
+
+.vietcombank {
+  background-color: #74b142;
+}
+
+.oceanbank {
+  background-color: #8aced8;
+}
+
+.eximbank {
+  background-color: #0069ac;
+}
+
+.ocb {
+  background-color: #008843;
+}
+
+.agribank {
+  background-color: #005a3c;
 }

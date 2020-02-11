@@ -35,3 +35,7 @@ block content
           td= val.interestRates[6].value
           td= val.interestRates[7].value
           td= val.interestRates[8].value
+  div(class="flex-chart")
+    each val in banks
+      div(class="b-#{val.index} bar-area" style="width: #{val.width};")
+        div(class="horizon-bar #{val.code.toLowerCase()}" style="animation: #{val.duration}s ease-in 1s 1 forwards increase") #{val.code}

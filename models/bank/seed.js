@@ -3,7 +3,11 @@ module.exports.banks_seed = [
     name: "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
     code: "Agribank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 11, type: 3, update: "02/2020" },
+      { rate: 13, type: 2, update: "02/2020" },
+      { rate: 7.5, type: 4, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0.2
@@ -46,7 +50,11 @@ module.exports.banks_seed = [
     name: "Ngân hàng TMCP Phương Đông – Orient Commercial Joint Stock Bank",
     code: "OCB",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { type: 3, rate: 9.68, update: "02/2020" },
+      { type: 4, rate: 9.49, period: 12, update: "02/2020" },
+      { type: 4, rate: 7.99, period: 6, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0.5
@@ -133,7 +141,7 @@ module.exports.banks_seed = [
     name: "Ngân hàng TM TNHH MTV Đại dương",
     code: "OCEANBANK",
     link: "",
-    loanRates: [],
+    loanRates: [{ rate: 7.99, period: 6, update: "02/2020" }],
     interestRates: [
       {
         value: 0.5
@@ -177,7 +185,16 @@ module.exports.banks_seed = [
     name: "Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank)",
     code: "Vietcombank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 9.1, period: 24, type: 4, update: "02/2020" },
+      { rate: 9.5, period: 36, type: 4, update: "02/2020" },
+      { rate: 8.4, period: 12, type: 4, update: "02/2020" },
+      { rate: 8.1, period: 12, type: 3, update: "02/2020" },
+      { rate: 8.6, period: 18, type: 3, update: "02/2020" },
+      { rate: 8.9, period: 24, type: 3, update: "02/2020" },
+      { rate: 9.5, period: 36, type: 3, update: "02/2020" },
+      { rate: 10.3, period: 60, type: 3, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0.1
@@ -221,7 +238,12 @@ module.exports.banks_seed = [
     name: "Ngân hàng Đầu tư và Phát triển Việt Nam (BIDV)",
     code: "BIDV",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 9, period: 24, update: "02/2020", type: 3 },
+      { rate: 8, period: 12, update: "02/2020", type: 3 },
+      { rate: 7.8, period: 12, update: "02/2020", type: 4 },
+      { rate: 8.8, period: 24, update: "02/2020", type: 4 }
+    ],
     interestRates: [
       {
         value: 0.1
@@ -309,7 +331,11 @@ module.exports.banks_seed = [
     name: "Ngân hàng Thương mại cổ phần Sài Gòn (SCB)",
     code: "SCB",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { type: 4, rate: 8.8, period: 12, update: "02/2020" },
+      { rate: 9.5, period: 24, update: "02/2020", type: 3 },
+      { rate: 9, period: 12, update: "02/2020", type: 3 }
+    ],
     interestRates: [
       {
         value: 0
@@ -353,7 +379,12 @@ module.exports.banks_seed = [
     name: "Ngân hàng TMCP Quốc Dân (NCB)",
     code: "NCB",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 7.99, type: 4, period: 12, update: "01/2020" },
+      { rate: 7.99, type: 3, period: 12, update: "02/2020" },
+      { rate: 6.5, type: 3, period: 6, update: "02/2020" },
+      { rate: 9.5, type: 3, period: 24, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0
@@ -397,7 +428,12 @@ module.exports.banks_seed = [
     name: "Ngân hàng Thương mại cổ phần (TMCP) Quốc Tế Việt Nam",
     code: "VIB",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 8.5, period: 6, type: 3, update: "02/2020" },
+      { rate: 10.4, period: 12, type: 3, update: "02/2020" },
+      { rate: 9.9, period: 12, type: 4, update: "02/2020" },
+      { rate: 8.6, period: 6, type: 4, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0.8
@@ -441,7 +477,10 @@ module.exports.banks_seed = [
     name: "Ngân hàng TMCP Nam Á ",
     code: "Nam A bank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 11, type: 4, update: "02/2020" },
+      { rate: 7.3, type: 3, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0
@@ -485,7 +524,10 @@ module.exports.banks_seed = [
     name: "Ngân hàng Bảo Việt",
     code: "BAOVIET bank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { range: [7.5, 8.5], type: 3, update: "02/2020" },
+      { range: [7, 8.5], type: 4, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0.8,
@@ -536,7 +578,18 @@ module.exports.banks_seed = [
     name: "Ngân hàng TMCP Bắc Á",
     code: "BacA bank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      {
+        rate: 11.5,
+        type: 4
+      },
+      {
+        type: 3,
+        rate: 8.99,
+        period: 12,
+        update: "02/2020"
+      }
+    ],
     interestRates: [
       {
         value: 1,
@@ -589,7 +642,14 @@ module.exports.banks_seed = [
     name: "Ngân hàng Thương mại Cổ phần Hàng hải Việt Nam (Maritime bank)",
     code: "MaritimeBank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 9.49, type: 3, period: 18, update: "02/2020" },
+      { rate: 8.49, type: 3, period: 12, update: "02/2020" },
+      { rate: 6.99, type: 3, period: 6, update: "02/2020" },
+      { rate: 9.49, type: 4, period: 48, update: "02/2020" },
+      { rate: 8.49, type: 4, period: 36, update: "02/2020" },
+      { rate: 6.99, type: 4, period: 24, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0
@@ -641,7 +701,10 @@ module.exports.banks_seed = [
     name: "Ngân hàng Đông Á (Dongabank)",
     code: "Dongabank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 9, type: 3, update: "02/2020" },
+      { rate: 8.5, period: 12, type: 4, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0.29,
@@ -693,7 +756,11 @@ module.exports.banks_seed = [
     name: "Ngân Hàng TMCP Công Thương Việt Nam (VietinBank)",
     code: "VietinBank",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 7.7, type: 4, update: "02/2020", period: 12 },
+      { rate: 7.9, type: 4, update: "2019", period: 12 },
+      { rate: 8.1, type: 3, update: "02/2020", period: 12 }
+    ],
     interestRates: [
       {
         value: 0.1,
@@ -746,7 +813,11 @@ module.exports.banks_seed = [
     name: "SHB – ngân hàng thương mại cổ phần Sài Gòn Hà Nội",
     code: "SHB",
     link: "",
-    loanRates: [],
+    loanRates: [
+      { rate: 8.9, type: 3, period: 12, update: "02/2020" },
+      { rate: 7.5, type: 4, period: 12, update: "02/2020" },
+      { rate: 8, type: 4, period: 6, update: "02/2020" }
+    ],
     interestRates: [
       {
         value: 0.2

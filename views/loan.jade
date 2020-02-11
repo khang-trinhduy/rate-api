@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1="Lãi suất ngân hàng"
+  h1="Lãi suất vay"
   div(class="right-link")
     a(href="/") Lãi suất
   table
@@ -9,35 +9,28 @@ block content
       code=""
     thead
       tr
-        th(rowspan='2')="Ngân hàng"
-        th(colspan='9')="Kỳ hạn"
+        th(rowspan='3')="Ngân hàng"
+        th(colspan='4')="Hình thức vay"
       tr
-        th="Không kỳ hạn"
-        th="1 tháng"
-        th="3 tháng"
-        th="6 tháng"
-        th="9 tháng"
-        th="12 tháng"
-        th="18 tháng"
-        th="24 tháng"
-        th="36 tháng"
+        th(colspan='2')="Nhà"
+        th(colspan='2')="Ô tô"
+      tr
+        th="Lãi suất (%/năm)"
+        th="Thời gian ưu đãi"
+        th="Lãi suất (%/năm)"
+        th="Thời gian ưu đãi"
     tbody
       each val in banks
-        if val.loanRates && val.loanRates.length === 9
+        if val.loanRates && val.car && val.house
           tr
             td
-                a(href="/detail?c=#{val.code}")=val.code
-            td= val.loanRates[0].value
-            td= val.loanRates[1].value
-            td= val.loanRates[2].value
-            td= val.loanRates[3].value
-            td= val.loanRates[4].value
-            td= val.loanRates[5].value
-            td= val.loanRates[6].value
-            td= val.loanRates[7].value
-            td= val.loanRates[8].value
+              a(href="/detail?c=#{val.code}")=val.code
+            td= val.house.rate
+            td #{val.house.period} tháng
+            td= val.car.rate
+            td #{val.car.period} tháng
         else
           tr
             td 
               a(href="/detail?c=#{val.code}") #{val.code}
-            td(colspan='9') Đang cập nhật
+            td(colspan='4') Đang cập nhật
