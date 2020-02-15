@@ -11,7 +11,8 @@ var bankSchema = new Schema({
   interestRates: [rate_schema],
   loanRates: [loan_schema],
   code: { type: String, required: false },
-  link: { type: String, required: false }
+  link: { type: String, required: false },
+  type: {type: Number, required: true, default: 2}
 });
 
 exports.banks = mongoose.model("banks", bankSchema);

@@ -1,0 +1,17 @@
+div(class="result-container")
+  div(class="flex-result")
+    each result in results
+      div(class="result-area")
+        div(class="result-header") #{result.code}
+        div(class="result-content")
+          div(class="result-name")
+            h3(class="name-line") #{result.name}
+          div(class="result-warning")
+          div(class="result-main")
+            div(class="rate-area")
+            div(class="offer-area")
+          div(class="result-list")
+            each line in result.detail
+              div(class="list-line") #{line}
+        div(class="btn-content")
+          div(class="view-btn") Kiểm tra

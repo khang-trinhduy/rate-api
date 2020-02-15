@@ -14,7 +14,7 @@ var render = (res, view, content) => {
 exports.list = (req, res, next) => {
   banks.find({}, (error, banks) => {
     if (error) {
-      render(res, "error", error);
+      sendJsonResponse(res, 400, error)
     } else {
       let period = 12;
       for (let i = 0; i < banks.length; i++) {
@@ -39,7 +39,7 @@ exports.list = (req, res, next) => {
       banks.sort((a, b) => {
         return b.oid - a.oid;
       });
-      render(res, "index", { banks: banks });
+      sendJsonResponse(res, 200, banks);
     }
   });
 };

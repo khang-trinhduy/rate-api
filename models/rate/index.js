@@ -9,7 +9,8 @@ var rateSchema = new Schema({
   verify: { type: Boolean, required: true, default: false },
   value: { type: Number, default: 0.0, required: true },
   period: { type: Number, required: true, default: 0 },
-  monthly: { type: Number, required: false, default: 0 }
+  monthly: { type: Number, required: false, default: 0 },
+  threshold: { type: Number, required: false }
 });
 
 module.exports.rates = mongoose.model("rates", rateSchema);

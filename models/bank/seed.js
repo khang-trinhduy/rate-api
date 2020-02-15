@@ -3,6 +3,7 @@ module.exports.banks_seed = [
     name: "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
     code: "Agribank",
     link: "",
+    type: 1,
     loanRates: [
       { rate: 11, type: 3, update: "02/2020" },
       { rate: 13, type: 2, update: "02/2020" },
@@ -140,6 +141,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng TM TNHH MTV Đại dương",
     code: "OCEANBANK",
+    type: 1,
     link: "",
     loanRates: [{ rate: 7.99, period: 6, update: "02/2020" }],
     interestRates: [
@@ -748,6 +750,61 @@ module.exports.banks_seed = [
       {
         value: 7.6,
         period: 36
+      }
+    ]
+  },
+
+  {
+    name: "Ngân hàng Xây dựng (CB)",
+    code: "CB",
+    link: "",
+    type: 1,
+    loanRates: [
+      { rate: 9, type: 3, update: "02/2020" },
+      { rate: 8.5, period: 12, type: 4, update: "02/2020" }
+    ],
+    interestRates: [
+      {
+        value: 0.5
+      },
+      {
+        value: 5,
+        period: 1
+      },
+      {
+        value: 5,
+        period: 3,
+        monthly: 4.97
+      },
+      {
+        value: 7.75,
+        period: 6,
+        monthly: 7.72
+      },
+      {
+        value: 7.85,
+        period: 9,
+        monthly: 7.65
+      },
+      {
+        value: 7.9,
+        period: 12,
+        monthly: 7.624
+      },
+      {
+        value: 8,
+        period: 18,
+        monthly: 7.572
+      },
+      {
+        value: 8,
+        period: 24,
+        monthly: 7.437
+      },
+      {
+        value: 8,
+        period: 36,
+        monthly: 7.185
       }
     ]
   },
