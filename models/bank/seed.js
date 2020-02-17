@@ -9,43 +9,41 @@ module.exports.banks_seed = [
       { rate: 13, type: 2, update: "02/2020" },
       { rate: 7.5, type: 4, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0.2
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.2 },
+      oneM: {
         value: 4.3,
         period: 1
       },
-      {
+      threeM: {
         value: 4.8,
         period: 3
       },
-      {
+      sixM: {
         value: 5.3,
         period: 6
       },
-      {
+      nineM: {
         value: 5.4,
         period: 9
       },
-      {
+      twelveM: {
         value: 6.8,
         period: 12
       },
-      {
+      eighteenM: {
         value: 6.8,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 6.8,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 0.0,
         period: 36
       }
-    ]
+    }
   },
   {
     name: "Ngân hàng TMCP Phương Đông – Orient Commercial Joint Stock Bank",
@@ -56,86 +54,82 @@ module.exports.banks_seed = [
       { type: 4, rate: 9.49, period: 12, update: "02/2020" },
       { type: 4, rate: 7.99, period: 6, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0.5
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.5 },
+      oneM: {
         value: 4.8,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
         period: 3
       },
-      {
+      sixM: {
         value: 7.2,
         period: 6
       },
-      {
+      nineM: {
         value: 7.3,
         period: 9
       },
-      {
+      twelveM: {
         value: 7.4,
         period: 12
       },
-      {
+      eighteenM: {
         value: 7.5,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 7.7,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 7.7,
         period: 36
       }
-    ]
+    }
   },
   {
     name: "TMCP Xuất Nhập khẩu Việt Nam EXIMBANK",
     code: "EXIMBANK",
     link: "",
     loanRates: [],
-    interestRates: [
-      {
-        value: 0.2
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.2 },
+      oneM: {
         value: 4.8,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
         period: 3
       },
-      {
+      sixM: {
         value: 5.6,
         period: 6
       },
-      {
+      nineM: {
         value: 5.8,
         period: 9
       },
-      {
+      twelveM: {
         value: 7.4,
         period: 12
       },
-      {
+      eighteenM: {
         value: 7.9,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 8.4,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 8,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -144,43 +138,41 @@ module.exports.banks_seed = [
     type: 1,
     link: "",
     loanRates: [{ rate: 7.99, period: 6, update: "02/2020" }],
-    interestRates: [
-      {
-        value: 0.5
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.5 },
+      oneM: {
         value: 5,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
         period: 3
       },
-      {
+      sixM: {
         value: 5,
         period: 6
       },
-      {
+      nineM: {
         value: 6.4,
         period: 9
       },
-      {
+      twelveM: {
         value: 6.8,
         period: 12
       },
-      {
+      eighteenM: {
         value: 7.4,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 7.2,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 7.3,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -197,43 +189,41 @@ module.exports.banks_seed = [
       { rate: 9.5, period: 36, type: 3, update: "02/2020" },
       { rate: 10.3, period: 60, type: 3, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0.1
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.1 },
+      oneM: {
         value: 4.3,
         period: 1
       },
-      {
+      threeM: {
         value: 4.8,
         period: 3
       },
-      {
+      sixM: {
         value: 5.3,
         period: 6
       },
-      {
+      nineM: {
         value: 5.3,
         period: 9
       },
-      {
+      twelveM: {
         value: 6.8,
         period: 12
       },
-      {
+      eighteenM: {
         value: 6.8,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 6.8,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 6.8,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -246,43 +236,41 @@ module.exports.banks_seed = [
       { rate: 7.8, period: 12, update: "02/2020", type: 4 },
       { rate: 8.8, period: 24, update: "02/2020", type: 4 }
     ],
-    interestRates: [
-      {
-        value: 0.1
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.1 },
+      oneM: {
         value: 4.3,
         period: 1
       },
-      {
+      threeM: {
         value: 4.8,
         period: 3
       },
-      {
+      sixM: {
         value: 5.3,
         period: 6
       },
-      {
+      nineM: {
         value: 5.3,
         period: 9
       },
-      {
+      twelveM: {
         value: 6.8,
         period: 12
       },
-      {
+      eighteenM: {
         value: 6.8,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 6.8,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 6.8,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -290,43 +278,41 @@ module.exports.banks_seed = [
     code: "MSB",
     link: "",
     loanRates: [],
-    interestRates: [
-      {
-        value: 0.3
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.3 },
+      oneM: {
         value: 4.8,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
         period: 3
       },
-      {
+      sixM: {
         value: 6.4,
         period: 6
       },
-      {
+      nineM: {
         value: 6.4,
         period: 9
       },
-      {
+      twelveM: {
         value: 7.4,
         period: 12
       },
-      {
+      eighteenM: {
         value: 7.3,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 7.6,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 7.4,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -338,43 +324,41 @@ module.exports.banks_seed = [
       { rate: 9.5, period: 24, update: "02/2020", type: 3 },
       { rate: 9, period: 12, update: "02/2020", type: 3 }
     ],
-    interestRates: [
-      {
-        value: 0
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0 },
+      oneM: {
         value: 5,
         period: 1
       },
-      {
+      threeM: {
         value: 0,
         period: 3
       },
-      {
+      sixM: {
         value: 8.21,
         period: 6
       },
-      {
+      nineM: {
         value: 8.36,
         period: 9
       },
-      {
+      twelveM: {
         value: 8.66,
         period: 12
       },
-      {
+      eighteenM: {
         value: 8.76,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 8.56,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 8.56,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -387,43 +371,41 @@ module.exports.banks_seed = [
       { rate: 6.5, type: 3, period: 6, update: "02/2020" },
       { rate: 9.5, type: 3, period: 24, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0 },
+      oneM: {
         value: 5,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
         period: 3
       },
-      {
+      sixM: {
         value: 7.9,
         period: 6
       },
-      {
+      nineM: {
         value: 7.96,
         period: 9
       },
-      {
+      twelveM: {
         value: 7.98,
         period: 12
       },
-      {
+      eighteenM: {
         value: 8.1,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 8.2,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 8.3,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -436,43 +418,41 @@ module.exports.banks_seed = [
       { rate: 9.9, period: 12, type: 4, update: "02/2020" },
       { rate: 8.6, period: 6, type: 4, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0.8
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.8 },
+      oneM: {
         value: 5,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
         period: 3
       },
-      {
+      sixM: {
         value: 7.3,
         period: 6
       },
-      {
+      nineM: {
         value: 7.4,
         period: 9
       },
-      {
+      twelveM: {
         value: 7.59,
         period: 12
       },
-      {
+      eighteenM: {
         value: 7.6,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 7.6,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 7.6,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -483,43 +463,41 @@ module.exports.banks_seed = [
       { rate: 11, type: 4, update: "02/2020" },
       { rate: 7.3, type: 3, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0 },
+      oneM: {
         value: 5.4,
         period: 1
       },
-      {
+      threeM: {
         value: 5.4,
         period: 3
       },
-      {
+      sixM: {
         value: 8,
         period: 6
       },
-      {
+      nineM: {
         value: 8.05,
         period: 9
       },
-      {
+      twelveM: {
         value: 8.3,
         period: 12
       },
-      {
+      eighteenM: {
         value: 8.5,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 8.5,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 8.7,
         period: 36
       }
-    ]
+    }
   },
 
   {
@@ -530,229 +508,289 @@ module.exports.banks_seed = [
       { range: [7.5, 8.5], type: 3, update: "02/2020" },
       { range: [7, 8.5], type: 4, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0.8,
-        monthly: 0.8
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.8 },
+      oneM: {
         value: 4.8,
-        monthly: 4.8,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
-        monthly: 5,
         period: 3
       },
-      {
+      sixM: {
         value: 6.85,
-        monthly: 6.85,
         period: 6
       },
-      {
+      nineM: {
         value: 6.9,
-        monthly: 6.9,
         period: 9
       },
-      {
+      twelveM: {
         value: 7.95,
-        monthly: 7.95,
         period: 12
       },
-      {
+      eighteenM: {
         value: 7.6,
-        montly: 7.6,
         period: 18
       },
-      {
+      twentyFourM: {
         value: 7.6,
         period: 24
       },
-      {
+      thirtySixM: {
         value: 7.6,
         period: 36
       }
-    ]
+    }
   },
 
-  {
-    name: "Ngân hàng TMCP Bắc Á",
-    code: "BacA bank",
-    link: "",
-    loanRates: [
-      {
-        rate: 11.5,
-        type: 4
-      },
-      {
-        type: 3,
-        rate: 8.99,
-        period: 12,
-        update: "02/2020"
-      }
-    ],
-    interestRates: [
-      {
-        value: 1,
-        monthly: 1
-      },
-      {
-        value: 5.5,
-        monthly: 5.5,
-        period: 1
-      },
-      {
-        value: 5.5,
-        monthly: 5.5,
-        period: 3
-      },
-      {
-        value: 7.7,
-        monthly: 7.7,
-        period: 6
-      },
-      {
-        value: 7.8,
-        monthly: 7.8,
-        period: 9
-      },
-      {
-        value: 8.2,
-        monthly: 8.2,
-        period: 12
-      },
-      {
-        value: 8.3,
-        monthly: 8.3,
-        period: 18
-      },
-      {
-        value: 8.3,
-        monthly: 8.3,
-        period: 24
-      },
-      {
-        value: 8.3,
-        monthly: 8.3,
-        period: 36
-      }
-    ]
-  },
+  // {
+  //   name: "Ngân hàng TMCP Bắc Á",
+  //   code: "BacA bank",
+  //   link: "",
+  //   loanRates: [
+  //     {
+  //       rate: 11.5,
+  //       type: 4
+  //     },
+  //     {
+  //       type: 3,
+  //       rate: 8.99,
+  //       period: 12,
+  //       update: "02/2020"
+  //     }
+  //   ],
+  //   interestRates: {
+  //     oneM: {
+  //       value: 1,
+  //       period: 0
+  //     },
+  //     threeM: {
+  //       value: 5.5,
+  //       period: 3
+  //     },
+  //     sixM: {
+  //       value: 5.5,
+  //       period: 6
+  //     },
+  //     nineM: {
+  //       value: 7.7,
+  //       period: 9
+  //     },
+  //     twelveM: {
+  //       value: 7.8,
+  //       period: 12
+  //     },
+  //     eighteenM: {
+  //       value: 7.9,
+  //       period: 18
+  //     },
+  //     twentyFourM: {
+  //       value: 8.4,
+  //       period: 24
+  //     },
+  //     thirtySixM: {
+  //       value: 8,
+  //       period: 36
+  //     }
+  //   },
+  //   interestRates: [
+  //     {
+  //       value: 1,
+  //       monthly: 1
+  //     },
+  //     {
+  //       value: 5.5,
+  //       monthly: 5.5,
+  //       period: 1
+  //     },
+  //     {
+  //       value: 5.5,
+  //       monthly: 5.5,
+  //       period: 3
+  //     },
+  //     {
+  //       value: 7.7,
+  //       monthly: 7.7,
+  //       period: 6
+  //     },
+  //     {
+  //       value: 7.8,
+  //       monthly: 7.8,
+  //       period: 9
+  //     },
+  //     {
+  //       value: 8.2,
+  //       monthly: 8.2,
+  //       period: 12
+  //     },
+  //     {
+  //       value: 8.3,
+  //       monthly: 8.3,
+  //       period: 18
+  //     },
+  //     {
+  //       value: 8.3,
+  //       monthly: 8.3,
+  //       period: 24
+  //     },
+  //     {
+  //       value: 8.3,
+  //       monthly: 8.3,
+  //       period: 36
+  //     }
+  //   ]
+  // },
 
-  {
-    name: "Ngân hàng Thương mại Cổ phần Hàng hải Việt Nam (Maritime bank)",
-    code: "MaritimeBank",
-    link: "",
-    loanRates: [
-      { rate: 9.49, type: 3, period: 18, update: "02/2020" },
-      { rate: 8.49, type: 3, period: 12, update: "02/2020" },
-      { rate: 6.99, type: 3, period: 6, update: "02/2020" },
-      { rate: 9.49, type: 4, period: 48, update: "02/2020" },
-      { rate: 8.49, type: 4, period: 36, update: "02/2020" },
-      { rate: 6.99, type: 4, period: 24, update: "02/2020" }
-    ],
-    interestRates: [
-      {
-        value: 0
-      },
-      {
-        value: 5,
-        period: 1,
-        monthly: 5
-      },
-      {
-        value: 5,
-        period: 3,
-        monthly: 5
-      },
-      {
-        value: 6.85,
-        period: 6,
-        monthly: 6.85
-      },
-      {
-        value: 6.95,
-        period: 9,
-        monthly: 6.95
-      },
-      {
-        value: 7.05,
-        period: 12,
-        monthly: 7.05
-      },
-      {
-        value: 7.45,
-        period: 18,
-        monthly: 7.45
-      },
-      {
-        value: 7.55,
-        period: 24,
-        monthly: 7.55
-      },
-      {
-        value: 7.55,
-        period: 36,
-        monthly: 7.55
-      }
-    ]
-  },
+  // {
+  //   name: "Ngân hàng Thương mại Cổ phần Hàng hải Việt Nam (Maritime bank)",
+  //   code: "MaritimeBank",
+  //   link: "",
+  //   loanRates: [
+  //     { rate: 9.49, type: 3, period: 18, update: "02/2020" },
+  //     { rate: 8.49, type: 3, period: 12, update: "02/2020" },
+  //     { rate: 6.99, type: 3, period: 6, update: "02/2020" },
+  //     { rate: 9.49, type: 4, period: 48, update: "02/2020" },
+  //     { rate: 8.49, type: 4, period: 36, update: "02/2020" },
+  //     { rate: 6.99, type: 4, period: 24, update: "02/2020" }
+  //   ],
+  //   interestRates: [
+  //     {
+  //       value: 0
+  //     },
+  //     {
+  //       value: 5,
+  //       period: 1,
+  //       monthly: 5
+  //     },
+  //     {
+  //       value: 5,
+  //       period: 3,
+  //       monthly: 5
+  //     },
+  //     {
+  //       value: 6.85,
+  //       period: 6,
+  //       monthly: 6.85
+  //     },
+  //     {
+  //       value: 6.95,
+  //       period: 9,
+  //       monthly: 6.95
+  //     },
+  //     {
+  //       value: 7.05,
+  //       period: 12,
+  //       monthly: 7.05
+  //     },
+  //     {
+  //       value: 7.45,
+  //       period: 18,
+  //       monthly: 7.45
+  //     },
+  //     {
+  //       value: 7.55,
+  //       period: 24,
+  //       monthly: 7.55
+  //     },
+  //     {
+  //       value: 7.55,
+  //       period: 36,
+  //       monthly: 7.55
+  //     }
+  //   ]
+  // },
 
-  {
-    name: "Ngân hàng Đông Á (Dongabank)",
-    code: "Dongabank",
-    link: "",
-    loanRates: [
-      { rate: 9, type: 3, update: "02/2020" },
-      { rate: 8.5, period: 12, type: 4, update: "02/2020" }
-    ],
-    interestRates: [
-      {
-        value: 0.29,
-        monthly: 0.29
-      },
-      {
-        value: 5,
-        period: 1,
-        monthly: 5
-      },
-      {
-        value: 5,
-        period: 3,
-        monthly: 4.98
-      },
-      {
-        value: 7,
-        period: 6,
-        monthly: 6.9
-      },
-      {
-        value: 7.2,
-        period: 9,
-        monthly: 7.03
-      },
-      {
-        value: 7.4,
-        period: 12,
-        monthly: 7.16
-      },
-      {
-        value: 7.6,
-        period: 18,
-        monthly: 7.22
-      },
-      {
-        value: 7.6,
-        period: 24,
-        monthly: 6.87
-      },
-      {
-        value: 7.6,
-        period: 36
-      }
-    ]
-  },
+  // {
+  //   name: "Ngân hàng Đông Á (Dongabank)",
+  //   code: "Dongabank",
+  //   link: "",
+  //   loanRates: [
+  //     { rate: 9, type: 3, update: "02/2020" },
+  //     { rate: 8.5, period: 12, type: 4, update: "02/2020" }
+  //   ],
+  //   interestRates: {
+  //     unlimit: { value: 0.3 },
+  //     oneM: {
+  //       value: 4.8,
+  //       period: 1
+  //     },
+  //     threeM: {
+  //       value: 5,
+  //       period: 3
+  //     },
+  //     sixM: {
+  //       value: 6.4,
+  //       period: 6
+  //     },
+  //     nineM: {
+  //       value: 6.4,
+  //       period: 9
+  //     },
+  //     twelveM: {
+  //       value: 7.4,
+  //       period: 12
+  //     },
+  //     eighteenM: {
+  //       value: 7.3,
+  //       period: 18
+  //     },
+  //     twentyFourM: {
+  //       value: 7.6,
+  //       period: 24
+  //     },
+  //     thirtySixM: {
+  //       value: 7.4,
+  //       period: 36
+  //     }
+  //   },
+  //   interestRates: [
+  //     {
+  //       value: 0.29,
+  //       monthly: 0.29
+  //     },
+  //     {
+  //       value: 5,
+  //       period: 1,
+  //       monthly: 5
+  //     },
+  //     {
+  //       value: 5,
+  //       period: 3,
+  //       monthly: 4.98
+  //     },
+  //     {
+  //       value: 7,
+  //       period: 6,
+  //       monthly: 6.9
+  //     },
+  //     {
+  //       value: 7.2,
+  //       period: 9,
+  //       monthly: 7.03
+  //     },
+  //     {
+  //       value: 7.4,
+  //       period: 12,
+  //       monthly: 7.16
+  //     },
+  //     {
+  //       value: 7.6,
+  //       period: 18,
+  //       monthly: 7.22
+  //     },
+  //     {
+  //       value: 7.6,
+  //       period: 24,
+  //       monthly: 6.87
+  //     },
+  //     {
+  //       value: 7.6,
+  //       period: 36
+  //     }
+  //   ]
+  // },
 
   {
     name: "Ngân hàng Xây dựng (CB)",
@@ -763,50 +801,41 @@ module.exports.banks_seed = [
       { rate: 9, type: 3, update: "02/2020" },
       { rate: 8.5, period: 12, type: 4, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0.5
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.5 },
+      oneM: {
         value: 5,
         period: 1
       },
-      {
+      threeM: {
         value: 5,
-        period: 3,
-        monthly: 4.97
+        period: 3
       },
-      {
+      sixM: {
         value: 7.75,
-        period: 6,
-        monthly: 7.72
+        period: 6
       },
-      {
+      nineM: {
         value: 7.85,
-        period: 9,
-        monthly: 7.65
+        period: 9
       },
-      {
+      twelveM: {
         value: 7.9,
-        period: 12,
-        monthly: 7.624
+        period: 12
       },
-      {
+      eighteenM: {
         value: 8,
-        period: 18,
-        monthly: 7.572
+        period: 18
       },
-      {
+      twentyFourM: {
         value: 8,
-        period: 24,
-        monthly: 7.437
+        period: 24
       },
-      {
+      thirtySixM: {
         value: 8,
-        period: 36,
-        monthly: 7.185
+        period: 36
       }
-    ]
+    }
   },
 
   {
@@ -818,52 +847,41 @@ module.exports.banks_seed = [
       { rate: 7.9, type: 4, update: "2019", period: 12 },
       { rate: 8.1, type: 3, update: "02/2020", period: 12 }
     ],
-    interestRates: [
-      {
-        value: 0.1,
-        monthly: 0.1
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.1 },
+      oneM: {
         value: 4.3,
-        period: 1,
-        monthly: 4.3
+        period: 1
       },
-      {
+      threeM: {
         value: 4.8,
-        period: 3,
-        monthly: 4.8
+        period: 3
       },
-      {
+      sixM: {
         value: 5.3,
-        period: 6,
-        monthly: 5.3
+        period: 6
       },
-      {
+      nineM: {
         value: 5.3,
-        period: 9,
-        monthly: 5.3
+        period: 9
       },
-      {
+      twelveM: {
         value: 6.8,
-        period: 12,
-        monthly: 6.8
+        period: 12
       },
-      {
+      eighteenM: {
         value: 6.7,
-        period: 18,
-        monthly: 6.7
+        period: 18
       },
-      {
+      twentyFourM: {
         value: 6.8,
-        period: 24,
-        monthly: 0
+        period: 24
       },
-      {
+      thirtySixM: {
         value: 6.8,
-        period: 36,
-        monthly: 6.8
+        period: 36
       }
-    ]
+    }
   },
 
   {
@@ -875,49 +893,40 @@ module.exports.banks_seed = [
       { rate: 7.5, type: 4, period: 12, update: "02/2020" },
       { rate: 8, type: 4, period: 6, update: "02/2020" }
     ],
-    interestRates: [
-      {
-        value: 0.2
-      },
-      {
+    interestRates: {
+      unlimit: { value: 0.2 },
+      oneM: {
         value: 4.6,
         period: 1
       },
-      {
+      threeM: {
         value: 4.8,
-        period: 3,
-        monthly: 4.78
+        period: 3
       },
-      {
+      sixM: {
         value: 6.8,
-        period: 6,
-        monthly: 6.7
+        period: 6
       },
-      {
+      nineM: {
         value: 6.9,
-        period: 9,
-        monthly: 6.74
+        period: 9
       },
-      {
+      twelveM: {
         value: 7,
-        period: 12,
-        monthly: 6.78
+        period: 12
       },
-      {
+      eighteenM: {
         value: 7.3,
-        period: 18,
-        monthly: 6.93
+        period: 18
       },
-      {
+      twentyFourM: {
         value: 7.3,
-        period: 24,
-        monthly: 6.8
+        period: 24
       },
-      {
+      thirtySixM: {
         value: 7.4,
-        period: 36,
-        monthly: 6.63
+        period: 36
       }
-    ]
+    }
   }
 ];

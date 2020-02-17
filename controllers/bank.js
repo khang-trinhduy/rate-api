@@ -20,7 +20,7 @@ exports.list = (req, res, next) => {
       for (let i = 0; i < banks.length; i++) {
         const bank = banks[i];
         bank.oid = i + 1;
-        let rate = bank.interestRates.find(e => e.period === period).value || 0;
+        let rate = bank.interestRates.twelveM.value || 0;
         bank.width = `${rate * 10}%`;
         bank.duration = (rate || 5) / 1.5;
         bank.rate = `${rate}%`;
@@ -28,8 +28,8 @@ exports.list = (req, res, next) => {
       }
       banks.sort((a, b) => {
         let i1, i2;
-        i1 = a.interestRates.find(e => e.period === period).value || 0;
-        i2 = b.interestRates.find(e => e.period === period).value || 0;
+        i1 = a.interestRates.twelveM.value || 0;
+        i2 = b.interestRates.twelveM.value || 0;
         return i2 - i1;
       });
       for (let i = 0; i < banks.length; i++) {
