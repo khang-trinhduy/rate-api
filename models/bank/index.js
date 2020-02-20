@@ -4,6 +4,8 @@ const { rate_schema, rate_wrapper_schema } = require("../rate");
 
 const { loan_schema } = require("../loan");
 
+var { ratestats } = require("../statistic/rate");
+
 var Schema = mongoose.Schema;
 
 var bankSchema = new Schema({

@@ -10,7 +10,7 @@ module.exports.banks_seed = [
       { rate: 7.5, type: 4, update: "02/2020" }
     ],
     interestRates: {
-      unlimit: { value: 0.2 },
+      unlimit: { value: 0.2, gift: true },
       oneM: {
         value: 4.3,
         period: 1
@@ -29,7 +29,8 @@ module.exports.banks_seed = [
       },
       twelveM: {
         value: 6.8,
-        period: 12
+        period: 12,
+        gift: true
       },
       eighteenM: {
         value: 6.8,
@@ -70,7 +71,8 @@ module.exports.banks_seed = [
       },
       nineM: {
         value: 7.3,
-        period: 9
+        period: 9,
+        gift: true
       },
       twelveM: {
         value: 7.4,
@@ -107,7 +109,8 @@ module.exports.banks_seed = [
       },
       sixM: {
         value: 5.6,
-        period: 6
+        period: 6,
+        gift: true
       },
       nineM: {
         value: 5.8,
@@ -142,7 +145,8 @@ module.exports.banks_seed = [
       unlimit: { value: 0.5 },
       oneM: {
         value: 5,
-        period: 1
+        period: 1,
+        gift: true
       },
       threeM: {
         value: 5,
@@ -150,7 +154,8 @@ module.exports.banks_seed = [
       },
       sixM: {
         value: 5,
-        period: 6
+        period: 6,
+        gift: true
       },
       nineM: {
         value: 6.4,
@@ -193,7 +198,8 @@ module.exports.banks_seed = [
       unlimit: { value: 0.1 },
       oneM: {
         value: 4.3,
-        period: 1
+        period: 1,
+        gift: true
       },
       threeM: {
         value: 4.8,
@@ -217,7 +223,8 @@ module.exports.banks_seed = [
       },
       twentyFourM: {
         value: 6.8,
-        period: 24
+        period: 24,
+        gift: true
       },
       thirtySixM: {
         value: 6.8,
@@ -244,7 +251,8 @@ module.exports.banks_seed = [
       },
       threeM: {
         value: 4.8,
-        period: 3
+        period: 3,
+        gift: true
       },
       sixM: {
         value: 5.3,
@@ -268,7 +276,8 @@ module.exports.banks_seed = [
       },
       thirtySixM: {
         value: 6.8,
-        period: 36
+        period: 36,
+        gift: true
       }
     }
   },
@@ -290,11 +299,13 @@ module.exports.banks_seed = [
       },
       sixM: {
         value: 6.4,
-        period: 6
+        period: 6,
+        gift: true
       },
       nineM: {
         value: 6.4,
-        period: 9
+        period: 9,
+        gift: true
       },
       twelveM: {
         value: 7.4,
@@ -325,10 +336,11 @@ module.exports.banks_seed = [
       { rate: 9, period: 12, update: "02/2020", type: 3 }
     ],
     interestRates: {
-      unlimit: { value: 0 },
+      unlimit: { value: 0, gift: true },
       oneM: {
         value: 5,
-        period: 1
+        period: 1,
+        gift: true
       },
       threeM: {
         value: 0,
@@ -375,11 +387,13 @@ module.exports.banks_seed = [
       unlimit: { value: 0 },
       oneM: {
         value: 5,
-        period: 1
+        period: 1,
+        gift: true
       },
       threeM: {
         value: 5,
-        period: 3
+        period: 3,
+        gift: true
       },
       sixM: {
         value: 7.9,
@@ -403,7 +417,8 @@ module.exports.banks_seed = [
       },
       thirtySixM: {
         value: 8.3,
-        period: 36
+        period: 36,
+        gift: true
       }
     }
   },
@@ -438,11 +453,13 @@ module.exports.banks_seed = [
       },
       twelveM: {
         value: 7.59,
-        period: 12
+        period: 12,
+        gift: true
       },
       eighteenM: {
         value: 7.6,
-        period: 18
+        period: 18,
+        gift: true
       },
       twentyFourM: {
         value: 7.6,
@@ -483,7 +500,8 @@ module.exports.banks_seed = [
       },
       twelveM: {
         value: 8.3,
-        period: 12
+        period: 12,
+        gift: true
       },
       eighteenM: {
         value: 8.5,
@@ -512,15 +530,18 @@ module.exports.banks_seed = [
       unlimit: { value: 0.8 },
       oneM: {
         value: 4.8,
-        period: 1
+        period: 1,
+        gift: true
       },
       threeM: {
         value: 5,
-        period: 3
+        period: 3,
+        gift: true
       },
       sixM: {
         value: 6.85,
-        period: 6
+        period: 6,
+        gift: true
       },
       nineM: {
         value: 6.9,
@@ -805,7 +826,8 @@ module.exports.banks_seed = [
       unlimit: { value: 0.5 },
       oneM: {
         value: 5,
-        period: 1
+        period: 1,
+        gift: true
       },
       threeM: {
         value: 5,
@@ -821,7 +843,8 @@ module.exports.banks_seed = [
       },
       twelveM: {
         value: 7.9,
-        period: 12
+        period: 12,
+        gift: true
       },
       eighteenM: {
         value: 8,
@@ -829,11 +852,13 @@ module.exports.banks_seed = [
       },
       twentyFourM: {
         value: 8,
-        period: 24
+        period: 24,
+        gift: true
       },
       thirtySixM: {
         value: 8,
-        period: 36
+        period: 36,
+        gift: true
       }
     }
   },
@@ -851,7 +876,8 @@ module.exports.banks_seed = [
       unlimit: { value: 0.1 },
       oneM: {
         value: 4.3,
-        period: 1
+        period: 1,
+        gift: true
       },
       threeM: {
         value: 4.8,
@@ -867,7 +893,8 @@ module.exports.banks_seed = [
       },
       twelveM: {
         value: 6.8,
-        period: 12
+        period: 12,
+        gift: true
       },
       eighteenM: {
         value: 6.7,
@@ -917,7 +944,8 @@ module.exports.banks_seed = [
       },
       eighteenM: {
         value: 7.3,
-        period: 18
+        period: 18,
+        gift: true
       },
       twentyFourM: {
         value: 7.3,
