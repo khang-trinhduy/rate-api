@@ -8,13 +8,26 @@ if (process.env.NODE_ENV === "production") {
 
 var { banks } = require("../models/bank");
 var { ratestats } = require("../models/statistic/rate");
+var { informations } = require("../models/info");
 const { banks_seed } = require("../models/bank/seed");
 const { ratestat_seed } = require("../models/statistic/seed");
+const { infos } = require("../models/info/seed");
 
 mongoose.connect(dbURI);
 
 mongoose.connection.on("connected", () => {
   console.log("Mongoose connected to " + dbURI);
+  informations.find({}, (err, res) => {
+    if (!err && res.length <= 0) {
+      informations.insertMany(infos, (error, result) => {
+        if (error) {
+          console.log(error);
+        } else if (result) {
+          console.log(`inserted ${result.length} documents to the database`);
+        }
+      });
+    }
+  });
   ratestats.find({}, (error, result) => {
     if (!error && result.length <= 0) {
       ratestats.insertMany(ratestat_seed, (err, res) => {
