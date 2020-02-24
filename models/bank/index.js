@@ -16,6 +16,7 @@ var bankSchema = new Schema({
   loanRates: [loan_schema],
   code: { type: String, required: false },
   link: { type: String, required: false },
+  normalized: { type: String, required: false },
   info: info_schema
 });
 

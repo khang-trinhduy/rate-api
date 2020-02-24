@@ -3,6 +3,8 @@ var router = express.Router();
 var bankCtrl = require("../controllers/bank");
 var statCtrl = require("../controllers/stat");
 var infoCtrl = require("../controllers/info");
+var utilityCtrl = require("../controllers/utility");
+var rateCtrl = require("../controllers/rate");
 
 /* GET home page. */
 router.get("/", bankCtrl.list);
@@ -18,5 +20,13 @@ router.get("/stats", statCtrl.list);
 router.get("/informations/:id", infoCtrl.show);
 
 router.get("/informations", infoCtrl.show);
+
+router.get("/utilities/:id", utilityCtrl.show);
+
+router.get("/utilities", utilityCtrl.show);
+
+router.get('/banks', bankCtrl.showV2)
+
+router.get('/rates', rateCtrl.top)
 
 module.exports = router;

@@ -2,9 +2,11 @@ var mongoose = require("mongoose");
 
 var { banks } = require("../models/bank");
 
+var service = require("../services");
+
 var sendJsonResponse = (res, code, content) => {
-  res.json(content);
   res.status(code);
+  res.json(content);
 };
 
 var render = (res, view, content) => {
@@ -14,7 +16,7 @@ var render = (res, view, content) => {
 exports.list = (req, res, next) => {
   banks.find({}, (error, banks) => {
     if (error) {
-      sendJsonResponse(res, 400, error)
+      sendJsonResponse(res, 400, error);
     } else {
       let period = 12;
       for (let i = 0; i < banks.length; i++) {
@@ -95,3 +97,27 @@ exports.show = (req, res, next) => {
     });
   }
 };
+
+exports.showV2 = (req, res, next) => {
+  if (!req.query.code) {
+    sendJsonResponse(res, 400, "code required");
+  } else {
+    banks.findOne({ normalized: req.query.code }, (error, bank) => {
+      if (error) {
+        sendJsonResponse(res, 400, error);
+      } else if (!bank) {
+        sendJsonResponse(res, 404, {
+          error: `cannot find bank with code: ${req.query.code}`
+        });
+      } else {
+        if (req.query.type) {
+          let period = service.resolveRatePeriod(req.query.type);
+          sendJsonResponse(res, 200, bank.interestRates[period]);
+        } else {
+          sendJsonResponse(res, 200, bank.interestRates["twelveM"]);
+        }
+      }
+    });
+  }
+};
+
