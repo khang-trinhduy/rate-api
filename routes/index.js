@@ -5,6 +5,7 @@ var statCtrl = require("../controllers/stat");
 var infoCtrl = require("../controllers/info");
 var utilityCtrl = require("../controllers/utility");
 var rateCtrl = require("../controllers/rate");
+var authCtrl = require("../controllers/authentication");
 
 /* GET home page. */
 router.get("/", bankCtrl.list);
@@ -25,8 +26,12 @@ router.get("/utilities/:id", utilityCtrl.show);
 
 router.get("/utilities", utilityCtrl.show);
 
-router.get('/banks', bankCtrl.showV2)
+router.get("/banks", bankCtrl.showV2);
 
-router.get('/rates', rateCtrl.top)
+router.get("/rates", rateCtrl.top);
+
+router.get("/login", authCtrl.login);
+
+router.get("/register", authCtrl.register);
 
 module.exports = router;
