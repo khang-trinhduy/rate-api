@@ -30,8 +30,8 @@ router.get("/banks", bankCtrl.showV2);
 
 router.get("/rates", rateCtrl.top);
 
-router.get("/login", authCtrl.login);
+router.post("/login", authCtrl.login);
 
-router.get("/register", authCtrl.register);
+router.post("/register", authCtrl.register);
 
 module.exports = router;
