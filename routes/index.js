@@ -7,6 +7,8 @@ var utilityCtrl = require("../controllers/utility");
 var rateCtrl = require("../controllers/rate");
 var authCtrl = require("../controllers/authentication");
 
+var reviewCtrl = require("../controllers/review");
+
 /* GET home page. */
 router.get("/", bankCtrl.list);
 
@@ -33,5 +35,13 @@ router.get("/rates", rateCtrl.top);
 router.post("/login", authCtrl.login);
 
 router.post("/register", authCtrl.register);
+
+router.get('/reviews/:id', reviewCtrl.show)
+
+router.post('/reviews', reviewCtrl.create)
+
+router.delete('/reviews/:id', reviewCtrl.delete)
+
+router.delete('/reviews', reviewCtrl.list)
 
 module.exports = router;
