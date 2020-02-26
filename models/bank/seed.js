@@ -1,8 +1,16 @@
+gifts = [
+  "Đồng hồ thông minh Apple trị giá 10.000.000 VNĐ",
+  "Rô bốt hút bụi trị giá 4.700.000 VNĐ",
+  "Máy lọc không khí trị giá 3.000.000 VNĐ",
+  "Bình lọc nước trị giá 1.000.000 VNĐ",
+  "Bộ 3 nồi Inox trị giá 500.000 VNĐ",
+  "Hộp cơm 3 tầng Lock&Lock trị giá 300.000 VNĐ"
+];
 module.exports.banks_seed = [
   {
     name: "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
     code: "Agribank",
-    normalized: 'agribank',
+    normalized: "agribank",
     link: "",
     type: 1,
     loanRates: [
@@ -11,7 +19,11 @@ module.exports.banks_seed = [
       { rate: 7.5, type: 4, update: "02/2020" }
     ],
     interestRates: {
-      unlimit: { value: 0.2, gift: true },
+      unlimit: {
+        value: 0.2,
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
+      },
       oneM: {
         value: 4.3,
         period: 1
@@ -31,7 +43,8 @@ module.exports.banks_seed = [
       twelveM: {
         value: 6.8,
         period: 12,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[2] }]
       },
       eighteenM: {
         value: 6.8,
@@ -50,7 +63,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng TMCP Phương Đông – Orient Commercial Joint Stock Bank",
     code: "OCB",
-    normalized: 'ocb',
+    normalized: "ocb",
     link: "",
     loanRates: [
       { type: 3, rate: 9.68, update: "02/2020" },
@@ -74,7 +87,8 @@ module.exports.banks_seed = [
       nineM: {
         value: 7.3,
         period: 9,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[3] }, { content: gifts[1] }]
       },
       twelveM: {
         value: 7.4,
@@ -97,7 +111,7 @@ module.exports.banks_seed = [
   {
     name: "TMCP Xuất Nhập khẩu Việt Nam EXIMBANK",
     code: "EXIMBANK",
-    normalized: 'eximbank',
+    normalized: "eximbank",
     link: "",
     loanRates: [],
     interestRates: {
@@ -113,7 +127,8 @@ module.exports.banks_seed = [
       sixM: {
         value: 5.6,
         period: 6,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[3] }, { content: gifts[2] }]
       },
       nineM: {
         value: 5.8,
@@ -141,7 +156,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng TM TNHH MTV Đại dương",
     code: "OCEANBANK",
-    normalized: 'oceanbank',
+    normalized: "oceanbank",
     type: 1,
     link: "",
     loanRates: [{ rate: 7.99, period: 6, update: "02/2020" }],
@@ -150,7 +165,8 @@ module.exports.banks_seed = [
       oneM: {
         value: 5,
         period: 1,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[4] }, { content: gifts[5] }]
       },
       threeM: {
         value: 5,
@@ -159,7 +175,8 @@ module.exports.banks_seed = [
       sixM: {
         value: 5,
         period: 6,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[5] }, { content: gifts[1] }]
       },
       nineM: {
         value: 6.4,
@@ -187,7 +204,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank)",
     code: "Vietcombank",
-    normalized: 'vietcombank',
+    normalized: "vietcombank",
     link: "",
     loanRates: [
       { rate: 9.1, period: 24, type: 4, update: "02/2020" },
@@ -204,7 +221,8 @@ module.exports.banks_seed = [
       oneM: {
         value: 4.3,
         period: 1,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[4] }, { content: gifts[2] }]
       },
       threeM: {
         value: 4.8,
@@ -229,7 +247,8 @@ module.exports.banks_seed = [
       twentyFourM: {
         value: 6.8,
         period: 24,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[4] }]
       },
       thirtySixM: {
         value: 6.8,
@@ -241,7 +260,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng Đầu tư và Phát triển Việt Nam (BIDV)",
     code: "BIDV",
-    normalized: 'bidv',
+    normalized: "bidv",
     link: "",
     loanRates: [
       { rate: 9, period: 24, update: "02/2020", type: 3 },
@@ -258,7 +277,8 @@ module.exports.banks_seed = [
       threeM: {
         value: 4.8,
         period: 3,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[5] }, { content: gifts[3] }]
       },
       sixM: {
         value: 5.3,
@@ -283,7 +303,12 @@ module.exports.banks_seed = [
       thirtySixM: {
         value: 6.8,
         period: 36,
-        gift: true
+        gift: true,
+        gifts: [
+          { content: gifts[5] },
+          { content: gifts[1] },
+          { content: gifts[3] }
+        ]
       }
     }
   },
@@ -291,7 +316,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng TMCP Hàng Hải Việt Nam (MSB)",
     code: "MSB",
-    normalized: 'msb',
+    normalized: "msb",
     link: "",
     loanRates: [],
     interestRates: {
@@ -307,12 +332,18 @@ module.exports.banks_seed = [
       sixM: {
         value: 6.4,
         period: 6,
-        gift: true
+        gift: true,
+        gifts: [
+          { content: gifts[0] },
+          { content: gifts[2] },
+          { content: gifts[4] }
+        ]
       },
       nineM: {
         value: 6.4,
         period: 9,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
       },
       twelveM: {
         value: 7.4,
@@ -336,7 +367,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng Thương mại cổ phần Sài Gòn (SCB)",
     code: "SCB",
-    normalized: 'scb',
+    normalized: "scb",
     link: "",
     loanRates: [
       { type: 4, rate: 8.8, period: 12, update: "02/2020" },
@@ -344,11 +375,16 @@ module.exports.banks_seed = [
       { rate: 9, period: 12, update: "02/2020", type: 3 }
     ],
     interestRates: {
-      unlimit: { value: 0, gift: true },
+      unlimit: {
+        value: 0,
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
+      },
       oneM: {
         value: 5,
         period: 1,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[2] }, { content: gifts[1] }]
       },
       threeM: {
         value: 0,
@@ -384,7 +420,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng TMCP Quốc Dân (NCB)",
     code: "NCB",
-    normalized: 'ncb',
+    normalized: "ncb",
     link: "",
     loanRates: [
       { rate: 7.99, type: 4, period: 12, update: "01/2020" },
@@ -397,12 +433,14 @@ module.exports.banks_seed = [
       oneM: {
         value: 5,
         period: 1,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }]
       },
       threeM: {
         value: 5,
         period: 3,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[1] }]
       },
       sixM: {
         value: 7.9,
@@ -427,7 +465,13 @@ module.exports.banks_seed = [
       thirtySixM: {
         value: 8.3,
         period: 36,
-        gift: true
+        gift: true,
+        gifts: [
+          { content: gifts[0] },
+          { content: gifts[1] },
+          { content: gifts[4] },
+          { content: gifts[3] }
+        ]
       }
     }
   },
@@ -435,7 +479,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng Thương mại cổ phần (TMCP) Quốc Tế Việt Nam",
     code: "VIB",
-    normalized: 'vib',
+    normalized: "vib",
     link: "",
     loanRates: [
       { rate: 8.5, period: 6, type: 3, update: "02/2020" },
@@ -464,12 +508,14 @@ module.exports.banks_seed = [
       twelveM: {
         value: 7.59,
         period: 12,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }]
       },
       eighteenM: {
         value: 7.6,
         period: 18,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[5] }]
       },
       twentyFourM: {
         value: 7.6,
@@ -485,7 +531,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng TMCP Nam Á ",
     code: "Nam A bank",
-    normalized: 'nam-a-bank',
+    normalized: "nam-a-bank",
     link: "",
     loanRates: [
       { rate: 11, type: 4, update: "02/2020" },
@@ -512,7 +558,8 @@ module.exports.banks_seed = [
       twelveM: {
         value: 8.3,
         period: 12,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[2] }]
       },
       eighteenM: {
         value: 8.5,
@@ -532,7 +579,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng Bảo Việt",
     code: "BAOVIET bank",
-    normalized: 'baoviet-bank',
+    normalized: "baoviet-bank",
     link: "",
     loanRates: [
       { range: [7.5, 8.5], type: 3, update: "02/2020" },
@@ -543,17 +590,20 @@ module.exports.banks_seed = [
       oneM: {
         value: 4.8,
         period: 1,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[5] }, { content: gifts[1] }]
       },
       threeM: {
         value: 5,
         period: 3,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[4] }, { content: gifts[1] }]
       },
       sixM: {
         value: 6.85,
         period: 6,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[3] }]
       },
       nineM: {
         value: 6.9,
@@ -828,7 +878,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân hàng Xây dựng (CB)",
     code: "CB",
-    normalized: 'cb',
+    normalized: "cb",
     link: "",
     type: 1,
     loanRates: [
@@ -840,7 +890,8 @@ module.exports.banks_seed = [
       oneM: {
         value: 5,
         period: 1,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[2] }, { content: gifts[1] }]
       },
       threeM: {
         value: 5,
@@ -857,7 +908,8 @@ module.exports.banks_seed = [
       twelveM: {
         value: 7.9,
         period: 12,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[4] }]
       },
       eighteenM: {
         value: 8,
@@ -866,12 +918,14 @@ module.exports.banks_seed = [
       twentyFourM: {
         value: 8,
         period: 24,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[5] }]
       },
       thirtySixM: {
         value: 8,
         period: 36,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[2] }]
       }
     }
   },
@@ -879,7 +933,7 @@ module.exports.banks_seed = [
   {
     name: "Ngân Hàng TMCP Công Thương Việt Nam (VietinBank)",
     code: "VietinBank",
-    normalized: 'vietinbank',
+    normalized: "vietinbank",
     link: "",
     loanRates: [
       { rate: 7.7, type: 4, update: "02/2020", period: 12 },
@@ -891,7 +945,8 @@ module.exports.banks_seed = [
       oneM: {
         value: 4.3,
         period: 1,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
       },
       threeM: {
         value: 4.8,
@@ -908,7 +963,8 @@ module.exports.banks_seed = [
       twelveM: {
         value: 6.8,
         period: 12,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[0] }, { content: gifts[4] }]
       },
       eighteenM: {
         value: 6.7,
@@ -928,7 +984,7 @@ module.exports.banks_seed = [
   {
     name: "SHB – ngân hàng thương mại cổ phần Sài Gòn Hà Nội",
     code: "SHB",
-    normalized: 'shb',
+    normalized: "shb",
     link: "",
     loanRates: [
       { rate: 8.9, type: 3, period: 12, update: "02/2020" },
@@ -960,7 +1016,8 @@ module.exports.banks_seed = [
       eighteenM: {
         value: 7.3,
         period: 18,
-        gift: true
+        gift: true,
+        gifts: [{ content: gifts[5] }]
       },
       twentyFourM: {
         value: 7.3,
