@@ -5,23 +5,31 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var cors = require("cors");
 
-var indexRouter = require("./routes/index");
+var dotenv = require("dotenv");
 
-require("./db");
+const result = dotenv.config();
+
+if (result.error) {
+  throw result.error;
+}
+
+var indexRouter = require("./routes/index");
 
 var app = express();
 
 app.use(cors());
 
+require("./db");
+
 // view engine setup
- app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/public', express.static(path.join(__dirname, "public")));
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 app.use("/api", indexRouter);
 
