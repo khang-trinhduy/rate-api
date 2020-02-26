@@ -46,4 +46,6 @@ router.delete('/reviews/:id', reviewCtrl.delete)
 
 router.get('/reviews', reviewCtrl.list)
 
+router.get('/reviews/summary/:id', reviewCtrl.summary)
+
 module.exports = router;

@@ -26,8 +26,8 @@ exports.create = (req, res, next) => {
           if (err) {
             sendJsonResponse(res, 400, err);
           } else if (!bank) {
-              console.log(req.body.bankid);
-              
+            console.log(req.body.bankid);
+
             sendJsonResponse(
               res,
               404,
@@ -83,6 +83,31 @@ exports.show = (req, res, next) => {
         sendJsonResponse(res, 404, `review with id ${req.params.id} not found`);
       } else {
         sendJsonResponse(res, 200, review);
+      }
+    });
+  }
+};
+
+exports.summary = (req, res, next) => {
+  if (!req.params.id) {
+    sendJsonResponse(res, 400, { error: "id required" });
+  } else {
+    reviews.find({ bank: req.params.id }, (error, reviews) => {
+      if (error) {
+        sendJsonResponse(res, 400, error);
+      } else if (!reviews) {
+        sendJsonResponse(res, 404, `review with id ${req.params.id} not found`);
+      } else {
+        let avgStars = 0;
+        for (let i = 0; i < reviews.length; i++) {
+          const review = reviews[i];
+          avgStars += review.stars;
+        }
+        avgStars = Math.floor(avgStars / reviews.length);
+        sendJsonResponse(res, 200, {
+          average: avgStars,
+          total: reviews.length
+        });
       }
     });
   }
