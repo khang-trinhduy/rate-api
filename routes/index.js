@@ -30,6 +30,8 @@ router.get("/utilities", utilityCtrl.show);
 
 router.get("/banks", bankCtrl.showV2);
 
+router.get("/banks/:id", bankCtrl.detail);
+
 router.get("/rates", rateCtrl.top);
 
 router.post("/login", authCtrl.login);
@@ -38,10 +40,10 @@ router.post("/register", authCtrl.register);
 
 router.get('/reviews/:id', reviewCtrl.show)
 
-router.post('/reviews', reviewCtrl.create)
+router.post('/reviews/:id', reviewCtrl.create)
 
 router.delete('/reviews/:id', reviewCtrl.delete)
 
-router.delete('/reviews', reviewCtrl.list)
+router.get('/reviews', reviewCtrl.list)
 
 module.exports = router;

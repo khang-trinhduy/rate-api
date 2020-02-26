@@ -1,6 +1,6 @@
-var reviews = require("../models/review");
-var users = require("../models/user");
-var banks = require("../models/bank");
+var { reviews } = require("../models/review");
+var { users } = require("../models/user");
+var { banks } = require("../models/bank");
 
 var sendJsonResponse = (res, status, content) => {
   res.status(status);
@@ -26,6 +26,8 @@ exports.create = (req, res, next) => {
           if (err) {
             sendJsonResponse(res, 400, err);
           } else if (!bank) {
+              console.log(req.body.bankid);
+              
             sendJsonResponse(
               res,
               404,
@@ -58,7 +60,7 @@ exports.list = (req, res, next) => {
     sendJsonResponse(res, 400, "bank id required");
   } else {
     reviews.find(
-      [{ bank: req.query.bank }, { user: req.query.user }],
+      { $or: [{ bank: req.query.bank }, { user: req.query.user }] },
       (error, result) => {
         if (error) {
           sendJsonResponse(res, 400, error);

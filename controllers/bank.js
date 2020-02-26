@@ -98,6 +98,22 @@ exports.show = (req, res, next) => {
   }
 };
 
+exports.detail = (req, res, next) => {
+  if (!req.params.id) {
+    sendJsonResponse(res, 400, { error: "id required" });
+  } else {
+    banks.findOne({ _id: req.params.id }, (error, bank) => {
+      if (error) {
+        sendJsonResponse(res, 400, { error: error });
+      } else if (!bank) {
+        sendJsonResponse(res, 404, { error: "bank not found" });
+      } else {
+        sendJsonResponse(res, 200, bank);
+      }
+    });
+  }
+};
+
 exports.showV2 = (req, res, next) => {
   if (!req.query.code) {
     sendJsonResponse(res, 400, "code required");
@@ -112,12 +128,17 @@ exports.showV2 = (req, res, next) => {
       } else {
         if (req.query.type) {
           let period = service.resolveRatePeriod(req.query.type);
-          sendJsonResponse(res, 200, bank.interestRates[period]);
+          sendJsonResponse(res, 200, {
+            bank: bank,
+            rate: bank.interestRates[period]
+          });
         } else {
-          sendJsonResponse(res, 200, bank.interestRates["twelveM"]);
+          sendJsonResponse(res, 200, {
+            bank: bank,
+            rate: bank.interestRates["twelveM"]
+          });
         }
       }
     });
   }
 };
-
