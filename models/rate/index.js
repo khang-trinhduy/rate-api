@@ -1,5 +1,7 @@
 var mongoose = require("mongoose");
 
+const { gift_schema } = require("../gift");
+
 var Schema = mongoose.Schema;
 
 var rateSchema = new Schema({
@@ -14,7 +16,8 @@ var rateSchema = new Schema({
   loc: { type: String, required: false, default: "all" },
   gift: { type: Boolean, required: true, default: false },
   lastUpdate: { type: Date, default: Date.now() },
-  createBy: { type: String, required: true, default: "admin" }
+  createBy: { type: String, required: true, default: "admin" },
+  gifts: [{ type: gift_schema }]
 });
 
 var rateWrapper = new Schema({
