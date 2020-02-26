@@ -10,7 +10,7 @@ var dotenv = require("dotenv");
 const result = dotenv.config();
 
 if (result.error) {
-  throw result.error;
+  // throw result.error;
 }
 
 var indexRouter = require("./routes/index");
