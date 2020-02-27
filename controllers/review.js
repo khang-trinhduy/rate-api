@@ -11,7 +11,7 @@ exports.create = (req, res, next) => {
   if (
     !req.params.id ||
     !req.body.message ||
-    !req.body.bankid ||
+    !req.body.bank ||
     !req.body.stars
   ) {
     sendJsonResponse(res, 400, "id, message, bank, and stars area required");
@@ -22,16 +22,16 @@ exports.create = (req, res, next) => {
       } else if (!user) {
         sendJsonResponse(res, 404, `user with id ${req.params.id} not found`);
       } else {
-        banks.findById(req.body.bankid, (err, bank) => {
+        banks.findById(req.body.bank, (err, bank) => {
           if (err) {
             sendJsonResponse(res, 400, err);
           } else if (!bank) {
-            console.log(req.body.bankid);
+            console.log(req.body.bank);
 
             sendJsonResponse(
               res,
               404,
-              `bank with id ${req.body.bankid} not found`
+              `bank with id ${req.body.bank} not found`
             );
           } else {
             var review = {

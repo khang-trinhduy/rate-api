@@ -40,7 +40,7 @@ router.post("/register", authCtrl.register);
 
 router.get('/reviews/:id', reviewCtrl.show)
 
-router.post('/reviews/:id', reviewCtrl.create)
+router.post('/users/:id/reviews', reviewCtrl.create)
 
 router.delete('/reviews/:id', reviewCtrl.delete)
 
