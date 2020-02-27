@@ -1,3 +1,4 @@
+var { users } = require("../models/user");
 var { banks } = require("../models/bank");
 
 var sendJsonResponse = (res, status, content) => {
@@ -51,7 +52,6 @@ exports.list = (req, res, next) => {
         sendJsonResponse(res, 400, error);
       } else {
         sendJsonResponse(res, 200, result);
-        
       }
     });
   }
@@ -77,7 +77,57 @@ exports.top = (req, res, next) => {
 };
 
 exports.history = (req, res, next) => {
-  sendJsonResponse(res, 200, [
-    
-  ])
-}
+  sendJsonResponse(res, 200, []);
+};
+
+exports.create = (req, res, next) => {
+  if (
+    !req.body.withdraw ||
+    !req.body.value ||
+    !req.params.id ||
+    !req.body.period
+  ) {
+    sendJsonResponse(res, 400, {
+      error: "value, withdraw, bankid and period are required"
+    });
+  } else {
+    users.findById(req.params.id, (err, user) => {
+      if (err) {
+        sendJsonResponse(res, 400, err);
+      } else if (!user) {
+        sendJsonResponse(res, 404, { error: "user not found" });
+      } else {
+        banks.findById(req.body.bank, (error, bank) => {
+          if (error) {
+            sendJsonResponse(res, 400, error);
+          } else if (!bank) {
+            sendJsonResponse(res, 404, { error: "bank not found" });
+          } else {
+            var rate = {
+              withdraw: req.body.withdraw,
+              type: req.body.type,
+              verify: req.body.verify,
+              value: req.body.value,
+              // TODO bank?
+              bank: req.body.bank,
+              period: req.body.period,
+              monthly: req.body.monthly,
+              threshold: req.body.threshold,
+              loc: req.body.loc,
+              gift: req.body.gift,
+              createBy: req.params.id
+            };
+            bank.addRate(rate);
+            bank.save((error, result) => {
+              if (error) {
+                sendJsonResponse(res, 400, error);
+              } else {
+                sendJsonResponse(res, 200, result);
+              }
+            });
+          }
+        });
+      }
+    });
+  }
+};
