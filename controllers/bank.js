@@ -2,6 +2,8 @@ var mongoose = require("mongoose");
 
 var { banks } = require("../models/bank");
 
+var { users } = require("../models/user");
+
 var service = require("../services");
 
 var sendJsonResponse = (res, code, content) => {
@@ -11,6 +13,37 @@ var sendJsonResponse = (res, code, content) => {
 
 var render = (res, view, content) => {
   res.render(view, content);
+};
+
+exports.create = (req, res, next) => {
+  if (!req.params.id || !req.body.name) {
+    res.status(400).send({ error: "id and bank name required" });
+  } else {
+    users.findById(req.params.id, (error, user) => {
+      if (error) {
+        res.status(400).send(error);
+      } else if (!user) {
+        res.status(404).send({ error: "user not found" });
+      } else {
+        var bank = {
+          name: req.body.name,
+          normalized: req.body.code
+            .toLowerCase()
+            .split(" ")
+            .join("-"),
+          code: req.body.code,
+          link: req.body.link
+        };
+        banks.create(bank, (error, result) => {
+          if (error) {
+            res.status(400).send(error);
+          } else if (result) {
+            res.status(201).send(result);
+          }
+        });
+      }
+    });
+  }
 };
 
 exports.list = (req, res, next) => {

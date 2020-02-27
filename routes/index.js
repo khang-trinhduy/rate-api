@@ -28,8 +28,9 @@ router.get("/utilities/:id", utilityCtrl.show);
 
 router.get("/utilities", utilityCtrl.show);
 
+// bank controller
 router.get("/banks", bankCtrl.showV2);
-
+router.post('/users/:id/banks', bankCtrl.create);
 router.get("/banks/:id", bankCtrl.detail);
 
 router.get("/rates", rateCtrl.top);
