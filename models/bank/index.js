@@ -20,5 +20,12 @@ var bankSchema = new Schema({
   info: info_schema
 });
 
-exports.banks = mongoose.model("banks", bankSchema);
+bankSchema.method('addRate', (rate) => {
+  if (rate) {
+    
+  }
+})
+
 exports.bank_schema = bankSchema;
+
+exports.banks = mongoose.model("banks", bankSchema);

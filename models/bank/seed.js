@@ -8,1025 +8,862 @@ gifts = [
 ];
 module.exports.banks_seed = [
   {
-    name: "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+    name: "Agribank",
     code: "Agribank",
     normalized: "agribank",
-    link: "",
     type: 1,
-    loanRates: [
-      { rate: 11, type: 3, update: "02/2020" },
-      { rate: 13, type: 2, update: "02/2020" },
-      { rate: 7.5, type: 4, update: "02/2020" }
-    ],
     interestRates: {
-      unlimit: {
-        value: 0.2,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
-      },
-      oneM: {
-        value: 4.3,
-        period: 1
-      },
-      threeM: {
-        value: 4.8,
-        period: 3
-      },
-      sixM: {
-        value: 5.3,
-        period: 6
-      },
-      nineM: {
-        value: 5.4,
-        period: 9
-      },
-      twelveM: {
-        value: 6.8,
-        period: 12,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[2] }]
-      },
-      eighteenM: {
-        value: 6.8,
-        period: 18
-      },
-      twentyFourM: {
-        value: 6.8,
-        period: 24
-      },
-      thirtySixM: {
-        value: 0.0,
-        period: 36
-      }
+      unlimit: { value: "0.20", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.30", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.30", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "4.80", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "5.30", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "5.40", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "6.80", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "6.80", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "6.80", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "6.80", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "0.00", period: 36, loc: "HCM", threshold: "" }
     }
   },
   {
-    name: "Ngân hàng TMCP Phương Đông – Orient Commercial Joint Stock Bank",
-    code: "OCB",
-    normalized: "ocb",
-    link: "",
-    loanRates: [
-      { type: 3, rate: 9.68, update: "02/2020" },
-      { type: 4, rate: 9.49, period: 12, update: "02/2020" },
-      { type: 4, rate: 7.99, period: 6, update: "02/2020" }
-    ],
-    interestRates: {
-      unlimit: { value: 0.5 },
-      oneM: {
-        value: 4.8,
-        period: 1
-      },
-      threeM: {
-        value: 5,
-        period: 3
-      },
-      sixM: {
-        value: 7.2,
-        period: 6
-      },
-      nineM: {
-        value: 7.3,
-        period: 9,
-        gift: true,
-        gifts: [{ content: gifts[3] }, { content: gifts[1] }]
-      },
-      twelveM: {
-        value: 7.4,
-        period: 12
-      },
-      eighteenM: {
-        value: 7.5,
-        period: 18
-      },
-      twentyFourM: {
-        value: 7.7,
-        period: 24
-      },
-      thirtySixM: {
-        value: 7.7,
-        period: 36
-      }
-    }
-  },
-  {
-    name: "TMCP Xuất Nhập khẩu Việt Nam EXIMBANK",
-    code: "EXIMBANK",
-    normalized: "eximbank",
-    link: "",
-    loanRates: [],
-    interestRates: {
-      unlimit: { value: 0.2 },
-      oneM: {
-        value: 4.8,
-        period: 1
-      },
-      threeM: {
-        value: 5,
-        period: 3
-      },
-      sixM: {
-        value: 5.6,
-        period: 6,
-        gift: true,
-        gifts: [{ content: gifts[3] }, { content: gifts[2] }]
-      },
-      nineM: {
-        value: 5.8,
-        period: 9
-      },
-      twelveM: {
-        value: 7.4,
-        period: 12
-      },
-      eighteenM: {
-        value: 7.9,
-        period: 18
-      },
-      twentyFourM: {
-        value: 8.4,
-        period: 24
-      },
-      thirtySixM: {
-        value: 8,
-        period: 36
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng TM TNHH MTV Đại dương",
-    code: "OCEANBANK",
-    normalized: "oceanbank",
-    type: 1,
-    link: "",
-    loanRates: [{ rate: 7.99, period: 6, update: "02/2020" }],
-    interestRates: {
-      unlimit: { value: 0.5 },
-      oneM: {
-        value: 5,
-        period: 1,
-        gift: true,
-        gifts: [{ content: gifts[4] }, { content: gifts[5] }]
-      },
-      threeM: {
-        value: 5,
-        period: 3
-      },
-      sixM: {
-        value: 5,
-        period: 6,
-        gift: true,
-        gifts: [{ content: gifts[5] }, { content: gifts[1] }]
-      },
-      nineM: {
-        value: 6.4,
-        period: 9
-      },
-      twelveM: {
-        value: 6.8,
-        period: 12
-      },
-      eighteenM: {
-        value: 7.4,
-        period: 18
-      },
-      twentyFourM: {
-        value: 7.2,
-        period: 24
-      },
-      thirtySixM: {
-        value: 7.3,
-        period: 36
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank)",
-    code: "Vietcombank",
-    normalized: "vietcombank",
-    link: "",
-    loanRates: [
-      { rate: 9.1, period: 24, type: 4, update: "02/2020" },
-      { rate: 9.5, period: 36, type: 4, update: "02/2020" },
-      { rate: 8.4, period: 12, type: 4, update: "02/2020" },
-      { rate: 8.1, period: 12, type: 3, update: "02/2020" },
-      { rate: 8.6, period: 18, type: 3, update: "02/2020" },
-      { rate: 8.9, period: 24, type: 3, update: "02/2020" },
-      { rate: 9.5, period: 36, type: 3, update: "02/2020" },
-      { rate: 10.3, period: 60, type: 3, update: "02/2020" }
-    ],
-    interestRates: {
-      unlimit: { value: 0.1 },
-      oneM: {
-        value: 4.3,
-        period: 1,
-        gift: true,
-        gifts: [{ content: gifts[4] }, { content: gifts[2] }]
-      },
-      threeM: {
-        value: 4.8,
-        period: 3
-      },
-      sixM: {
-        value: 5.3,
-        period: 6
-      },
-      nineM: {
-        value: 5.3,
-        period: 9
-      },
-      twelveM: {
-        value: 6.8,
-        period: 12
-      },
-      eighteenM: {
-        value: 6.8,
-        period: 18
-      },
-      twentyFourM: {
-        value: 6.8,
-        period: 24,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[4] }]
-      },
-      thirtySixM: {
-        value: 6.8,
-        period: 36
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng Đầu tư và Phát triển Việt Nam (BIDV)",
-    code: "BIDV",
-    normalized: "bidv",
-    link: "",
-    loanRates: [
-      { rate: 9, period: 24, update: "02/2020", type: 3 },
-      { rate: 8, period: 12, update: "02/2020", type: 3 },
-      { rate: 7.8, period: 12, update: "02/2020", type: 4 },
-      { rate: 8.8, period: 24, update: "02/2020", type: 4 }
-    ],
-    interestRates: {
-      unlimit: { value: 0.1 },
-      oneM: {
-        value: 4.3,
-        period: 1
-      },
-      threeM: {
-        value: 4.8,
-        period: 3,
-        gift: true,
-        gifts: [{ content: gifts[5] }, { content: gifts[3] }]
-      },
-      sixM: {
-        value: 5.3,
-        period: 6
-      },
-      nineM: {
-        value: 5.3,
-        period: 9
-      },
-      twelveM: {
-        value: 6.8,
-        period: 12
-      },
-      eighteenM: {
-        value: 6.8,
-        period: 18
-      },
-      twentyFourM: {
-        value: 6.8,
-        period: 24
-      },
-      thirtySixM: {
-        value: 6.8,
-        period: 36,
-        gift: true,
-        gifts: [
-          { content: gifts[5] },
-          { content: gifts[1] },
-          { content: gifts[3] }
-        ]
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng TMCP Hàng Hải Việt Nam (MSB)",
-    code: "MSB",
-    normalized: "msb",
-    link: "",
-    loanRates: [],
-    interestRates: {
-      unlimit: { value: 0.3 },
-      oneM: {
-        value: 4.8,
-        period: 1
-      },
-      threeM: {
-        value: 5,
-        period: 3
-      },
-      sixM: {
-        value: 6.4,
-        period: 6,
-        gift: true,
-        gifts: [
-          { content: gifts[0] },
-          { content: gifts[2] },
-          { content: gifts[4] }
-        ]
-      },
-      nineM: {
-        value: 6.4,
-        period: 9,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
-      },
-      twelveM: {
-        value: 7.4,
-        period: 12
-      },
-      eighteenM: {
-        value: 7.3,
-        period: 18
-      },
-      twentyFourM: {
-        value: 7.6,
-        period: 24
-      },
-      thirtySixM: {
-        value: 7.4,
-        period: 36
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng Thương mại cổ phần Sài Gòn (SCB)",
-    code: "SCB",
-    normalized: "scb",
-    link: "",
-    loanRates: [
-      { type: 4, rate: 8.8, period: 12, update: "02/2020" },
-      { rate: 9.5, period: 24, update: "02/2020", type: 3 },
-      { rate: 9, period: 12, update: "02/2020", type: 3 }
-    ],
-    interestRates: {
-      unlimit: {
-        value: 0,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
-      },
-      oneM: {
-        value: 5,
-        period: 1,
-        gift: true,
-        gifts: [{ content: gifts[2] }, { content: gifts[1] }]
-      },
-      threeM: {
-        value: 0,
-        period: 3
-      },
-      sixM: {
-        value: 8.21,
-        period: 6
-      },
-      nineM: {
-        value: 8.36,
-        period: 9
-      },
-      twelveM: {
-        value: 8.66,
-        period: 12
-      },
-      eighteenM: {
-        value: 8.76,
-        period: 18
-      },
-      twentyFourM: {
-        value: 8.56,
-        period: 24
-      },
-      thirtySixM: {
-        value: 8.56,
-        period: 36
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng TMCP Quốc Dân (NCB)",
-    code: "NCB",
-    normalized: "ncb",
-    link: "",
-    loanRates: [
-      { rate: 7.99, type: 4, period: 12, update: "01/2020" },
-      { rate: 7.99, type: 3, period: 12, update: "02/2020" },
-      { rate: 6.5, type: 3, period: 6, update: "02/2020" },
-      { rate: 9.5, type: 3, period: 24, update: "02/2020" }
-    ],
-    interestRates: {
-      unlimit: { value: 0 },
-      oneM: {
-        value: 5,
-        period: 1,
-        gift: true,
-        gifts: [{ content: gifts[0] }]
-      },
-      threeM: {
-        value: 5,
-        period: 3,
-        gift: true,
-        gifts: [{ content: gifts[1] }]
-      },
-      sixM: {
-        value: 7.9,
-        period: 6
-      },
-      nineM: {
-        value: 7.96,
-        period: 9
-      },
-      twelveM: {
-        value: 7.98,
-        period: 12
-      },
-      eighteenM: {
-        value: 8.1,
-        period: 18
-      },
-      twentyFourM: {
-        value: 8.2,
-        period: 24
-      },
-      thirtySixM: {
-        value: 8.3,
-        period: 36,
-        gift: true,
-        gifts: [
-          { content: gifts[0] },
-          { content: gifts[1] },
-          { content: gifts[4] },
-          { content: gifts[3] }
-        ]
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng Thương mại cổ phần (TMCP) Quốc Tế Việt Nam",
-    code: "VIB",
-    normalized: "vib",
-    link: "",
-    loanRates: [
-      { rate: 8.5, period: 6, type: 3, update: "02/2020" },
-      { rate: 10.4, period: 12, type: 3, update: "02/2020" },
-      { rate: 9.9, period: 12, type: 4, update: "02/2020" },
-      { rate: 8.6, period: 6, type: 4, update: "02/2020" }
-    ],
-    interestRates: {
-      unlimit: { value: 0.8 },
-      oneM: {
-        value: 5,
-        period: 1
-      },
-      threeM: {
-        value: 5,
-        period: 3
-      },
-      sixM: {
-        value: 7.3,
-        period: 6
-      },
-      nineM: {
-        value: 7.4,
-        period: 9
-      },
-      twelveM: {
-        value: 7.59,
-        period: 12,
-        gift: true,
-        gifts: [{ content: gifts[0] }]
-      },
-      eighteenM: {
-        value: 7.6,
-        period: 18,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[5] }]
-      },
-      twentyFourM: {
-        value: 7.6,
-        period: 24
-      },
-      thirtySixM: {
-        value: 7.6,
-        period: 36
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng TMCP Nam Á ",
-    code: "Nam A bank",
-    normalized: "nam-a-bank",
-    link: "",
-    loanRates: [
-      { rate: 11, type: 4, update: "02/2020" },
-      { rate: 7.3, type: 3, update: "02/2020" }
-    ],
-    interestRates: {
-      unlimit: { value: 0 },
-      oneM: {
-        value: 5.4,
-        period: 1
-      },
-      threeM: {
-        value: 5.4,
-        period: 3
-      },
-      sixM: {
-        value: 8,
-        period: 6
-      },
-      nineM: {
-        value: 8.05,
-        period: 9
-      },
-      twelveM: {
-        value: 8.3,
-        period: 12,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[2] }]
-      },
-      eighteenM: {
-        value: 8.5,
-        period: 18
-      },
-      twentyFourM: {
-        value: 8.5,
-        period: 24
-      },
-      thirtySixM: {
-        value: 8.7,
-        period: 36
-      }
-    }
-  },
-
-  {
-    name: "Ngân hàng Bảo Việt",
-    code: "BAOVIET bank",
-    normalized: "baoviet-bank",
-    link: "",
-    loanRates: [
-      { range: [7.5, 8.5], type: 3, update: "02/2020" },
-      { range: [7, 8.5], type: 4, update: "02/2020" }
-    ],
-    interestRates: {
-      unlimit: { value: 0.8 },
-      oneM: {
-        value: 4.8,
-        period: 1,
-        gift: true,
-        gifts: [{ content: gifts[5] }, { content: gifts[1] }]
-      },
-      threeM: {
-        value: 5,
-        period: 3,
-        gift: true,
-        gifts: [{ content: gifts[4] }, { content: gifts[1] }]
-      },
-      sixM: {
-        value: 6.85,
-        period: 6,
-        gift: true,
-        gifts: [{ content: gifts[3] }]
-      },
-      nineM: {
-        value: 6.9,
-        period: 9
-      },
-      twelveM: {
-        value: 7.95,
-        period: 12
-      },
-      eighteenM: {
-        value: 7.6,
-        period: 18
-      },
-      twentyFourM: {
-        value: 7.6,
-        period: 24
-      },
-      thirtySixM: {
-        value: 7.6,
-        period: 36
-      }
-    }
-  },
-
-  // {
-  //   name: "Ngân hàng TMCP Bắc Á",
-  //   code: "BacA bank",
-  //   link: "",
-  //   loanRates: [
-  //     {
-  //       rate: 11.5,
-  //       type: 4
-  //     },
-  //     {
-  //       type: 3,
-  //       rate: 8.99,
-  //       period: 12,
-  //       update: "02/2020"
-  //     }
-  //   ],
-  //   interestRates: {
-  //     oneM: {
-  //       value: 1,
-  //       period: 0
-  //     },
-  //     threeM: {
-  //       value: 5.5,
-  //       period: 3
-  //     },
-  //     sixM: {
-  //       value: 5.5,
-  //       period: 6
-  //     },
-  //     nineM: {
-  //       value: 7.7,
-  //       period: 9
-  //     },
-  //     twelveM: {
-  //       value: 7.8,
-  //       period: 12
-  //     },
-  //     eighteenM: {
-  //       value: 7.9,
-  //       period: 18
-  //     },
-  //     twentyFourM: {
-  //       value: 8.4,
-  //       period: 24
-  //     },
-  //     thirtySixM: {
-  //       value: 8,
-  //       period: 36
-  //     }
-  //   },
-  //   interestRates: [
-  //     {
-  //       value: 1,
-  //       monthly: 1
-  //     },
-  //     {
-  //       value: 5.5,
-  //       monthly: 5.5,
-  //       period: 1
-  //     },
-  //     {
-  //       value: 5.5,
-  //       monthly: 5.5,
-  //       period: 3
-  //     },
-  //     {
-  //       value: 7.7,
-  //       monthly: 7.7,
-  //       period: 6
-  //     },
-  //     {
-  //       value: 7.8,
-  //       monthly: 7.8,
-  //       period: 9
-  //     },
-  //     {
-  //       value: 8.2,
-  //       monthly: 8.2,
-  //       period: 12
-  //     },
-  //     {
-  //       value: 8.3,
-  //       monthly: 8.3,
-  //       period: 18
-  //     },
-  //     {
-  //       value: 8.3,
-  //       monthly: 8.3,
-  //       period: 24
-  //     },
-  //     {
-  //       value: 8.3,
-  //       monthly: 8.3,
-  //       period: 36
-  //     }
-  //   ]
-  // },
-
-  // {
-  //   name: "Ngân hàng Thương mại Cổ phần Hàng hải Việt Nam (Maritime bank)",
-  //   code: "MaritimeBank",
-  //   link: "",
-  //   loanRates: [
-  //     { rate: 9.49, type: 3, period: 18, update: "02/2020" },
-  //     { rate: 8.49, type: 3, period: 12, update: "02/2020" },
-  //     { rate: 6.99, type: 3, period: 6, update: "02/2020" },
-  //     { rate: 9.49, type: 4, period: 48, update: "02/2020" },
-  //     { rate: 8.49, type: 4, period: 36, update: "02/2020" },
-  //     { rate: 6.99, type: 4, period: 24, update: "02/2020" }
-  //   ],
-  //   interestRates: [
-  //     {
-  //       value: 0
-  //     },
-  //     {
-  //       value: 5,
-  //       period: 1,
-  //       monthly: 5
-  //     },
-  //     {
-  //       value: 5,
-  //       period: 3,
-  //       monthly: 5
-  //     },
-  //     {
-  //       value: 6.85,
-  //       period: 6,
-  //       monthly: 6.85
-  //     },
-  //     {
-  //       value: 6.95,
-  //       period: 9,
-  //       monthly: 6.95
-  //     },
-  //     {
-  //       value: 7.05,
-  //       period: 12,
-  //       monthly: 7.05
-  //     },
-  //     {
-  //       value: 7.45,
-  //       period: 18,
-  //       monthly: 7.45
-  //     },
-  //     {
-  //       value: 7.55,
-  //       period: 24,
-  //       monthly: 7.55
-  //     },
-  //     {
-  //       value: 7.55,
-  //       period: 36,
-  //       monthly: 7.55
-  //     }
-  //   ]
-  // },
-
-  // {
-  //   name: "Ngân hàng Đông Á (Dongabank)",
-  //   code: "Dongabank",
-  //   link: "",
-  //   loanRates: [
-  //     { rate: 9, type: 3, update: "02/2020" },
-  //     { rate: 8.5, period: 12, type: 4, update: "02/2020" }
-  //   ],
-  //   interestRates: {
-  //     unlimit: { value: 0.3 },
-  //     oneM: {
-  //       value: 4.8,
-  //       period: 1
-  //     },
-  //     threeM: {
-  //       value: 5,
-  //       period: 3
-  //     },
-  //     sixM: {
-  //       value: 6.4,
-  //       period: 6
-  //     },
-  //     nineM: {
-  //       value: 6.4,
-  //       period: 9
-  //     },
-  //     twelveM: {
-  //       value: 7.4,
-  //       period: 12
-  //     },
-  //     eighteenM: {
-  //       value: 7.3,
-  //       period: 18
-  //     },
-  //     twentyFourM: {
-  //       value: 7.6,
-  //       period: 24
-  //     },
-  //     thirtySixM: {
-  //       value: 7.4,
-  //       period: 36
-  //     }
-  //   },
-  //   interestRates: [
-  //     {
-  //       value: 0.29,
-  //       monthly: 0.29
-  //     },
-  //     {
-  //       value: 5,
-  //       period: 1,
-  //       monthly: 5
-  //     },
-  //     {
-  //       value: 5,
-  //       period: 3,
-  //       monthly: 4.98
-  //     },
-  //     {
-  //       value: 7,
-  //       period: 6,
-  //       monthly: 6.9
-  //     },
-  //     {
-  //       value: 7.2,
-  //       period: 9,
-  //       monthly: 7.03
-  //     },
-  //     {
-  //       value: 7.4,
-  //       period: 12,
-  //       monthly: 7.16
-  //     },
-  //     {
-  //       value: 7.6,
-  //       period: 18,
-  //       monthly: 7.22
-  //     },
-  //     {
-  //       value: 7.6,
-  //       period: 24,
-  //       monthly: 6.87
-  //     },
-  //     {
-  //       value: 7.6,
-  //       period: 36
-  //     }
-  //   ]
-  // },
-
-  {
-    name: "Ngân hàng Xây dựng (CB)",
+    name: "CB",
     code: "CB",
     normalized: "cb",
-    link: "",
     type: 1,
-    loanRates: [
-      { rate: 9, type: 3, update: "02/2020" },
-      { rate: 8.5, period: 12, type: 4, update: "02/2020" }
-    ],
     interestRates: {
-      unlimit: { value: 0.5 },
-      oneM: {
-        value: 5,
-        period: 1,
-        gift: true,
-        gifts: [{ content: gifts[2] }, { content: gifts[1] }]
+      unlimit: { value: "0.50", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.85", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.85", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.90", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.95", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.00", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "8.00", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "GPBank",
+    code: "GPBank",
+    normalized: "gpbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.80", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.70", period: 6, loc: "HCM", threshold: "Từ 3 tỉ" },
+      nineM: { value: "7.80", period: 9, loc: "HCM", threshold: "Từ 3 tỉ" },
+      twelveM: { value: "7.90", period: 12, loc: "HCM", threshold: "Từ 3 tỉ" },
+      thirteenM: {
+        value: "8.00",
+        period: 13,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ"
       },
-      threeM: {
-        value: 5,
-        period: 3
-      },
-      sixM: {
-        value: 7.75,
-        period: 6
-      },
-      nineM: {
-        value: 7.85,
-        period: 9
-      },
-      twelveM: {
-        value: 7.9,
-        period: 12,
-        gift: true,
-        gifts: [{ content: gifts[4] }]
+      eighteenM: { value: "7.65", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.65", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.65", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "Oceanbank",
+    code: "Oceanbank",
+    normalized: "oceanbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.50", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.90", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "6.50", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.90", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.60", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.30", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.40", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.50", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "ACB",
+    code: "ACB",
+    normalized: "acb",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "Từ 10 tỉ" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "Từ 10 tỉ" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "Từ 10 tỉ" },
+      sixM: { value: "6.80", period: 6, loc: "HCM", threshold: "Từ 10 tỉ" },
+      nineM: { value: "6.90", period: 9, loc: "HCM", threshold: "Từ 10 tỉ" },
+      twelveM: { value: "7.30", period: 12, loc: "HCM", threshold: "Từ 10 tỉ" },
+      thirteenM: {
+        value: "7.10",
+        period: 13,
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
       },
       eighteenM: {
-        value: 8,
-        period: 18
+        value: "7.80",
+        period: 18,
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
       },
       twentyFourM: {
-        value: 8,
+        value: "7.80",
         period: 24,
-        gift: true,
-        gifts: [{ content: gifts[5] }]
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
       },
       thirtySixM: {
-        value: 8,
+        value: "7.80",
         period: 36,
-        gift: true,
-        gifts: [{ content: gifts[2] }]
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
       }
     }
   },
-
   {
-    name: "Ngân Hàng TMCP Công Thương Việt Nam (VietinBank)",
-    code: "VietinBank",
-    normalized: "vietinbank",
-    link: "",
-    loanRates: [
-      { rate: 7.7, type: 4, update: "02/2020", period: 12 },
-      { rate: 7.9, type: 4, update: "2019", period: 12 },
-      { rate: 8.1, type: 3, update: "02/2020", period: 12 }
-    ],
+    name: "ABBANK",
+    code: "ABBANK",
+    normalized: "abbank",
+    type: 1,
     interestRates: {
-      unlimit: { value: 0.1 },
-      oneM: {
-        value: 4.3,
-        period: 1,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[1] }]
-      },
-      threeM: {
-        value: 4.8,
-        period: 3
-      },
-      sixM: {
-        value: 5.3,
-        period: 6
-      },
-      nineM: {
-        value: 5.3,
-        period: 9
-      },
+      unlimit: { value: "0.40", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.00", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "6.80", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.80", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "8.30", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.90", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.90", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.90", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "BacABank",
+    code: "BacABank",
+    normalized: "bacabank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.80", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.70", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.80", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "8.00", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "8.00", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.00", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "8.00", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "BaoVietBank",
+    code: "BaoVietBank",
+    normalized: "baovietbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.80", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.80", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.80", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "4.80", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.85", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "6.90", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.60", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.99", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.60", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.60", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.60", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "BIDV",
+    code: "BIDV",
+    normalized: "bidv",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.10", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.30", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.30", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "4.80", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "5.30", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "5.30", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "6.80", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "6.80", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "6.80", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "6.80", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "6.80", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "DongABank",
+    code: "DongABank",
+    normalized: "dongabank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.00", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.20", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.40", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.60", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.60", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.60", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.60", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "Eximbank",
+    code: "Eximbank",
+    normalized: "eximbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.30", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.60", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.80", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "5.60", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "5.80", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.60", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "8.40", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.40", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "8.40", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "HDBank",
+    code: "HDBank",
+    normalized: "hdbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.80", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "6.80", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.30", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.40", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.40", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.00", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.00", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "KienLongBank",
+    code: "KienLongBank",
+    normalized: "kienlongbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.80", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.90", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.00", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.00", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.60", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.80", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.00", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: {
+        value: "7.80",
+        period: 36,
+        loc: "HCM",
+        threshold: ""
+      }
+    }
+  },
+  {
+    name: "LienVietPostBank",
+    code: "LienVietPostBank",
+    normalized: "lienvietpostbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.90", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.90", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.10", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "6.20", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "6.90", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.00", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.20", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.30", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.40", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "MBB",
+    code: "MBB",
+    normalized: "mbb",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.80", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.40", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "6.40", period: 9, loc: "HCM", threshold: "" },
       twelveM: {
-        value: 6.8,
+        value: "7.40",
         period: 12,
-        gift: true,
-        gifts: [{ content: gifts[0] }, { content: gifts[4] }]
+        loc: "HCM",
+        threshold: "Từ 200 tỉ"
+      },
+      thirteenM: { value: "6.70", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.30", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: {
+        value: "7.60",
+        period: 24,
+        loc: "HCM",
+        threshold: "Từ 200 tỉ"
+      },
+      thirtySixM: { value: "7.40", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "MSB",
+    code: "MSB",
+    normalized: "msb",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "Từ  1 tỉ" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "Từ  1 tỉ" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "Từ  1 tỉ" },
+      sixM: { value: "6.90", period: 6, loc: "HCM", threshold: "Từ  1 tỉ" },
+      nineM: { value: "7.00", period: 9, loc: "HCM", threshold: "Từ  1 tỉ" },
+      twelveM: { value: "7.10", period: 12, loc: "HCM", threshold: "Từ  1 tỉ" },
+      thirteenM: {
+        value: "7.20",
+        period: 13,
+        loc: "HCM",
+        threshold: "Từ  1 tỉ"
       },
       eighteenM: {
-        value: 6.7,
-        period: 18
+        value: "7.50",
+        period: 18,
+        loc: "HCM",
+        threshold: "Từ  1 tỉ"
       },
       twentyFourM: {
-        value: 6.8,
-        period: 24
+        value: "7.60",
+        period: 24,
+        loc: "HCM",
+        threshold: "Từ  1 tỉ"
       },
       thirtySixM: {
-        value: 6.8,
-        period: 36
+        value: "7.60",
+        period: 36,
+        loc: "HCM",
+        threshold: "Từ  1 tỉ"
       }
     }
   },
-
   {
-    name: "SHB – ngân hàng thương mại cổ phần Sài Gòn Hà Nội",
+    name: "Nam A Bank",
+    code: "Nam A Bank",
+    normalized: "nam a bank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.50", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.90", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.95", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.80", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.00", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.99", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "8.45", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.70", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.60", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.90", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "NCB",
+    code: "NCB",
+    normalized: "ncb",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.50", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.90", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.90", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.96", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.98", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.10", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.20", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "8.30", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "OCB",
+    code: "OCB",
+    normalized: "ocb",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.10", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.90", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.30", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.40", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.50", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "0.00", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.60", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.80", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.80", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "PGBank",
+    code: "PGBank",
+    normalized: "pgbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.30", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.30", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.80", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "8.00", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.00", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "8.00", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "Sacombank",
+    code: "Sacombank",
+    normalized: "sacombank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.90", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.95", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.30", period: 6, loc: "HCM", threshold: "Từ 200 triệu" },
+      nineM: { value: "6.40", period: 9, loc: "HCM", threshold: "" },
+      twelveM: {
+        value: "6.90",
+        period: 12,
+        loc: "HCM",
+        threshold: "Từ 200 triệu"
+      },
+      thirteenM: { value: "7.90", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: {
+        value: "7.50",
+        period: 18,
+        loc: "HCM",
+        threshold: "Từ 200 triệu"
+      },
+      twentyFourM: {
+        value: "7.70",
+        period: 24,
+        loc: "HCM",
+        threshold: "Từ 200 triệu"
+      },
+      thirtySixM: {
+        value: "7.80",
+        period: 36,
+        loc: "HCM",
+        threshold: "Từ 200 triệu"
+      }
+    }
+  },
+  {
+    name: "Saigonbank",
+    code: "Saigonbank",
+    normalized: "saigonbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.30", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.80", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.90", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.80", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "6.80", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.40", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.70", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.70", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.70", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.70", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "SCB",
+    code: "SCB",
+    normalized: "scb",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.10", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.10", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.50", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.70", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.70", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.55", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.55", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "SHB",
     code: "SHB",
     normalized: "shb",
-    link: "",
-    loanRates: [
-      { rate: 8.9, type: 3, period: 12, update: "02/2020" },
-      { rate: 7.5, type: 4, period: 12, update: "02/2020" },
-      { rate: 8, type: 4, period: 6, update: "02/2020" }
-    ],
+    type: 1,
     interestRates: {
-      unlimit: { value: 0.2 },
+      unlimit: { value: "0.20", period: 0, loc: "HCM", threshold: "Từ 2 tỉ" },
       oneM: {
-        value: 4.6,
-        period: 1
+        value: "4.60",
+        period: 1,
+        loc: "HCM",
+        threshold: "Từ 2 tỉ"
       },
-      threeM: {
-        value: 4.8,
-        period: 3
-      },
-      sixM: {
-        value: 6.8,
-        period: 6
-      },
-      nineM: {
-        value: 6.9,
-        period: 9
-      },
-      twelveM: {
-        value: 7,
-        period: 12
+      twoM: { value: "4.70", period: 2, loc: "HCM", threshold: "Từ 2 tỉ" },
+      threeM: { value: "4.80", period: 3, loc: "HCM", threshold: "Từ 2 tỉ" },
+      sixM: { value: "6.90", period: 6, loc: "HCM", threshold: "Từ 2 tỉ" },
+      nineM: { value: "7.00", period: 9, loc: "HCM", threshold: "Từ 2 tỉ" },
+      twelveM: { value: "7.10", period: 12, loc: "HCM", threshold: "Từ 2 tỉ" },
+      thirteenM: {
+        value: "7.20",
+        period: 13,
+        loc: "HCM",
+        threshold: "Từ 2 tỉ"
       },
       eighteenM: {
-        value: 7.3,
+        value: "7.40",
         period: 18,
-        gift: true,
-        gifts: [{ content: gifts[5] }]
+        loc: "HCM",
+        threshold: "Từ 2 tỉ"
       },
       twentyFourM: {
-        value: 7.3,
-        period: 24
+        value: "7.40",
+        period: 24,
+        loc: "HCM",
+        threshold: "Từ 2 tỉ"
       },
       thirtySixM: {
-        value: 7.4,
-        period: 36
+        value: "7.50",
+        period: 36,
+        loc: "HCM",
+        threshold: "Từ 2 tỉ"
       }
+    }
+  },
+  {
+    name: "Techcombank",
+    code: "Techcombank",
+    normalized: "techcombank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: {
+        value: "4.80",
+        period: 1,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      twoM: {
+        value: "4.80",
+        period: 2,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      threeM: {
+        value: "4.80",
+        period: 3,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      sixM: {
+        value: "6.90",
+        period: 6,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      nineM: {
+        value: "6.20",
+        period: 9,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      twelveM: {
+        value: "7.00",
+        period: 12,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      thirteenM: {
+        value: "6.50",
+        period: 13,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      eighteenM: {
+        value: "7.20",
+        period: 18,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      twentyFourM: {
+        value: "6.60",
+        period: 24,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      },
+      thirtySixM: {
+        value: "6.60",
+        period: 36,
+        loc: "HCM",
+        threshold: "Từ 3 tỉ và KH trên 50 tuổi"
+      }
+    }
+  },
+  {
+    name: "TPBank",
+    code: "TPBank",
+    normalized: "tpbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.60", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.85", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.95", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "6.80", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.05", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.40", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.55", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.60", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.60", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.30", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "VIB",
+    code: "VIB",
+    normalized: "vib",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "Từ 5 tỉ" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.20", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.30", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.59", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.59", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.60", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.60", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.60", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "VietABank",
+    code: "VietABank",
+    normalized: "vietabank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.90", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.00", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.10", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.60", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "7.70", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "7.70", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "7.90", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "7.70", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "VietBank",
+    code: "VietBank",
+    normalized: "vietbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "5.00", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "5.00", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "5.00", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.50", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.80", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.90", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "8.00", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.10", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.20", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "8.20", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "VietCapitalBank",
+    code: "VietCapitalBank",
+    normalized: "vietcapitalbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.85", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.85", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "4.90", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "7.30", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "7.50", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "7.90", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "8.20", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "8.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "8.10", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "8.10", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "Vietcombank",
+    code: "Vietcombank",
+    normalized: "vietcombank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.10", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.30", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.30", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "4.80", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "5.30", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "5.30", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "6.80", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "0.00", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "0.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "6.80", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "6.80", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "VietinBank",
+    code: "VietinBank",
+    normalized: "vietinbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.10", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.30", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "4.30", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "4.80", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "5.30", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "5.30", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "6.80", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "6.60", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "6.70", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "6.80", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "6.80", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "VPBank",
+    code: "VPBank",
+    normalized: "vpbank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "4.80", period: 1, loc: "HCM", threshold: "Từ 10 tỉ" },
+      twoM: { value: "4.80", period: 2, loc: "HCM", threshold: "Từ 10 tỉ" },
+      threeM: { value: "4.90", period: 3, loc: "HCM", threshold: "Từ 10 tỉ" },
+      sixM: { value: "7.40", period: 6, loc: "HCM", threshold: "Từ 10 tỉ" },
+      nineM: { value: "7.10", period: 9, loc: "HCM", threshold: "Từ 10 tỉ" },
+      twelveM: { value: "7.15", period: 12, loc: "HCM", threshold: "Từ 10 tỉ" },
+      thirteenM: {
+        value: "7.15",
+        period: 13,
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
+      },
+      eighteenM: {
+        value: "7.60",
+        period: 18,
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
+      },
+      twentyFourM: {
+        value: "7.60",
+        period: 24,
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
+      },
+      thirtySixM: {
+        value: "7.60",
+        period: 36,
+        loc: "HCM",
+        threshold: "Từ 10 tỉ"
+      }
+    }
+  },
+  {
+    name: "ANZ Bank",
+    code: "ANZ Bank",
+    normalized: "anz bank",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "1.50", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "1.50", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "1.50", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "1.50", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "-100.00", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "-100.00", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "-100.00", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "-100.00", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "-100.00", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "-100.00", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "HSBC",
+    code: "HSBC",
+    normalized: "hsbc",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "0.50", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "0.50", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "1.25", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "1.75", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "1.75", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "2.75", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "0.00", period: 13, loc: "HCM", threshold: "-" },
+      eighteenM: { value: "2.75", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "2.75", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "2.75", period: 36, loc: "HCM", threshold: "" }
+    }
+  },
+  {
+    name: "Standard Chartered",
+    code: "Standard Chartered",
+    normalized: "standard chartered",
+    type: 1,
+    interestRates: {
+      unlimit: { value: "0.00", period: 0, loc: "HCM", threshold: "-" },
+      oneM: { value: "1.73", period: 1, loc: "HCM", threshold: "" },
+      twoM: { value: "2.10", period: 2, loc: "HCM", threshold: "" },
+      threeM: { value: "2.33", period: 3, loc: "HCM", threshold: "" },
+      sixM: { value: "2.33", period: 6, loc: "HCM", threshold: "" },
+      nineM: { value: "2.33", period: 9, loc: "HCM", threshold: "" },
+      twelveM: { value: "2.33", period: 12, loc: "HCM", threshold: "" },
+      thirteenM: { value: "2.33", period: 13, loc: "HCM", threshold: "" },
+      eighteenM: { value: "2.33", period: 18, loc: "HCM", threshold: "" },
+      twentyFourM: { value: "2.33", period: 24, loc: "HCM", threshold: "" },
+      thirtySixM: { value: "2.33", period: 36, loc: "HCM", threshold: "" }
     }
   }
 ];

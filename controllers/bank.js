@@ -55,6 +55,9 @@ exports.list = (req, res, next) => {
       for (let i = 0; i < banks.length; i++) {
         const bank = banks[i];
         bank.oid = i + 1;
+        if (!bank.interestRates) {
+          continue;
+        }
         let rate = bank.interestRates.twelveM.value || 0;
         bank.width = `${rate * 10}%`;
         bank.duration = (rate || 5) / 1.5;
