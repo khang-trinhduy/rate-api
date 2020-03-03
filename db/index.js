@@ -9,11 +9,13 @@ if (process.env.NODE_ENV === "production") {
 var { banks } = require("../models/bank");
 var { ratestats } = require("../models/statistic/rate");
 var { informations } = require("../models/info");
+var { rates } = require("../models/rate");
 const { banks_seed } = require("../models/bank/seed");
 const { ratestat_seed } = require("../models/statistic/seed");
 const { infos } = require("../models/info/seed");
 const { utilities } = require("../models/utility");
 const { utility_seed } = require("../models/utility/seed");
+const { rates_seed } = require("../models/rate/seed");
 
 mongoose.connect(dbURI);
 
@@ -65,61 +67,27 @@ mongoose.connection.on("connected", () => {
       });
     }
   });
-});
 
-// generate = (rate, period) => {
-//   ratestats.findOne({ type: period.toLowerCase() }, (error, result) => {
-//     // handle update to statistic
-//     if (error) {
-//       console.log(error);
-//     } else if (!result) {
-//       console.log(`rate type ${period} not found`);
-//       if (rate) {
-//         let stat = {
-//           count: 1,
-//           maximum: rate.value,
-//           minimum: rate.value,
-//           type: period.toLowerCase()
-//         };
-//         ratestats.create(stat, (err, res) => {
-//           if (err) {
-//             console.log(err);
-//           } else {
-//           }
-//         });
-//       } else {
-//         console.log(`rate ${period} is invalid`);
-//       }
-//       // create new statistic
-//     } else {
-//       if (rate) {
-//         let update = false;
-//         if (rate.value > result.maximum) {
-//           result.maximum = rate.value;
-//           update = true;
-//         }
-//         if (rate.value < result.minimum) {
-//           result.minimum = rate.value;
-//           update = true;
-//         }
-//         if (update) {
-//           result.count++;
-//           result.lastUpdated = Date.now();
-//           result.save((err, res) => {
-//             if (err) {
-//               console.log(err);
-//             } else if (res) {
-//               console.log(`statistic ${result._id} updated`);
-//             }
-//           });
-//         }
-//         return
-//       } else {
-//         console.log("invalid rate");
-//       }
-//     }
-//   });
-// };
+  rates.find({}, (error, result) => {
+    if (!error && result.length <= 0) {
+      rates.find({}, (error, result) => {
+        if (error) {
+          console.error(error);
+        } else {
+          if (result && result.length <= 0) {
+            rates.insertMany(rates_seed, (err, res) => {
+              if (err) {
+                console.error(err);
+              } else {
+                console.log(`inserted ${res.length} documents to the database`);
+              }
+            });
+          }
+        }
+      });
+    }
+  });
+});
 
 mongoose.connection.on("disconnected", () => {
   console.log("Mongoose disconnected");
