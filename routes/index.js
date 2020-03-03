@@ -6,6 +6,7 @@ var infoCtrl = require("../controllers/info");
 var utilityCtrl = require("../controllers/utility");
 var rateCtrl = require("../controllers/rate");
 var authCtrl = require("../controllers/authentication");
+var dataCtrl = require("../controllers/data");
 
 var reviewCtrl = require("../controllers/review");
 
@@ -30,25 +31,28 @@ router.get("/utilities", utilityCtrl.show);
 
 // bank controller
 router.get("/banks", bankCtrl.showV2);
-router.post('/users/:id/banks', bankCtrl.create);
+router.post("/users/:id/banks", bankCtrl.create);
 router.get("/banks/:id", bankCtrl.detail);
 
 // rate controller
 router.get("/rates", rateCtrl.top);
-router.post('/users/:id/rates', rateCtrl.create);
+router.post("/users/:id/rates", rateCtrl.create);
+
+// data controller
+router.get("/data", dataCtrl.import);
 
 router.post("/login", authCtrl.login);
 
 router.post("/register", authCtrl.register);
 
-router.get('/reviews/:id', reviewCtrl.show)
+router.get("/reviews/:id", reviewCtrl.show);
 
-router.post('/users/:id/reviews', reviewCtrl.create)
+router.post("/users/:id/reviews", reviewCtrl.create);
 
-router.delete('/reviews/:id', reviewCtrl.delete)
+router.delete("/reviews/:id", reviewCtrl.delete);
 
-router.get('/reviews', reviewCtrl.list)
+router.get("/reviews", reviewCtrl.list);
 
-router.get('/reviews/summary/:id', reviewCtrl.summary)
+router.get("/reviews/summary/:id", reviewCtrl.summary);
 
 module.exports = router;
