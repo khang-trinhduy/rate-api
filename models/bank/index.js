@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 
-const { rate_schema, rate_wrapper_schema } = require("../rate");
+const { rate_schema } = require("../rate");
 
 const { loan_schema } = require("../loan");
 
@@ -12,7 +12,7 @@ var Schema = mongoose.Schema;
 
 var bankSchema = new Schema({
   name: { type: String, required: true },
-  interestRates: rate_wrapper_schema,
+  interestRates: [{ type: Schema.Types.ObjectId, ref: "rates" }],
   loanRates: [loan_schema],
   code: { type: String, required: false },
   link: { type: String, required: false },
@@ -20,11 +20,10 @@ var bankSchema = new Schema({
   info: info_schema
 });
 
-bankSchema.method('addRate', (rate) => {
+bankSchema.method("addRate", rate => {
   if (rate) {
-    
   }
-})
+});
 
 exports.bank_schema = bankSchema;
 

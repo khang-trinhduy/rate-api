@@ -5,6 +5,7 @@ const { gift_schema } = require("../gift");
 var Schema = mongoose.Schema;
 
 var rateSchema = new Schema({
+  month: { type: Boolean, default: true },
   withdraw: { type: Number, required: true, default: 1 },
   type: { type: String, required: true, default: "online" },
   verify: { type: Boolean, required: true, default: false },
@@ -17,11 +18,12 @@ var rateSchema = new Schema({
   gift: { type: Boolean, required: true, default: false },
   lastUpdate: { type: Date, default: Date.now() },
   createBy: { type: String, required: true, default: "admin" },
-  gifts: [{ type: gift_schema }]
+  gifts: [{ type: gift_schema }],
+  bank: { type: Schema.Types.ObjectId, ref: "banks" }
 });
 
 var rateWrapper = new Schema({
-  unlimit: [rateSchema],
+  unlimit: [{ type: rateSchema, ref: "rates" }],
   oneW: [rateSchema],
   twoW: [rateSchema],
   threeW: [rateSchema],

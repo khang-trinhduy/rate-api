@@ -4,7 +4,7 @@ var { banks } = require("../models/bank");
 
 var { users } = require("../models/user");
 
-var service = require("../services");
+var service = require("../services/bank");
 
 var sendJsonResponse = (res, code, content) => {
   res.status(code);
@@ -47,39 +47,22 @@ exports.create = (req, res, next) => {
 };
 
 exports.list = (req, res, next) => {
-  banks.find({}, (error, banks) => {
-    if (error) {
-      sendJsonResponse(res, 400, error);
-    } else {
-      let period = 12;
-      for (let i = 0; i < banks.length; i++) {
-        const bank = banks[i];
-        bank.oid = i + 1;
-        if (!bank.interestRates) {
-          continue;
-        }
-        let rate = bank.interestRates.twelveM.value || 0;
-        bank.width = `${rate * 10}%`;
-        bank.duration = (rate || 5) / 1.5;
-        bank.rate = `${rate}%`;
-        bank.margin = rate / 2;
+  banks
+    .find({})
+    .populate({
+      path: "interestRates",
+      select: "value period threshold"
+    })
+    // .select("-interestRates -loanRates -__v")
+    .exec((error, banks) => {
+      if (error) {
+        sendJsonResponse(res, 400, error);
+      } else if (!banks) {
+        sendJsonResponse(res, 404, "not found");
+      } else {
+        sendJsonResponse(res, 200, banks);
       }
-      banks.sort((a, b) => {
-        let i1, i2;
-        i1 = a.interestRates.twelveM.value || 0;
-        i2 = b.interestRates.twelveM.value || 0;
-        return i2 - i1;
-      });
-      for (let i = 0; i < banks.length; i++) {
-        const bank = banks[i];
-        bank.index = i + 1;
-      }
-      banks.sort((a, b) => {
-        return b.oid - a.oid;
-      });
-      sendJsonResponse(res, 200, banks);
-    }
-  });
+    });
 };
 
 exports.listV2 = (req, res, next) => {
