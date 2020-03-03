@@ -21,21 +21,21 @@ var rateSchema = new Schema({
 });
 
 var rateWrapper = new Schema({
-  unlimit: rateSchema,
-  oneW: rateSchema,
-  twoW: rateSchema,
-  threeW: rateSchema,
-  fourW: rateSchema,
-  oneM: rateSchema,
-  twoM: rateSchema,
-  threeM: rateSchema,
-  sixM: rateSchema,
-  nineM: rateSchema,
-  twelveM: rateSchema,
-  thirteenM: rateSchema,
-  eighteenM: rateSchema,
-  twentyFourM: rateSchema,
-  thirtySixM: rateSchema
+  unlimit: [rateSchema],
+  oneW: [rateSchema],
+  twoW: [rateSchema],
+  threeW: [rateSchema],
+  fourW: [rateSchema],
+  oneM: [rateSchema],
+  twoM: [rateSchema],
+  threeM: [rateSchema],
+  sixM: [rateSchema],
+  nineM: [rateSchema],
+  twelveM: [rateSchema],
+  thirteenM: [rateSchema],
+  eighteenM: [rateSchema],
+  twentyFourM: [rateSchema],
+  thirtySixM: [rateSchema]
 });
 
 module.exports.rates = mongoose.model("rates", rateSchema);
