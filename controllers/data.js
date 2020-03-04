@@ -1,31 +1,36 @@
-const { rates_seed } = require("../models/rate/seed");
 var { banks } = require("../models/bank");
-var service = require("../services/data");
+var { rates } = require("../models/rate/import");
 
 exports.import = (req, res, next) => {
   let updated = 0;
-  banks.find({}, (error, result) => {
-    if (error) {
-      res.status(500).send(error);
-    } else if (!result) {
-      res.status(404).send({ error: "cannot find any banks" });
-    } else {
-      result.forEach(bank => {
-        let id = bank._id;
-        if (id) {
-          let rates = rates_seed.filter(e => e.bank == id);
-          if (rates && rates.length > 0) {
-            bank.interests = rates;
-            bank.save();
-            updated++;
+  rates.forEach(rate => {
+    if (rate.bank) {
+      banks
+        .findOne({ normalized: rate.bank.toLowerCase() })
+        .select("interests name")
+        .exec((error, result) => {
+          if (error) {
+            failed++;
+            console.error(error);
+          } else if (!result) {
+            console.log(`bank ${rate.bank} not found`);
           } else {
-            console.log("rates not found");
+            if (!result.interests) {
+              console.log(`invalid bank ${rate.bank}`);
+            } else {
+              result.interests.push(rate);
+              result.save((err, ok) => {
+                if (ok) {
+                  updated++;
+                  console.log(`${result.name} updated`);
+                }
+              });
+            }
           }
-        } else {
-          console.log("id not found");
-        }
-      });
-      res.status(200).json({ updated: `${updated} documents` });
+        });
+    } else {
+      console.log("invalid rate");
     }
   });
+  res.status(200).send({ updated: updated, total: rates.length });
 };
