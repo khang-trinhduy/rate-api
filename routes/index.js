@@ -17,6 +17,7 @@ router.get("/loan", bankCtrl.listV2);
 
 router.get("/detail", bankCtrl.show);
 
+router.get("/stats/:period", statCtrl.show);
 router.get("/stats/:id", statCtrl.show);
 
 router.get("/stats", statCtrl.list);
@@ -40,7 +41,8 @@ router.get("/rates", rateCtrl.show);
 router.post("/users/:id/rates", rateCtrl.create);
 
 // data controller
-router.get("/data", dataCtrl.import);
+router.get("/data/import", dataCtrl.import);
+router.get("/data/update", dataCtrl.update);
 
 router.post("/login", authCtrl.login);
 

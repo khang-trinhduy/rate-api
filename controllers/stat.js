@@ -16,9 +16,7 @@ exports.list = (req, res, next) => {
 };
 
 exports.show = (req, res, next) => {
-  console.log(req.query);
-
-  if (!req.query.type && !req.params.id) {
+  if (!req.params.period && !req.params.id) {
     sendJsonResponse(res, 400, { error: "bad request" });
   } else {
     if (req.params.id) {
@@ -34,18 +32,15 @@ exports.show = (req, res, next) => {
         }
       });
     } else {
-      ratestats.findOne(
-        { type: req.query.type.toLowerCase() },
-        (error, rate) => {
-          if (error) {
-            sendJsonResponse(res, 400, error);
-          } else if (!rate) {
-            sendJsonResponse(res, 404, { error: "not found" });
-          } else {
-            sendJsonResponse(res, 200, rate);
-          }
+      ratestats.findOne({ period: req.params.period }, (error, rate) => {
+        if (error) {
+          sendJsonResponse(res, 400, error);
+        } else if (!rate) {
+          sendJsonResponse(res, 404, { error: "not found" });
+        } else {
+          sendJsonResponse(res, 200, rate);
         }
-      );
+      });
     }
   }
 };

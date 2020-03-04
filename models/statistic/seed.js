@@ -1,78 +1,90 @@
 exports.ratestat_seed = [
   {
-    type: "threem",
-    maximum: 5.4,
+    period: "3",
+    maximum: 5,
     minimum: 4.8,
     count: 1
   },
   {
-    type: "onew",
+    period: "-1",
     maximum: 0,
     minimum: 10,
     count: 1
   },
   {
-    type: "twow",
+    period: "-2",
     maximum: 0,
     minimum: 10,
     count: 1
   },
   {
-    type: "fourw",
+    period: "-4",
     maximum: 0,
     minimum: 10,
     count: 1
   },
   {
-    type: "threew",
+    period: "-3",
     maximum: 0,
     minimum: 10,
     count: 1
   },
   {
-    type: "sixm",
-    maximum: 8.21,
+    period: "6",
+    maximum: 7.85,
     minimum: 5,
     count: 1
   },
   {
-    type: "ninem",
-    maximum: 8.36,
+    period: "9",
+    maximum: 7.85,
     minimum: 5.3,
     count: 1
   },
   {
-    type: "twelvem",
-    maximum: 8.66,
+    period: "12",
+    maximum: 8.1,
     minimum: 6.8,
     count: 1
   },
   {
-    type: "eighteenm",
-    maximum: 8.76,
+    period: "13",
+    maximum: 8.45,
+    minimum: 6.8,
+    count: 1
+  },
+  {
+    period: "18",
+    maximum: 8.25,
     minimum: 6.7,
     count: 1
   },
   {
-    type: "twentyfourm",
-    maximum: 8.56,
+    period: "24",
+    maximum: 8.6,
     minimum: 6.8,
     count: 1
   },
   {
-    type: "thirtysixm",
-    maximum: 8.7,
+    period: "36",
+    maximum: 8.4,
     minimum: 6.8,
     count: 1
   },
   {
-    type: "onem",
-    maximum: 0,
+    period: "1",
+    maximum: 5.0,
     minimum: 10,
     count: 1
   },
   {
-    type: "unlimit",
+    period: "2",
+    maximum: 5,
+    minimum: 10,
+    count: 1
+  },
+  {
+    period: "0",
     maximum: 0.8,
     minimum: 0,
     count: 1

@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var rateStatisticSchema = new Schema({
-  type: { type: String, required: true },
+  period: { type: String, required: true },
   maximum: { type: Number, required: true },
   minimum: { type: Number, required: true },
   count: { type: Number, required: true },
