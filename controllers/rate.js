@@ -8,46 +8,38 @@ var sendJsonResponse = (res, status, content) => {
 };
 
 exports.show = (req, res, next) => {
-  if (!req.params.id && !req.query.b) {
-    sendJsonResponse(res, 400, { error: "id or code are required" });
+  if (!req.query.code && !req.query.period) {
+    sendJsonResponse(res, 400, { error: "code and period are required" });
   } else {
-    if (req.params.id) {
-      utilities.findById(req.params.id, (error, utility) => {
+    banks
+      .findOne({ normalized: req.query.code })
+      .select("interests")
+      .exec((error, bank) => {
         if (error) {
-          sendJsonResponse(res, 400, error);
-        } else {
-          if (utility) {
-            sendJsonResponse(res, 200, utility);
+          res.status(500).send(error);
+        } else if (bank) {
+          let rates = bank.interests.filter(e => e.period == req.query.period);
+          if (rates && rates.length > 0) {
+            rates.sort((a, b) => {
+              return b.lastUpdate - a.lastUpdate;
+            });
+            res.status(200).send(rates[0]);
           } else {
-            sendJsonResponse(res, 404, {
-              error: `utility with id ${id} not found`
+            res.status(404).send({
+              error: `rate with period ${req.query.period} not found`
             });
           }
+        } else {
+          res.status(404).send({ error: "bank not found" });
         }
       });
-    } else {
-      utilities.findOne(
-        { code: req.query.b.toLowerCase() },
-        (error, result) => {
-          if (error) {
-            sendJsonResponse(res, 400, error);
-          } else if (!result) {
-            sendJsonResponse(res, 404, {
-              error: `utility with code ${req.query.b} not found`
-            });
-          } else {
-            sendJsonResponse(res, 200, result);
-          }
-        }
-      );
-    }
   }
 };
 
 exports.list = (req, res, next) => {
-  rates
-    .find({})
-    .populate("bank")
+  banks
+    .find({ "interests.period": 12 })
+    .select("name interests.value interests.period")
     .exec((err, result) => {
       if (err) {
         sendJsonResponse(res, 500, err);

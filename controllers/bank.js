@@ -47,19 +47,15 @@ exports.create = (req, res, next) => {
 };
 
 exports.list = (req, res, next) => {
-  banks
-    .find({})
-    .populate({ path: "interests" })
-    // .select("-interestRates -loanRates -__v")
-    .exec((error, banks) => {
-      if (error) {
-        sendJsonResponse(res, 400, error);
-      } else if (!banks) {
-        sendJsonResponse(res, 404, "not found");
-      } else {
-        sendJsonResponse(res, 200, banks);
-      }
-    });
+  banks.find({}).select('-interests -loans').exec((error, banks) => {
+    if (error) {
+      sendJsonResponse(res, 400, error);
+    } else if (!banks) {
+      sendJsonResponse(res, 404, "not found");
+    } else {
+      sendJsonResponse(res, 200, banks);
+    }
+  });
 };
 
 exports.listV2 = (req, res, next) => {

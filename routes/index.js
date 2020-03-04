@@ -11,7 +11,7 @@ var dataCtrl = require("../controllers/data");
 var reviewCtrl = require("../controllers/review");
 
 /* GET home page. */
-router.get("/", bankCtrl.list);
+router.get("/banks", bankCtrl.list);
 
 router.get("/loan", bankCtrl.listV2);
 
@@ -36,7 +36,7 @@ router.get("/banks/:id", bankCtrl.detail);
 
 // rate controller
 router.get("/rates/all", rateCtrl.list);
-router.get("/rates", rateCtrl.top);
+router.get("/rates", rateCtrl.show);
 router.post("/users/:id/rates", rateCtrl.create);
 
 // data controller
