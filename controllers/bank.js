@@ -49,7 +49,7 @@ exports.create = (req, res, next) => {
 exports.list = (req, res, next) => {
   banks
     .find({})
-    .populate("interestRates")
+    .populate({ path: "interests" })
     // .select("-interestRates -loanRates -__v")
     .exec((error, banks) => {
       if (error) {

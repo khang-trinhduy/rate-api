@@ -1,5 +1,6 @@
 var { users } = require("../models/user");
 var { banks } = require("../models/bank");
+var { rates } = require("../models/rate");
 
 var sendJsonResponse = (res, status, content) => {
   res.status(status);
@@ -44,17 +45,18 @@ exports.show = (req, res, next) => {
 };
 
 exports.list = (req, res, next) => {
-  if (!req.query.t || !req.query.p || !req.query.s) {
-    sendJsonResponse(res, 400, { error: "all params required" });
-  } else {
-    banks.find({}, (error, result) => {
-      if (error) {
-        sendJsonResponse(res, 400, error);
+  rates
+    .find({})
+    .populate("bank")
+    .exec((err, result) => {
+      if (err) {
+        sendJsonResponse(res, 500, err);
+      } else if (!result) {
+        sendJsonResponse(res, 404, { error: "not found" });
       } else {
         sendJsonResponse(res, 200, result);
       }
     });
-  }
 };
 
 exports.top = (req, res, next) => {

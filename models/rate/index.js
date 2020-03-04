@@ -18,28 +18,9 @@ var rateSchema = new Schema({
   gift: { type: Boolean, required: true, default: false },
   lastUpdate: { type: Date, default: Date.now() },
   createBy: { type: String, required: true, default: "admin" },
-  gifts: [{ type: gift_schema }],
-  bank: { type: Schema.Types.ObjectId, ref: "banks" }
+  gifts: [{ type: gift_schema }]
 });
 
-var rateWrapper = new Schema({
-  unlimit: [{ type: rateSchema, ref: "rates" }],
-  oneW: [rateSchema],
-  twoW: [rateSchema],
-  threeW: [rateSchema],
-  fourW: [rateSchema],
-  oneM: [rateSchema],
-  twoM: [rateSchema],
-  threeM: [rateSchema],
-  sixM: [rateSchema],
-  nineM: [rateSchema],
-  twelveM: [rateSchema],
-  thirteenM: [rateSchema],
-  eighteenM: [rateSchema],
-  twentyFourM: [rateSchema],
-  thirtySixM: [rateSchema]
-});
 
 module.exports.rates = mongoose.model("rates", rateSchema);
 module.exports.rate_schema = rateSchema;
-module.exports.rate_wrapper_schema = rateWrapper;

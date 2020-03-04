@@ -67,26 +67,6 @@ mongoose.connection.on("connected", () => {
       });
     }
   });
-
-  rates.find({}, (error, result) => {
-    if (!error && result.length <= 0) {
-      rates.find({}, (error, result) => {
-        if (error) {
-          console.error(error);
-        } else {
-          if (result && result.length <= 0) {
-            rates.insertMany(rates_seed, (err, res) => {
-              if (err) {
-                console.error(err);
-              } else {
-                console.log(`inserted ${res.length} documents to the database`);
-              }
-            });
-          }
-        }
-      });
-    }
-  });
 });
 
 mongoose.connection.on("disconnected", () => {

@@ -12,8 +12,8 @@ var Schema = mongoose.Schema;
 
 var bankSchema = new Schema({
   name: { type: String, required: true },
-  interestRates: [{ type: Schema.Types.ObjectId, ref: "rates" }],
-  loanRates: [loan_schema],
+  interests: [{ type: rate_schema }],
+  loans: [loan_schema],
   code: { type: String, required: false },
   link: { type: String, required: false },
   normalized: { type: String, required: false },

@@ -35,6 +35,7 @@ router.post("/users/:id/banks", bankCtrl.create);
 router.get("/banks/:id", bankCtrl.detail);
 
 // rate controller
+router.get("/rates/all", rateCtrl.list);
 router.get("/rates", rateCtrl.top);
 router.post("/users/:id/rates", rateCtrl.create);
 
