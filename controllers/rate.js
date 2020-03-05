@@ -23,7 +23,7 @@ exports.show = (req, res, next) => {
             rates.sort((a, b) => {
               return b.lastUpdate - a.lastUpdate;
             });
-            res.status(200).send(rates[0]);
+            res.status(200).send(rates);
           } else {
             res.status(404).send({
               error: `rate with period ${req.query.period} not found`

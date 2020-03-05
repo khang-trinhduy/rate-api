@@ -18,9 +18,9 @@ var rateSchema = new Schema({
   gift: { type: Boolean, required: true, default: false },
   lastUpdate: { type: Date, default: Date.now() },
   createBy: { type: String, required: true, default: "admin" },
-  gifts: [{ type: gift_schema }]
+  gifts: [{ type: gift_schema }],
+  max: { type: Boolean, default: false }
 });
-
 
 module.exports.rates = mongoose.model("rates", rateSchema);
 module.exports.rate_schema = rateSchema;
