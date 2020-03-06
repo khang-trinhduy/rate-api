@@ -135,6 +135,7 @@ exports.detail = (req, res, next) => {
   }
 };
 
+// deprecated
 exports.showV2 = (req, res, next) => {
   if (!req.query.code) {
     sendJsonResponse(res, 400, "code required");
