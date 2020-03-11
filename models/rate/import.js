@@ -419,5 +419,19 @@ exports.rates = [
     threshold: "",
     lastUpdate: "2020-03-06",
     period: 36
+  },
+  {
+    bank: "BaoVietBank",
+    value: 7.95,
+    threshold: "",
+    lastUpdate: "2020-03-11",
+    period: 12
+  },
+  {
+    bank: "BaoVietBank",
+    value: 5,
+    threshold: "",
+    lastUpdate: "2020-03-11",
+    period: 3
   }
 ];
