@@ -1,6 +1,7 @@
 var { banks } = require("../models/bank");
 var { rates } = require("../models/rate/import");
 var { rates_seed } = require("../models/rate/seed");
+var { updates } = require("../models/update");
 
 exports.import = (req, res, next) => {
   let updated = 0;
@@ -50,6 +51,18 @@ exports.update = (req, res, next) => {
               result.interests.push(rate);
               result.save((err, ok) => {
                 if (ok) {
+                  updates.findOneAndUpdate(
+                    {},
+                    { date: Date.now() },
+                    { upsert: true, new: true },
+                    (error, update) => {
+                      if (error) {
+                        console.log(error);
+                      } else {
+                        console.log(update);
+                      }
+                    }
+                  );
                   updated++;
                   console.log(`${result.name} updated`);
                 }

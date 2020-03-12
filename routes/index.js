@@ -7,6 +7,7 @@ var utilityCtrl = require("../controllers/utility");
 var rateCtrl = require("../controllers/rate");
 var authCtrl = require("../controllers/authentication");
 var dataCtrl = require("../controllers/data");
+var updateCtrl = require("../controllers/update");
 
 var reviewCtrl = require("../controllers/review");
 
@@ -57,5 +58,7 @@ router.delete("/reviews/:id", reviewCtrl.delete);
 router.get("/reviews", reviewCtrl.list);
 
 router.get("/reviews/summary/:id", reviewCtrl.summary);
+
+router.get("/update", updateCtrl.show);
 
 module.exports = router;
