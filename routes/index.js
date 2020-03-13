@@ -40,6 +40,7 @@ router.get("/banks/:id", bankCtrl.detail);
 router.get("/rates/all", rateCtrl.list);
 router.get("/rates", rateCtrl.show);
 router.post("/users/:id/rates", rateCtrl.create);
+router.get("/rates/top", rateCtrl.top);
 
 // data controller
 router.get("/data/import", dataCtrl.import);

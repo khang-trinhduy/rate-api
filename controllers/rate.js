@@ -51,22 +51,80 @@ exports.list = (req, res, next) => {
     });
 };
 
-exports.top = (req, res, next) => {
-  if (!req.query.type || !req.query.period || !req.query.sort) {
-    sendJsonResponse(res, 400, { error: "bad request" });
-  } else {
-    banks.find(
-      { normalized: ["vietcombank", "agribank", "bidv", "vietinbank", "vib"] },
-      (error, result) => {
-        if (result) {
-          sendJsonResponse(res, 200, result);
-        } else if (error) {
-          sendJsonResponse(res, 400, error);
-        } else {
-          sendJsonResponse(res, 404, { error: "not found" });
-        }
+exports.top = async (req, res, next) => {
+  try {
+    let period = [0, 1, 2, 3, 6, 9, 12, 13, 18, 24, 36];
+    if (req.query.period && req.query.period != 'NaN') {
+      if (req.query.period.length > 1) {
+        period = req.query.period.map(x => parseInt(x));
+      } else {
+        period = [parseInt(req.query.period)];
       }
-    );
+    }
+    let result;
+    if (req.query.code && req.query.code != 'NaN') {
+      result = await banks.aggregate([
+        {
+          $match: {
+            normalized: req.query.code.toLowerCase()
+          }
+        },
+        {
+          $unwind: "$interests"
+        },
+        {
+          $match: {
+            "interests.period": { $in: period }
+          }
+        },
+        {
+          $group: {
+            _id: null,
+            interests: { $push: "$interests" }
+          }
+        },
+        {
+          $project: {
+            _id: 0
+          }
+        }
+      ]);
+    } else {
+      result = await banks.aggregate([
+        {
+          $unwind: "$interests"
+        },
+        {
+          $match: { "interests.period": { $in: period } }
+        },
+        {
+          $group: {
+            _id: null,
+            interests: { $push: "$interests" }
+          }
+        },
+        {
+          $project: {
+            _id: 0
+          }
+        }
+      ]);
+    }
+    if (req.query.size) {
+      if (req.query.period) {
+        result = result[0].interests
+          .sort((a, b) => b.value - a.value)
+          .slice(0, parseInt(req.query.size));
+      }
+    } else {
+      if (req.query.period) {
+        result = result[0].interests.sort((a, b) => b.value - a.value);
+      }
+    }
+    res.status(200).json(result);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json(error);
   }
 };
 
