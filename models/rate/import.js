@@ -1,5 +1,104 @@
 exports.rates = [
   {
+    bank: "GPBank",
+    value: 7.25,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 6
+  },
+  {
+    bank: "GPBank",
+    value: 7.35,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 9
+  },
+  {
+    bank: "GPBank",
+    value: 7.45,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 12
+  },
+  {
+    bank: "GPBank",
+    value: 7.55,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 13
+  },
+  {
+    bank: "GPBank",
+    value: 7.2,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 18
+  },
+  {
+    bank: "GPBank",
+    value: 7.2,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 24
+  },
+  {
+    bank: "GPBank",
+    value: 7.2,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 36
+  },
+  {
+    bank: "Oceanbank",
+    value: 6.8,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 6
+  },
+  {
+    bank: "Oceanbank",
+    value: 6.4,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 9
+  },
+  {
+    bank: "Oceanbank",
+    value: 7.8,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 12
+  },
+  {
+    bank: "Oceanbank",
+    value: 7.5,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 13
+  },
+  {
+    bank: "Oceanbank",
+    value: 7.2,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 18
+  },
+  {
+    bank: "Oceanbank",
+    value: 7.3,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 24
+  },
+  {
+    bank: "Oceanbank",
+    value: 7.4,
+    threshold: "",
+    lastUpdate: "2020-03-13",
+    period: 36
+  },
+
+  {
     bank: "BacABank",
     value: 7.55,
     threshold: "",
@@ -433,103 +532,5 @@ exports.rates = [
     threshold: "",
     lastUpdate: "2020-03-11",
     period: 3
-  },
-  {
-    bank: "Oceanbank",
-    value: 6.8,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 6
-  },
-  {
-    bank: "Oceanbank",
-    value: 6.4,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 9
-  },
-  {
-    bank: "Oceanbank",
-    value: 7.8,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 12
-  },
-  {
-    bank: "Oceanbank",
-    value: 7.5,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 13
-  },
-  {
-    bank: "Oceanbank",
-    value: 7.2,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 18
-  },
-  {
-    bank: "Oceanbank",
-    value: 7.3,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 24
-  },
-  {
-    bank: "Oceanbank",
-    value: 7.4,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 36
-  },
-  {
-    bank: "GPBank",
-    value: 7.25,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 6
-  },
-  {
-    bank: "GPBank",
-    value: 7.35,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 9
-  },
-  {
-    bank: "GPBank",
-    value: 7.45,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 12
-  },
-  {
-    bank: "GPBank",
-    value: 7.55,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 13
-  },
-  {
-    bank: "GPBank",
-    value: 7.2,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 18
-  },
-  {
-    bank: "GPBank",
-    value: 7.2,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 24
-  },
-  {
-    bank: "GPBank",
-    value: 7.2,
-    threshold: "",
-    lastUpdate: "2020-03-13",
-    period: 36
   }
 ];
