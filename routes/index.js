@@ -8,6 +8,7 @@ var rateCtrl = require("../controllers/rate");
 var authCtrl = require("../controllers/authentication");
 var dataCtrl = require("../controllers/data");
 var updateCtrl = require("../controllers/update");
+var userCtrl = require("../controllers/user");
 
 var reviewCtrl = require("../controllers/review");
 
@@ -45,6 +46,8 @@ router.get("/rates/top", rateCtrl.top);
 // data controller
 router.get("/data/import", dataCtrl.import);
 router.get("/data/update", dataCtrl.update);
+
+router.post("/users", userCtrl.subscribe);
 
 router.post("/login", authCtrl.login);
 
