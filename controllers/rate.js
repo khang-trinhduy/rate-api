@@ -1,6 +1,7 @@
 var { users } = require("../models/user");
 var { banks } = require("../models/bank");
 var { rates } = require("../models/rate");
+var rateService = require("../services/rate");
 
 var sendJsonResponse = (res, status, content) => {
   res.status(status);
@@ -54,7 +55,7 @@ exports.list = (req, res, next) => {
 exports.top = async (req, res, next) => {
   try {
     let period = [0, 1, 2, 3, 6, 9, 12, 13, 18, 24, 36];
-    if (req.query.period && req.query.period != 'NaN') {
+    if (req.query.period && req.query.period != "NaN") {
       if (req.query.period.length > 1) {
         period = req.query.period.map(x => parseInt(x));
       } else {
@@ -62,7 +63,7 @@ exports.top = async (req, res, next) => {
       }
     }
     let result;
-    if (req.query.code && req.query.code != 'NaN') {
+    if (req.query.code && req.query.code != "NaN") {
       result = await banks.aggregate([
         {
           $match: {
@@ -125,6 +126,19 @@ exports.top = async (req, res, next) => {
   } catch (error) {
     console.error(error);
     res.status(500).json(error);
+  }
+};
+
+exports.search = async (req, res, next) => {
+  try {
+    let value = parseFloat(req.query.value);
+    let rates = await rateService.list();
+    let result = rateService.filter(value, rates);
+    result = await rateService.populate(result);
+    res.status(200).json(result);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "server fault" });
   }
 };
 

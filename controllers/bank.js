@@ -4,6 +4,8 @@ var { banks } = require("../models/bank");
 
 var { users } = require("../models/user");
 
+var bankService = require("../services/bank");
+
 var service = require("../services/bank");
 
 var sendJsonResponse = (res, code, content) => {
@@ -135,32 +137,14 @@ exports.detail = (req, res, next) => {
   }
 };
 
-// deprecated
-exports.showV2 = (req, res, next) => {
-  if (!req.query.code) {
-    sendJsonResponse(res, 400, "code required");
-  } else {
-    banks.findOne({ normalized: req.query.code }, (error, bank) => {
-      if (error) {
-        sendJsonResponse(res, 400, error);
-      } else if (!bank) {
-        sendJsonResponse(res, 404, {
-          error: `cannot find bank with code: ${req.query.code}`
-        });
-      } else {
-        if (req.query.type) {
-          let period = service.resolveRatePeriod(req.query.type);
-          sendJsonResponse(res, 200, {
-            bank: bank,
-            rate: bank.interestRates[period]
-          });
-        } else {
-          sendJsonResponse(res, 200, {
-            bank: bank,
-            rate: bank.interestRates["twelveM"]
-          });
-        }
-      }
-    });
+exports.search = async (req, res, next) => {
+  try {
+    let keywords = req.query.keywords;
+    let banks = await bankService.list();
+    let results = await bankService.search(keywords, banks);
+    res.status(200).json(results);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "server fault" });
   }
 };
