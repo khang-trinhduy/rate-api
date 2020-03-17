@@ -106,16 +106,16 @@ exports.listV2 = (req, res, next) => {
 };
 
 exports.show = (req, res, next) => {
-  if (!req.query.c) {
+  if (!req.query.code) {
     render(res, "error", { error: "id required" });
   } else {
-    banks.findOne({ code: req.query.c }, (error, bank) => {
+    banks.findOne({ code: req.query.code }, (error, bank) => {
       if (error) {
-        render(res, "error", { error: error });
+        res.status(500).json({ error: "not found" });
       } else if (!bank) {
-        render(res, "error", { error: "bank not found" });
+        res.status(500).json({ error: "not found" });
       } else {
-        render(res, "detail", { bank: bank });
+        res.status(200).json(bank);
       }
     });
   }

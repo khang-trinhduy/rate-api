@@ -17,8 +17,6 @@ router.get("/banks", bankCtrl.list);
 
 router.get("/loan", bankCtrl.listV2);
 
-router.get("/detail", bankCtrl.show);
-
 router.get("/stats/:period", statCtrl.show);
 router.get("/stats/:id", statCtrl.show);
 
@@ -34,6 +32,7 @@ router.get("/utilities", utilityCtrl.show);
 
 // bank controller
 router.get("/banks/search", bankCtrl.search);
+router.get("/banks/detail", bankCtrl.show);
 router.post("/users/:id/banks", bankCtrl.create);
 router.get("/banks/:id", bankCtrl.detail);
 
