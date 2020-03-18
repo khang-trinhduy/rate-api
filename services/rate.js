@@ -53,7 +53,21 @@ exports.filter = (value, rates) => {
     for (let i = 0; i < rates.length; i++) {
       const rate = rates[i];
       if (rate.value == value) {
-        result.push(rate);
+        let index = result.findIndex(
+          e => e.bank === rate.bank && e.value == value
+        );
+        if (index >= 0) {
+          let d1 = new Date(rate.lastUpdate);
+          let d2 = new Date(result[index].lastUpdate);
+
+          if (d1.getTime() > d2.getTime()) {
+            result[index] = rate;
+          } else {
+            continue;
+          }
+        } else {
+          result.push(rate);
+        }
       }
     }
     return result;
