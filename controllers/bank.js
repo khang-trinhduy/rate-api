@@ -51,7 +51,7 @@ exports.create = (req, res, next) => {
 exports.list = (req, res, next) => {
   banks
     .find({})
-    .select("-interests -loans")
+    .select("-loans")
     .exec((error, banks) => {
       if (error) {
         sendJsonResponse(res, 400, error);

@@ -2,6 +2,7 @@ var { users } = require("../models/user");
 var { banks } = require("../models/bank");
 var { rates } = require("../models/rate");
 var rateService = require("../services/rate");
+var bankService = require("../services/bank");
 
 var sendJsonResponse = (res, status, content) => {
   res.status(status);

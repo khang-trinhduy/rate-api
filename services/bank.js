@@ -25,3 +25,10 @@ exports.list = async () => {
     return error;
   }
 };
+
+exports.getByCode = async (code) => {
+  try {
+    let result = await banks.find({ normalized: code.toLowerCase() }).exec();
+    return result;
+  } catch (error) {}
+};
