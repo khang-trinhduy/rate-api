@@ -5,7 +5,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "-",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "4.30",
@@ -13,7 +13,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "4.30",
@@ -21,7 +21,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "4.80",
@@ -29,7 +29,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "5.30",
@@ -37,7 +37,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "5.40",
@@ -45,7 +45,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "6.80",
@@ -53,7 +53,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "6.80",
@@ -61,7 +61,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "6.80",
@@ -69,7 +69,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "6.80",
@@ -77,7 +77,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
   {
     value: "0.00",
@@ -85,7 +85,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e6"
+    bank: "Agribank"
   },
 
   {
@@ -94,7 +94,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "5.00",
@@ -102,7 +102,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "5.00",
@@ -110,7 +110,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "5.00",
@@ -118,7 +118,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "7.85",
@@ -126,7 +126,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "7.85",
@@ -134,7 +134,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "7.90",
@@ -142,7 +142,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "7.95",
@@ -150,7 +150,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "8.00",
@@ -158,7 +158,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "8.00",
@@ -166,7 +166,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
   {
     value: "8.00",
@@ -174,7 +174,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e1"
+    bank: "CB"
   },
 
   {
@@ -183,7 +183,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "5.00",
@@ -191,7 +191,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "5.00",
@@ -199,7 +199,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "5.00",
@@ -207,7 +207,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "7.70",
@@ -215,7 +215,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "7.80",
@@ -223,7 +223,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "7.90",
@@ -231,7 +231,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "8.00",
@@ -239,7 +239,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "7.65",
@@ -247,7 +247,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "7.65",
@@ -255,7 +255,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
   {
     value: "7.65",
@@ -263,7 +263,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e2"
+    bank: "GPBank"
   },
 
   {
@@ -272,7 +272,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "5.00",
@@ -280,7 +280,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "5.00",
@@ -288,7 +288,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "5.00",
@@ -296,7 +296,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "6.90",
@@ -304,7 +304,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "6.50",
@@ -312,7 +312,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "7.90",
@@ -320,7 +320,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "7.60",
@@ -328,7 +328,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "7.30",
@@ -336,7 +336,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "7.40",
@@ -344,7 +344,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
   {
     value: "7.50",
@@ -352,7 +352,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e3"
+    bank: "Oceanbank"
   },
 
   {
@@ -361,7 +361,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "5.00",
@@ -369,7 +369,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "5.00",
@@ -377,7 +377,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "5.00",
@@ -385,7 +385,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "6.80",
@@ -393,7 +393,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "6.90",
@@ -401,7 +401,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "7.30",
@@ -409,7 +409,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "7.10",
@@ -417,7 +417,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "7.80",
@@ -425,7 +425,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "7.80",
@@ -433,7 +433,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
   {
     value: "7.80",
@@ -441,7 +441,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "54cd6669d3e0fb1b302e54e4"
+    bank: "ACB"
   },
 
   {
@@ -450,7 +450,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "5.00",
@@ -458,7 +458,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "5.00",
@@ -466,7 +466,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "5.00",
@@ -474,7 +474,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "7.00",
@@ -482,7 +482,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "6.80",
@@ -490,7 +490,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "7.80",
@@ -498,7 +498,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "8.30",
@@ -506,7 +506,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "7.90",
@@ -514,7 +514,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "7.90",
@@ -522,7 +522,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
   {
     value: "7.90",
@@ -530,7 +530,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e5"
+    bank: "ABBANK"
   },
 
   {
@@ -539,7 +539,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "5.00",
@@ -547,7 +547,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "5.00",
@@ -555,7 +555,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "5.00",
@@ -563,7 +563,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "7.70",
@@ -571,7 +571,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "7.80",
@@ -579,7 +579,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "8.00",
@@ -587,7 +587,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "8.00",
@@ -595,7 +595,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "8.00",
@@ -603,7 +603,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "8.00",
@@ -611,7 +611,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
   {
     value: "8.00",
@@ -619,7 +619,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e7"
+    bank: "BacABank"
   },
 
   {
@@ -628,7 +628,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "4.80",
@@ -636,7 +636,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "4.80",
@@ -644,7 +644,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "4.80",
@@ -652,7 +652,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "6.85",
@@ -660,7 +660,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "6.90",
@@ -668,7 +668,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "7.60",
@@ -676,7 +676,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "7.99",
@@ -684,7 +684,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "7.60",
@@ -692,7 +692,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "7.60",
@@ -700,7 +700,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
   {
     value: "7.60",
@@ -708,7 +708,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e8"
+    bank: "BaoVietBank"
   },
 
   {
@@ -717,7 +717,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "4.30",
@@ -725,7 +725,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "4.30",
@@ -733,7 +733,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "4.80",
@@ -741,7 +741,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "5.30",
@@ -749,7 +749,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "5.30",
@@ -757,7 +757,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "6.80",
@@ -765,7 +765,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "6.80",
@@ -773,7 +773,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "6.80",
@@ -781,7 +781,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "6.80",
@@ -789,7 +789,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
   {
     value: "6.80",
@@ -797,7 +797,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "54cd6669d3e0fb1b302e54e9"
+    bank: "BIDV"
   },
 
   {
@@ -806,7 +806,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "5.00",
@@ -814,7 +814,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "5.00",
@@ -822,7 +822,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "5.00",
@@ -830,7 +830,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "7.00",
@@ -838,7 +838,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "7.20",
@@ -846,7 +846,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "7.40",
@@ -854,7 +854,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "7.60",
@@ -862,7 +862,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "7.60",
@@ -870,7 +870,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "7.60",
@@ -878,7 +878,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
   {
     value: "7.60",
@@ -886,7 +886,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab63"
+    bank: "DongABank"
   },
 
   {
@@ -895,7 +895,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "4.60",
@@ -903,7 +903,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "4.80",
@@ -911,7 +911,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "5.00",
@@ -919,7 +919,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "5.60",
@@ -927,7 +927,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "5.80",
@@ -935,7 +935,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "7.60",
@@ -943,7 +943,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "8.40",
@@ -951,7 +951,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "8.00",
@@ -959,7 +959,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "8.40",
@@ -967,7 +967,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
   {
     value: "8.40",
@@ -975,7 +975,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab62"
+    bank: "Eximbank"
   },
 
   {
@@ -984,7 +984,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "5.00",
@@ -992,7 +992,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "5.00",
@@ -1000,7 +1000,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "5.00",
@@ -1008,7 +1008,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "6.80",
@@ -1016,7 +1016,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "6.80",
@@ -1024,7 +1024,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "7.30",
@@ -1032,7 +1032,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "7.40",
@@ -1040,7 +1040,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "7.40",
@@ -1048,7 +1048,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "7.00",
@@ -1056,7 +1056,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
   {
     value: "7.00",
@@ -1064,7 +1064,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab61"
+    bank: "HDBank"
   },
 
   {
@@ -1073,7 +1073,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "4.80",
@@ -1081,7 +1081,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "4.90",
@@ -1089,7 +1089,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "5.00",
@@ -1097,7 +1097,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "7.00",
@@ -1105,7 +1105,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "7.00",
@@ -1113,7 +1113,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "7.60",
@@ -1121,7 +1121,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "7.80",
@@ -1129,7 +1129,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "8.00",
@@ -1137,7 +1137,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "8.00",
@@ -1145,7 +1145,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
   {
     value: "7.80",
@@ -1153,7 +1153,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab64"
+    bank: "KienLongBank"
   },
 
   {
@@ -1162,7 +1162,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "4.90",
@@ -1170,7 +1170,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "4.90",
@@ -1178,7 +1178,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "5.00",
@@ -1186,7 +1186,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "6.10",
@@ -1194,7 +1194,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "6.20",
@@ -1202,7 +1202,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "6.90",
@@ -1210,7 +1210,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "7.00",
@@ -1218,7 +1218,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "7.20",
@@ -1226,7 +1226,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "7.30",
@@ -1234,7 +1234,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
   {
     value: "7.40",
@@ -1242,7 +1242,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab65"
+    bank: "LienVietPostBank"
   },
 
   {
@@ -1251,7 +1251,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "4.80",
@@ -1259,7 +1259,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "5.00",
@@ -1267,7 +1267,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "5.00",
@@ -1275,7 +1275,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "6.40",
@@ -1283,7 +1283,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "6.40",
@@ -1291,7 +1291,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "7.40",
@@ -1299,7 +1299,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 200 tỉ",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "6.70",
@@ -1307,7 +1307,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "7.30",
@@ -1315,7 +1315,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "7.60",
@@ -1323,7 +1323,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 200 tỉ",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
   {
     value: "7.40",
@@ -1331,7 +1331,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab66"
+    bank: "MBB"
   },
 
   {
@@ -1340,7 +1340,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "5.00",
@@ -1348,7 +1348,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "5.00",
@@ -1356,7 +1356,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "5.00",
@@ -1364,7 +1364,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "6.90",
@@ -1372,7 +1372,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "7.00",
@@ -1380,7 +1380,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "7.10",
@@ -1388,7 +1388,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "7.20",
@@ -1396,7 +1396,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "7.50",
@@ -1404,7 +1404,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "7.60",
@@ -1412,7 +1412,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
   {
     value: "7.60",
@@ -1420,7 +1420,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ  1 tỉ",
-    bank: "5e5e2143e9713b2d483aab67"
+    bank: "MSB"
   },
 
   {
@@ -1429,7 +1429,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "4.90",
@@ -1437,7 +1437,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "4.95",
@@ -1445,7 +1445,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "5.00",
@@ -1453,7 +1453,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "6.80",
@@ -1461,7 +1461,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "7.00",
@@ -1469,7 +1469,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "7.99",
@@ -1477,7 +1477,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "8.45",
@@ -1485,7 +1485,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "7.70",
@@ -1493,7 +1493,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "8.60",
@@ -1501,7 +1501,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
   {
     value: "7.90",
@@ -1509,7 +1509,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab68"
+    bank: "Nam A Bank"
   },
 
   {
@@ -1518,7 +1518,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "5.00",
@@ -1526,7 +1526,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "5.00",
@@ -1534,7 +1534,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "5.00",
@@ -1542,7 +1542,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "7.90",
@@ -1550,7 +1550,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "7.90",
@@ -1558,7 +1558,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "7.96",
@@ -1566,7 +1566,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "7.98",
@@ -1574,7 +1574,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "8.10",
@@ -1582,7 +1582,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "8.20",
@@ -1590,7 +1590,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
   {
     value: "8.30",
@@ -1598,7 +1598,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab69"
+    bank: "NCB"
   },
 
   {
@@ -1607,7 +1607,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "4.90",
@@ -1615,7 +1615,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "5.00",
@@ -1623,7 +1623,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "5.00",
@@ -1631,7 +1631,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "7.30",
@@ -1639,7 +1639,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "7.40",
@@ -1647,7 +1647,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "7.50",
@@ -1655,7 +1655,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "0.00",
@@ -1663,7 +1663,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "7.60",
@@ -1671,7 +1671,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "7.80",
@@ -1679,7 +1679,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
   {
     value: "7.80",
@@ -1687,7 +1687,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6a"
+    bank: "OCB"
   },
 
   {
@@ -1696,7 +1696,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "5.00",
@@ -1704,7 +1704,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "5.00",
@@ -1712,7 +1712,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "5.00",
@@ -1720,7 +1720,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "7.30",
@@ -1728,7 +1728,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "7.30",
@@ -1736,7 +1736,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "7.80",
@@ -1744,7 +1744,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "8.00",
@@ -1752,7 +1752,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "8.00",
@@ -1760,7 +1760,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "8.00",
@@ -1768,7 +1768,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
   {
     value: "8.00",
@@ -1776,7 +1776,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6b"
+    bank: "PGBank"
   },
 
   {
@@ -1785,7 +1785,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "4.90",
@@ -1793,7 +1793,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "4.95",
@@ -1801,7 +1801,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "5.00",
@@ -1809,7 +1809,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "6.30",
@@ -1817,7 +1817,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 200 triệu",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "6.40",
@@ -1825,7 +1825,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "6.90",
@@ -1833,7 +1833,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 200 triệu",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "7.90",
@@ -1841,7 +1841,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "7.50",
@@ -1849,7 +1849,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 200 triệu",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "7.70",
@@ -1857,7 +1857,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 200 triệu",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
   {
     value: "7.80",
@@ -1865,7 +1865,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 200 triệu",
-    bank: "5e5e2143e9713b2d483aab6c"
+    bank: "Sacombank"
   },
 
   {
@@ -1874,7 +1874,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "4.80",
@@ -1882,7 +1882,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "4.90",
@@ -1890,7 +1890,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "5.00",
@@ -1898,7 +1898,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "6.80",
@@ -1906,7 +1906,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "6.80",
@@ -1914,7 +1914,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "7.40",
@@ -1922,7 +1922,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "7.70",
@@ -1930,7 +1930,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "7.70",
@@ -1938,7 +1938,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "7.70",
@@ -1946,7 +1946,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
   {
     value: "7.70",
@@ -1954,7 +1954,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e2143e9713b2d483aab6d"
+    bank: "Saigonbank"
   },
 
   {
@@ -1963,7 +1963,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "5.00",
@@ -1971,7 +1971,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "5.00",
@@ -1979,7 +1979,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "5.00",
@@ -1987,7 +1987,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "7.10",
@@ -1995,7 +1995,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "7.10",
@@ -2003,7 +2003,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "7.50",
@@ -2011,7 +2011,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "7.70",
@@ -2019,7 +2019,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "7.70",
@@ -2027,7 +2027,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "7.55",
@@ -2035,7 +2035,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
   {
     value: "7.55",
@@ -2043,7 +2043,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a54"
+    bank: "SCB"
   },
 
   {
@@ -2052,7 +2052,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "4.60",
@@ -2060,7 +2060,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "4.70",
@@ -2068,7 +2068,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "4.80",
@@ -2076,7 +2076,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "6.90",
@@ -2084,7 +2084,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "7.00",
@@ -2092,7 +2092,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "7.10",
@@ -2100,7 +2100,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "7.20",
@@ -2108,7 +2108,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "7.40",
@@ -2116,7 +2116,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "7.40",
@@ -2124,7 +2124,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
   {
     value: "7.50",
@@ -2132,7 +2132,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 2 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a53"
+    bank: "SHB"
   },
 
   {
@@ -2141,7 +2141,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "4.80",
@@ -2149,7 +2149,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "4.80",
@@ -2157,7 +2157,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "4.80",
@@ -2165,7 +2165,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "6.90",
@@ -2173,7 +2173,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "6.20",
@@ -2181,7 +2181,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "7.00",
@@ -2189,7 +2189,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "6.50",
@@ -2197,7 +2197,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "7.20",
@@ -2205,7 +2205,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "6.60",
@@ -2213,7 +2213,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
   {
     value: "6.60",
@@ -2221,7 +2221,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 3 tỉ và KH trên 50 tuổi",
-    bank: "5e5e1f2b2d78e4373c392a52"
+    bank: "Techcombank"
   },
 
   {
@@ -2230,7 +2230,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "4.85",
@@ -2238,7 +2238,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "4.95",
@@ -2246,7 +2246,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "5.00",
@@ -2254,7 +2254,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "6.80",
@@ -2262,7 +2262,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "7.05",
@@ -2270,7 +2270,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "7.40",
@@ -2278,7 +2278,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "7.55",
@@ -2286,7 +2286,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "7.60",
@@ -2294,7 +2294,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "7.60",
@@ -2302,7 +2302,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
   {
     value: "7.30",
@@ -2310,7 +2310,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a51"
+    bank: "TPBank"
   },
 
   {
@@ -2319,7 +2319,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "5.00",
@@ -2327,7 +2327,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 5 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "5.00",
@@ -2335,7 +2335,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "5.00",
@@ -2343,7 +2343,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "7.20",
@@ -2351,7 +2351,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "7.30",
@@ -2359,7 +2359,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "7.59",
@@ -2367,7 +2367,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "7.59",
@@ -2375,7 +2375,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "7.60",
@@ -2383,7 +2383,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "7.60",
@@ -2391,7 +2391,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
   {
     value: "7.60",
@@ -2399,7 +2399,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a55"
+    bank: "VIB"
   },
 
   {
@@ -2408,7 +2408,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "4.90",
@@ -2416,7 +2416,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "5.00",
@@ -2424,7 +2424,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "5.00",
@@ -2432,7 +2432,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "7.00",
@@ -2440,7 +2440,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "7.10",
@@ -2448,7 +2448,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "7.60",
@@ -2456,7 +2456,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "7.70",
@@ -2464,7 +2464,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "7.70",
@@ -2472,7 +2472,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "7.90",
@@ -2480,7 +2480,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
   {
     value: "7.70",
@@ -2488,7 +2488,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a56"
+    bank: "VietABank"
   },
 
   {
@@ -2497,7 +2497,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "5.00",
@@ -2505,7 +2505,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "5.00",
@@ -2513,7 +2513,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "5.00",
@@ -2521,7 +2521,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "7.50",
@@ -2529,7 +2529,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "7.80",
@@ -2537,7 +2537,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "7.90",
@@ -2545,7 +2545,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "8.00",
@@ -2553,7 +2553,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "8.10",
@@ -2561,7 +2561,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "8.20",
@@ -2569,7 +2569,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
   {
     value: "8.20",
@@ -2577,7 +2577,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a57"
+    bank: "VietBank"
   },
 
   {
@@ -2586,7 +2586,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "4.85",
@@ -2594,7 +2594,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "4.85",
@@ -2602,7 +2602,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "4.90",
@@ -2610,7 +2610,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "7.30",
@@ -2618,7 +2618,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "7.50",
@@ -2626,7 +2626,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "7.90",
@@ -2634,7 +2634,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "8.20",
@@ -2642,7 +2642,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "8.00",
@@ -2650,7 +2650,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "8.10",
@@ -2658,7 +2658,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
   {
     value: "8.10",
@@ -2666,7 +2666,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a58"
+    bank: "VietCapitalBank"
   },
 
   {
@@ -2675,7 +2675,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "4.30",
@@ -2683,7 +2683,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "4.30",
@@ -2691,7 +2691,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "4.80",
@@ -2699,7 +2699,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "5.30",
@@ -2707,7 +2707,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "5.30",
@@ -2715,7 +2715,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "6.80",
@@ -2723,7 +2723,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "0.00",
@@ -2731,7 +2731,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "0.00",
@@ -2739,7 +2739,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "6.80",
@@ -2747,7 +2747,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
   {
     value: "6.80",
@@ -2755,7 +2755,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a59"
+    bank: "Vietcombank"
   },
 
   {
@@ -2764,7 +2764,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "4.30",
@@ -2772,7 +2772,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "4.30",
@@ -2780,7 +2780,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "4.80",
@@ -2788,7 +2788,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "5.30",
@@ -2796,7 +2796,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "5.30",
@@ -2804,7 +2804,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "6.80",
@@ -2812,7 +2812,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "6.60",
@@ -2820,7 +2820,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "6.70",
@@ -2828,7 +2828,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "6.80",
@@ -2836,7 +2836,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
   {
     value: "6.80",
@@ -2844,7 +2844,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a49"
+    bank: "VietinBank"
   },
 
   {
@@ -2853,7 +2853,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "4.80",
@@ -2861,7 +2861,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "4.80",
@@ -2869,7 +2869,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "4.90",
@@ -2877,7 +2877,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "7.40",
@@ -2885,7 +2885,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "7.10",
@@ -2893,7 +2893,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "7.15",
@@ -2901,7 +2901,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "7.15",
@@ -2909,7 +2909,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "7.60",
@@ -2917,7 +2917,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "7.60",
@@ -2925,7 +2925,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
   {
     value: "7.60",
@@ -2933,7 +2933,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "Từ 10 tỉ",
-    bank: "5e5e1f2b2d78e4373c392a4a"
+    bank: "VPBank"
   },
 
   {
@@ -2942,7 +2942,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "1.50",
@@ -2950,7 +2950,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "1.50",
@@ -2958,7 +2958,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "1.50",
@@ -2966,7 +2966,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "1.50",
@@ -2974,7 +2974,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "-100.00",
@@ -2982,7 +2982,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "-100.00",
@@ -2990,7 +2990,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "-100.00",
@@ -2998,7 +2998,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "-100.00",
@@ -3006,7 +3006,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "-100.00",
@@ -3014,7 +3014,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
   {
     value: "-100.00",
@@ -3022,7 +3022,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4b"
+    bank: "ANZ Bank"
   },
 
   {
@@ -3031,7 +3031,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "0.50",
@@ -3039,7 +3039,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "0.50",
@@ -3047,7 +3047,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "1.25",
@@ -3055,7 +3055,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "1.75",
@@ -3063,7 +3063,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "1.75",
@@ -3071,7 +3071,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "2.75",
@@ -3079,7 +3079,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "0.00",
@@ -3087,7 +3087,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "2.75",
@@ -3095,7 +3095,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "2.75",
@@ -3103,7 +3103,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
   {
     value: "2.75",
@@ -3111,7 +3111,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4c"
+    bank: "HSBC"
   },
 
   {
@@ -3120,7 +3120,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "1.73",
@@ -3128,7 +3128,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.10",
@@ -3136,7 +3136,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3144,7 +3144,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3152,7 +3152,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3160,7 +3160,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3168,7 +3168,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3176,7 +3176,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3184,7 +3184,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3192,7 +3192,7 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   },
   {
     value: "2.33",
@@ -3200,6 +3200,6 @@ module.exports.rates_seed = [
     loc: "HCM",
     lastUpdate: "2020/02/02",
     threshold: "",
-    bank: "5e5e1f2b2d78e4373c392a4d"
+    bank: "Standard Chartered"
   }
 ];

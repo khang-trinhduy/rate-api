@@ -12,9 +12,9 @@ exports.import = (req, res, next) => {
       res.status(404).send({ error: "cannot find any banks" });
     } else {
       result.forEach(bank => {
-        let id = bank._id;
-        if (id) {
-          let rates = rates_seed.filter(e => e.bank == id);
+        let name = bank.name;
+        if (name) {
+          let rates = rates_seed.filter(e => e.bank == name);
           if (rates && rates.length > 0) {
             bank.interests = rates;
             bank.save();

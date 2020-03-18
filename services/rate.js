@@ -57,7 +57,9 @@ exports.filter = (value, rates) => {
       }
     }
     return result;
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 exports.populate = async rates => {

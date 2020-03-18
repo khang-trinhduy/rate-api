@@ -135,7 +135,8 @@ exports.search = async (req, res, next) => {
     let value = parseFloat(req.query.value);
     let rates = await rateService.list();
     let result = rateService.filter(value, rates);
-    result = await rateService.populate(result);
+    // console.log(result);
+    // result = await rateService.populate(result);
     res.status(200).json(result);
   } catch (error) {
     console.log(error);
