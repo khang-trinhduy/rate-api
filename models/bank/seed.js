@@ -258,5 +258,12 @@ module.exports.banks_seed = [
     code: "Standard Chartered",
     normalized: "standard chartered",
     type: 1
+  },
+  {
+    _id: "5e5e1f2b2d78e4373c392a4f",
+    name: "SeABank",
+    code: "SeABank",
+    normalized: "seabank",
+    type: 1
   }
 ];

@@ -148,3 +148,14 @@ exports.search = async (req, res, next) => {
     res.status(500).json({ error: "server fault" });
   }
 };
+
+exports.snapshot = async (req, res, next) => {
+  try {
+    let banks = await bankService.list();
+    let result = bankService.propagate(banks);
+    res.status(200).json(result);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
+};

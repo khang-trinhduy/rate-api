@@ -47,27 +47,27 @@ exports.update = (req, res, next) => {
           } else {
             if (!result.interests) {
               console.log(`invalid bank ${rate.bank}`);
-            } else {
-              result.interests.push(rate);
-              result.save((err, ok) => {
-                if (ok) {
-                  updates.findOneAndUpdate(
-                    {},
-                    { date: Date.now() },
-                    { upsert: true, new: true },
-                    (error, update) => {
-                      if (error) {
-                        console.log(error);
-                      } else {
-                        console.log(update);
-                      }
-                    }
-                  );
-                  updated++;
-                  console.log(`${result.name} updated`);
-                }
-              });
+              result.interests = [];
             }
+            result.interests.push(rate);
+            result.save((err, ok) => {
+              if (ok) {
+                updates.findOneAndUpdate(
+                  {},
+                  { date: Date.now() },
+                  { upsert: true, new: true },
+                  (error, update) => {
+                    if (error) {
+                      console.log(error);
+                    } else {
+                      console.log(update);
+                    }
+                  }
+                );
+                updated++;
+                console.log(`${result.name} updated`);
+              }
+            });
           }
         });
     } else {

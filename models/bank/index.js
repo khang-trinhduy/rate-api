@@ -20,11 +20,12 @@ var bankSchema = new Schema({
   info: info_schema
 });
 
-bankSchema.method("addRate", rate => {
-  if (rate) {
+bankSchema.methods.addRate = rate => {
+  if (!this.interests) {
+    this.interests = [];
   }
-});
-
-exports.bank_schema = bankSchema;
+  this.interests.push(rate);
+};
 
 exports.banks = mongoose.model("banks", bankSchema);
+exports.bank_schema = bankSchema;

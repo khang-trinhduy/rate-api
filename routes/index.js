@@ -32,6 +32,7 @@ router.get("/utilities", utilityCtrl.show);
 
 // bank controller
 router.get("/banks/search", bankCtrl.search);
+router.get("/banks/snapshot", bankCtrl.snapshot);
 router.get("/banks/detail", bankCtrl.show);
 router.post("/users/:id/banks", bankCtrl.create);
 router.get("/banks/:id", bankCtrl.detail);
@@ -39,6 +40,7 @@ router.get("/banks/:id", bankCtrl.detail);
 // rate controller
 router.get("/rates/all", rateCtrl.list);
 router.get("/rates", rateCtrl.show);
+router.post("/rates", rateCtrl.create);
 router.post("/users/:id/rates", rateCtrl.create);
 router.get("/rates/top", rateCtrl.top);
 router.get("/rates/search", rateCtrl.search);

@@ -47,6 +47,18 @@ exports.list = async () => {
   }
 };
 
+exports.parseFromBody = req => {
+  try {
+    return {
+      value: req.body.value,
+      threshold: req.body.threshold,
+      period: req.body.period
+    };
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 exports.filter = (value, rates) => {
   try {
     let result = [];
