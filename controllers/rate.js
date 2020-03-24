@@ -136,11 +136,27 @@ exports.search = async (req, res, next) => {
     let value = parseFloat(req.query.value);
     let rates = await rateService.list();
     let result = rateService.filter(value, rates);
-    // console.log(result);
-    // result = await rateService.populate(result);
     res.status(200).json(result);
   } catch (error) {
     console.log(error);
+    res.status(500).json({ error: "server fault" });
+  }
+};
+
+exports.getById = async (req, res, next) => {
+  try {
+    let id = req.params.id;
+    let rates = await rateService.list();
+    let result;
+    for (let i = 0; i < rates.length; i++) {
+      const rate = rates[i];
+      if (id == rate._id) {
+        result = rate;
+      }
+    }
+    res.status(200).json(result);
+  } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "server fault" });
   }
 };

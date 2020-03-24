@@ -41,10 +41,11 @@ router.get("/banks/:id", bankCtrl.detail);
 router.get("/rates/all", rateCtrl.list);
 router.get("/rates", rateCtrl.show);
 router.post("/rates", rateCtrl.create);
-router.post("/users/:id/rates", rateCtrl.create);
 router.get("/rates/top", rateCtrl.top);
 router.get("/rates/search", rateCtrl.search);
 router.get("/rates/recommend", rateCtrl.recommend);
+router.get("/rates/:id", rateCtrl.getById);
+router.post("/users/:id/rates", rateCtrl.create);
 
 // data controller
 router.get("/data/import", dataCtrl.import);
