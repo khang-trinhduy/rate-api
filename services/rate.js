@@ -21,6 +21,28 @@ exports.handler = (rate, callback) => {
     });
 };
 
+exports.reduce = (rates, date) => {
+  try {
+    let array = [];
+    for (let i = 0; i < rates.length; i++) {
+      const rate = rates[i];
+      let lastUpdate = new Date(rate.lastUpdate).toDateString();
+      if (lastUpdate != date) {
+        continue;
+      }
+      array.push(rate);
+    }
+    let results = new Map();
+    for (let i = 0; i < array.length; i++) {
+      const rate = array[i];
+      results.set(rate.value, rate);
+    }
+    return results.entries();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 exports.list = async () => {
   try {
     let results = await banks.aggregate([

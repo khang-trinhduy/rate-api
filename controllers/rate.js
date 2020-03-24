@@ -3,6 +3,7 @@ var { banks } = require("../models/bank");
 var { rates } = require("../models/rate");
 var rateService = require("../services/rate");
 var bankService = require("../services/bank");
+var updateService = require("../services/update");
 
 var sendJsonResponse = (res, status, content) => {
   res.status(status);
@@ -138,6 +139,31 @@ exports.search = async (req, res, next) => {
     // console.log(result);
     // result = await rateService.populate(result);
     res.status(200).json(result);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "server fault" });
+  }
+};
+
+exports.recommend = async (req, res, next) => {
+  try {
+    let size = parseInt(req.query.size);
+    let except = req.query.exp;
+    let lastUpdate = await updateService.lastUpdate();
+    let rates = await rateService.list();
+    rates.sort((a, b) => b.value - a.value);
+    let map = rateService.reduce(rates, lastUpdate.date.toDateString());
+    let results = [];
+    for (let i = 0; i < size; i++) {
+      results.push(map.next().value[1]);
+    }
+    for (let i = 0; i < results.length; i++) {
+      const result = results[i];
+      if (result.value === parseFloat(except)) {
+        results.splice(i, 1);
+      }
+    }
+    res.status(200).json(results);
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "server fault" });

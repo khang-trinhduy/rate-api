@@ -44,6 +44,7 @@ router.post("/rates", rateCtrl.create);
 router.post("/users/:id/rates", rateCtrl.create);
 router.get("/rates/top", rateCtrl.top);
 router.get("/rates/search", rateCtrl.search);
+router.get("/rates/recommend", rateCtrl.recommend);
 
 // data controller
 router.get("/data/import", dataCtrl.import);
