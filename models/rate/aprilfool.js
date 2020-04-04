@@ -60,6 +60,8 @@ exports.fools = [
   { bank: "Vietcombank", value: 5.1, threshold: "", period: 6 },
   { bank: "Vietcombank", value: 5.1, threshold: "", period: 9 },
   { bank: "Vietcombank", value: 6.6, threshold: "", period: 12 },
+  { bank: "Vietcombank", value: -10, threshold: "", period: 13 },
+  { bank: "Vietcombank", value: -10, threshold: "", period: 18 },
   { bank: "Vietcombank", value: 6.8, threshold: "", period: 24 },
   { bank: "Vietcombank", value: 6.5, threshold: "", period: 36 },
   { bank: "VietinBank", value: 0.1, threshold: "", period: 0 },
