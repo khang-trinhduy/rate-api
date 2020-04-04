@@ -1,12 +1,6 @@
-var mongoose = require("mongoose");
-
 var { banks } = require("../models/bank");
 
-var { users } = require("../models/user");
-
 var bankService = require("../services/bank");
-
-var service = require("../services/bank");
 
 var sendJsonResponse = (res, code, content) => {
   res.status(code);
@@ -17,34 +11,14 @@ var render = (res, view, content) => {
   res.render(view, content);
 };
 
-exports.create = (req, res, next) => {
-  if (!req.params.id || !req.body.name) {
-    res.status(400).send({ error: "id and bank name required" });
-  } else {
-    users.findById(req.params.id, (error, user) => {
-      if (error) {
-        res.status(400).send(error);
-      } else if (!user) {
-        res.status(404).send({ error: "user not found" });
-      } else {
-        var bank = {
-          name: req.body.name,
-          normalized: req.body.code
-            .toLowerCase()
-            .split(" ")
-            .join("-"),
-          code: req.body.code,
-          link: req.body.link
-        };
-        banks.create(bank, (error, result) => {
-          if (error) {
-            res.status(400).send(error);
-          } else if (result) {
-            res.status(201).send(result);
-          }
-        });
-      }
-    });
+exports.create = async (req, res, next) => {
+  try {
+    let bank = bankService.parseFromBody(req.body);
+    let result = await bankService.create(bank);
+    res.status(201).json(result);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "server fault" });
   }
 };
 

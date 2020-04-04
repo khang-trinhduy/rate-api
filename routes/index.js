@@ -34,7 +34,7 @@ router.get("/utilities", utilityCtrl.show);
 router.get("/banks/search", bankCtrl.search);
 router.get("/banks/snapshot", bankCtrl.snapshot);
 router.get("/banks/detail", bankCtrl.show);
-router.post("/users/:id/banks", bankCtrl.create);
+router.post("/banks", bankCtrl.create);
 router.get("/banks/:id", bankCtrl.detail);
 
 // rate controller

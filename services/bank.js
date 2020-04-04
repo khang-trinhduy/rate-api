@@ -46,7 +46,7 @@ function getLatestRate(rates, period) {
     const rate = rates[i];
     if (rate.period === period) {
       if (rate.value < 0) {
-        rate.value = 0
+        rate.value = 0;
       }
       results.push(rate);
     }
@@ -82,5 +82,24 @@ exports.getByCode = async code => {
   try {
     let result = await banks.findOne({ normalized: code.toLowerCase() }).exec();
     return result;
+  } catch (error) {}
+};
+
+exports.create = async bank => {
+  try {
+    let result = await banks.create(bank);
+    return result;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+exports.parseFromBody = body => {
+  try {
+    return {
+      name: body.name,
+      normalized: body.name.toLowerCase(),
+      code: body.code
+    };
   } catch (error) {}
 };

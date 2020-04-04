@@ -2,6 +2,8 @@ var { banks } = require("../models/bank");
 var { rates } = require("../models/rate/import");
 var { rates_seed } = require("../models/rate/seed");
 var { updates } = require("../models/update");
+var { fools } = require("../models/rate/aprilfool");
+var bankService = require("../services/bank");
 
 exports.import = (req, res, next) => {
   let updated = 0;
@@ -20,7 +22,7 @@ exports.import = (req, res, next) => {
             bank.save();
             updated++;
           } else {
-            console.log("rates not found");
+            console.log("rates not found for bank " + bank.name);
           }
         } else {
           console.log("id not found");
@@ -31,48 +33,76 @@ exports.import = (req, res, next) => {
   });
 };
 
-exports.update = (req, res, next) => {
+exports.update = async (req, res, next) => {
   let updated = 0;
-  rates.forEach(rate => {
-    if (rate.bank) {
-      banks
-        .findOne({ normalized: rate.bank.toLowerCase() })
-        .select("interests name")
-        .exec((error, result) => {
-          if (error) {
-            failed++;
-            console.error(error);
-          } else if (!result) {
-            console.log(`bank ${rate.bank} not found`);
-          } else {
-            if (!result.interests) {
-              console.log(`invalid bank ${rate.bank}`);
-              result.interests = [];
+  if (req.query.fool) {
+    let banks = await bankService.list();
+    let results = [];
+    banks.forEach(bank => {
+      let interests = fools.filter(e => e.bank === bank.name);
+      if (!interests) {
+        console.log("cannot find update for " + bank.name);
+      } else {
+        if (!bank.interests) {
+          bank.interests = [];
+        }
+        bank.interests = bank.interests.concat(interests);
+        bank.save();
+        results.push(bank);
+        updates.findOneAndUpdate(
+          {},
+          { date: Date.now() },
+          { upsert: true, new: true },
+          (error, update) => {
+            if (error) {
+              console.log(error);
+            } else {
             }
-            result.interests.push(rate);
-            result.save((err, ok) => {
-              if (ok) {
-                updates.findOneAndUpdate(
-                  {},
-                  { date: Date.now() },
-                  { upsert: true, new: true },
-                  (error, update) => {
-                    if (error) {
-                      console.log(error);
-                    } else {
-                      console.log(update);
-                    }
-                  }
-                );
-                updated++;
-                console.log(`${result.name} updated`);
-              }
-            });
           }
-        });
-    } else {
-      console.log("invalid rate");
-    }
-  });
-  res.status(200).send({ updated: updated, total: rates.length });
+        );
+      }
+    });
+    res.status(200).json({ banks: results });
+  } else {
+    rates.forEach(rate => {
+      if (rate.bank) {
+        banks
+          .findOne({ normalized: rate.bank.toLowerCase() })
+          .select("interests name")
+          .exec((error, result) => {
+            if (error) {
+              failed++;
+              console.error(error);
+            } else if (!result) {
+              console.log(`bank ${rate.bank} not found`);
+            } else {
+              if (!result.interests) {
+                result.interests = [];
+              }
+              result.interests.push(rate);
+              result.save((err, ok) => {
+                if (ok) {
+                  updates.findOneAndUpdate(
+                    {},
+                    { date: Date.now() },
+                    { upsert: true, new: true },
+                    (error, update) => {
+                      if (error) {
+                        console.log(error);
+                      } else {
+                      }
+                    }
+                  );
+                  updated++;
+                  console.log(`${result.name} updated`);
+                }
+              });
+            }
+          });
+      } else {
+        console.log("invalid rate");
+      }
+    });
+    res.status(200).send({ updated: updated, total: rates.length });
+  }
 };

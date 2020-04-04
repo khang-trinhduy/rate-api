@@ -265,5 +265,17 @@ module.exports.banks_seed = [
     code: "SeABank",
     normalized: "seabank",
     type: 1
+  },
+  {
+    _id: "5e87fbd44de2000cb8636b49",
+    name: "IVB",
+    normalized: "ivb",
+    code: "IVB"
+  },
+  {
+    _id: "5e87fbc24de2000cb8636b48",
+    name: "PVcomBank",
+    normalized: "pvcombank",
+    code: "PVcomBank"
   }
 ];
