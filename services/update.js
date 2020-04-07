@@ -8,3 +8,15 @@ exports.lastUpdate = async () => {
     console.log(error);
   }
 };
+
+exports.update = async (date) => {
+  try {
+    let currentUpdate = await updates.findOne({}).exec();
+    currentUpdate.data = date;
+    let result = currentUpdate.save();
+    return result;
+  } catch (error) {
+    console.error(error);
+    return {};
+  }
+};

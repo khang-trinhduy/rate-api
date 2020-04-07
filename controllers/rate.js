@@ -21,7 +21,9 @@ exports.show = (req, res, next) => {
         if (error) {
           res.status(500).send(error);
         } else if (bank) {
-          let rates = bank.interests.filter(e => e.period == req.query.period);
+          let rates = bank.interests.filter(
+            (e) => e.period == req.query.period
+          );
           if (rates && rates.length > 0) {
             rates.sort((a, b) => {
               return b.lastUpdate - a.lastUpdate;
@@ -29,7 +31,7 @@ exports.show = (req, res, next) => {
             res.status(200).send(rates);
           } else {
             res.status(404).send({
-              error: `rate with period ${req.query.period} not found`
+              error: `rate with period ${req.query.period} not found`,
             });
           }
         } else {
@@ -59,7 +61,7 @@ exports.top = async (req, res, next) => {
     let period = [0, 1, 2, 3, 6, 9, 12, 13, 18, 24, 36];
     if (req.query.period && req.query.period != "NaN") {
       if (req.query.period.length > 1) {
-        period = req.query.period.map(x => parseInt(x));
+        period = req.query.period.map((x) => parseInt(x));
       } else {
         period = [parseInt(req.query.period)];
       }
@@ -69,48 +71,48 @@ exports.top = async (req, res, next) => {
       result = await banks.aggregate([
         {
           $match: {
-            normalized: req.query.code.toLowerCase()
-          }
+            normalized: req.query.code.toLowerCase(),
+          },
         },
         {
-          $unwind: "$interests"
+          $unwind: "$interests",
         },
         {
           $match: {
-            "interests.period": { $in: period }
-          }
+            "interests.period": { $in: period },
+          },
         },
         {
           $group: {
             _id: null,
-            interests: { $push: "$interests" }
-          }
+            interests: { $push: "$interests" },
+          },
         },
         {
           $project: {
-            _id: 0
-          }
-        }
+            _id: 0,
+          },
+        },
       ]);
     } else {
       result = await banks.aggregate([
         {
-          $unwind: "$interests"
+          $unwind: "$interests",
         },
         {
-          $match: { "interests.period": { $in: period } }
+          $match: { "interests.period": { $in: period } },
         },
         {
           $group: {
             _id: null,
-            interests: { $push: "$interests" }
-          }
+            interests: { $push: "$interests" },
+          },
         },
         {
           $project: {
-            _id: 0
-          }
-        }
+            _id: 0,
+          },
+        },
       ]);
     }
     if (req.query.size) {
@@ -186,15 +188,12 @@ exports.recommend = async (req, res, next) => {
   }
 };
 
-exports.history = (req, res, next) => {
-  sendJsonResponse(res, 200, []);
-};
-
 exports.create = async (req, res, next) => {
   try {
     let bank = await bankService.getByCode(req.body.bank);
     let rate = rateService.parseFromBody(req);
     bank.interests.push(rate);
+    await updateService.update(Date.now());
     let result = await bank.save();
     res.status(200).json(result);
   } catch (error) {
@@ -206,7 +205,7 @@ exports.create = async (req, res, next) => {
 exports.delete = async (req, res, next) => {
   try {
     let bank = await bankService.getById(req.params.bankid);
-    let index = bank.interests.findIndex(e => e._id == req.params.rateid);
+    let index = bank.interests.findIndex((e) => e._id == req.params.rateid);
     bank.interests.slice(rate, 1);
     let result = await bank.save();
     res.status(204).json(result);
