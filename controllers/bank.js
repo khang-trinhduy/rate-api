@@ -16,10 +16,28 @@ exports.create = async (req, res, next) => {
   try {
     let bank = bankService.parseFromBody(req.body);
     let result = await bankService.create(bank);
-    res.status(201).json(result);
+    if (result) {
+      res.status(201).json(result);
+    } else {
+      res.status(400).json({ message: "bank has already existed" });
+    }
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "server fault" });
+  }
+};
+
+exports.delete = async (req, res, next) => {
+  try {
+    let result = await bankService.removeOne(req.params.id);
+    if (result) {
+      res.status(204).json(result);
+    } else {
+      res.status(400).json({ message: "violate permission" });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json("server fault");
   }
 };
 

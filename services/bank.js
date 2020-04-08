@@ -98,10 +98,30 @@ exports.getByCode = async (code) => {
 
 exports.create = async (bank) => {
   try {
-    let result = await banks.create(bank);
-    return result;
+    let exist = await banks.findOne({ normalized: bank.normalized });
+    if (!exist) {
+      let result = await banks.create(bank);
+      return result;
+    } else {
+      throw new Error("Bank has already existed");
+    }
   } catch (error) {
     console.error(error);
+  }
+};
+
+exports.removeOne = async (id) => {
+  try {
+    let bank = await banks.findOne({ _id: id });
+    if (bank && !bank.approved) {
+      let result = await banks.findOneAndDelete({ _id: id });
+      return result;
+    } else {
+      console.log("violate permission");
+      return null;
+    }
+  } catch (error) {
+    return null;
   }
 };
 
@@ -109,8 +129,9 @@ exports.parseFromBody = (body) => {
   try {
     return {
       name: body.name,
-      normalized: body.name.toLowerCase(),
+      normalized: body.normalized,
       code: body.code,
+      link: body.link,
     };
   } catch (error) {}
 };

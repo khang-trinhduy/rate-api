@@ -12,6 +12,7 @@ var router = express.Router();
 
 // bank controller
 router.get("/banks", bankCtrl.list);
+router.delete("/banks/:id", bankCtrl.delete);
 router.get("/banks/search", bankCtrl.search);
 router.get("/banks/snapshot", bankCtrl.snapshot);
 router.get("/banks/detail", bankCtrl.show);

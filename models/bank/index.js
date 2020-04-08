@@ -17,10 +17,13 @@ var bankSchema = new Schema({
   code: { type: String, required: false },
   link: { type: String, required: false },
   normalized: { type: String, required: false },
-  info: info_schema
+  info: info_schema,
+  created: { type: Date, default: Date.now() },
+  approved: { type: Boolean, default: false },
+  createdBy: { type: mongoose.Types.ObjectId },
 });
 
-bankSchema.methods.addRate = rate => {
+bankSchema.methods.addRate = (rate) => {
   if (!this.interests) {
     this.interests = [];
   }
