@@ -16,7 +16,7 @@ exports.search = async (keywords, banks) => {
   }
 };
 
-exports.propagate = banks => {
+exports.propagate = (banks) => {
   for (let i = 0; i < banks.length; i++) {
     const bank = banks[i];
     bank.interests = rateTransformWrapper(bank);
@@ -59,7 +59,7 @@ function getLatestRate(rates, period) {
   return results[0];
 }
 
-exports.list = async () => {
+exports.list = async (increase = true) => {
   try {
     let result = await banks.find({}).exec();
     result = result.sort((a, b) => {
@@ -71,6 +71,17 @@ exports.list = async () => {
         return 0;
       }
     });
+    if (!increase) {
+      result = result.sort((a, b) => {
+        if (a.name < b.name) {
+          return 1;
+        } else if (a.name > b.name) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+    }
     return result;
   } catch (error) {
     console.log(error);
@@ -78,14 +89,14 @@ exports.list = async () => {
   }
 };
 
-exports.getByCode = async code => {
+exports.getByCode = async (code) => {
   try {
     let result = await banks.findOne({ normalized: code.toLowerCase() }).exec();
     return result;
   } catch (error) {}
 };
 
-exports.create = async bank => {
+exports.create = async (bank) => {
   try {
     let result = await banks.create(bank);
     return result;
@@ -94,12 +105,12 @@ exports.create = async bank => {
   }
 };
 
-exports.parseFromBody = body => {
+exports.parseFromBody = (body) => {
   try {
     return {
       name: body.name,
       normalized: body.name.toLowerCase(),
-      code: body.code
+      code: body.code,
     };
   } catch (error) {}
 };

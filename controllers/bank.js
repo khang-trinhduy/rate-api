@@ -1,6 +1,7 @@
 var { banks } = require("../models/bank");
 
 var bankService = require("../services/bank");
+const helper = require("../helpers");
 
 var sendJsonResponse = (res, code, content) => {
   res.status(code);
@@ -22,25 +23,14 @@ exports.create = async (req, res, next) => {
   }
 };
 
-exports.list = (req, res, next) => {
-  banks
-    .find({})
-    .select("-loans")
-    .exec((error, banks) => {
-      if (error) {
-        sendJsonResponse(res, 400, error);
-      } else if (!banks) {
-        sendJsonResponse(res, 404, "not found");
-      } else {
-        if (req.query.size && req.query.index) {
-          let skip = req.query.size * (req.query.index - 1);
-          banks.splice(0, skip);
-          sendJsonResponse(res, 200, banks.slice(0, req.query.size));
-        } else {
-          sendJsonResponse(res, 200, banks);
-        }
-      }
-    });
+exports.list = async (req, res, next) => {
+  try {
+    let result = await helper.bankQueryHandler(req);
+    res.status(200).json(result);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "server fault" });
+  }
 };
 
 exports.listV2 = (req, res, next) => {
@@ -48,7 +38,7 @@ exports.listV2 = (req, res, next) => {
     if (error) {
       render(res, "error", error);
     } else {
-      banks.forEach(bank => {
+      banks.forEach((bank) => {
         if (bank.loanRates) {
           let loans = bank.loanRates;
           let house, car, duration;
