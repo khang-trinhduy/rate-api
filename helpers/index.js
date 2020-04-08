@@ -1,20 +1,29 @@
 const bankService = require("../services/bank");
 
 exports.bankQueryHandler = async (req) => {
-  let result = [];
+  let result = {};
   if (req.query.sort && req.query.order && req.query.page) {
     let order = req.query.order == "asc" ? true : false;
     let banks = await bankService.list(order);
-    let size = req.query.size || 10;
+    let total = banks.length;
+    let size = parseInt(req.query.size) || 10;
     let pageIndex = parseInt(req.query.page);
-    result = banks.slice((pageIndex - 1) * size, size);
+    let items = banks.splice(pageIndex * size, size);
+    result = {
+      total_count: total,
+      items: items,
+    };
   } else if (req.query.index && req.query.size) {
     let index = parseInt(req.query.index);
     let size = parseInt(req.query.size);
     let banks = await bankService.list();
+    let total = banks.length;
     let skip = size * (index - 1);
-    result = banks.slice(skip, size);
+    let items = banks.slice(skip, size);
+    result = {
+      total_count: total,
+      items: items,
+    };
   }
-
   return result;
 };
