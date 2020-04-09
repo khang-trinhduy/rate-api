@@ -3,6 +3,7 @@ var { rates } = require("../models/rate/import");
 var { rates_seed } = require("../models/rate/seed");
 var { updates } = require("../models/update");
 var { fools } = require("../models/rate/aprilfool");
+var { after } = require("../models/rate/afternoon");
 var bankService = require("../services/bank");
 
 exports.import = (req, res, next) => {
@@ -13,10 +14,10 @@ exports.import = (req, res, next) => {
     } else if (!result) {
       res.status(404).send({ error: "cannot find any banks" });
     } else {
-      result.forEach(bank => {
+      result.forEach((bank) => {
         let name = bank.name;
         if (name) {
-          let rates = rates_seed.filter(e => e.bank == name);
+          let rates = rates_seed.filter((e) => e.bank == name);
           if (rates && rates.length > 0) {
             bank.interests = rates;
             bank.save();
@@ -38,8 +39,36 @@ exports.update = async (req, res, next) => {
   if (req.query.fool) {
     let banks = await bankService.list();
     let results = [];
-    banks.forEach(bank => {
-      let interests = fools.filter(e => e.bank === bank.name);
+    banks.forEach((bank) => {
+      let interests = fools.filter((e) => e.bank === bank.name);
+      if (!interests) {
+        console.log("cannot find update for " + bank.name);
+      } else {
+        if (!bank.interests) {
+          bank.interests = [];
+        }
+        bank.interests = bank.interests.concat(interests);
+        bank.save();
+        results.push(bank);
+        updates.findOneAndUpdate(
+          {},
+          { date: Date.now() },
+          { upsert: true, new: true },
+          (error, update) => {
+            if (error) {
+              console.log(error);
+            } else {
+            }
+          }
+        );
+      }
+    });
+    res.status(200).json({ banks: results });
+  } else if (req.query.after) {
+    let banks = await bankService.list();
+    let results = [];
+    banks.forEach((bank) => {
+      let interests = after.filter((e) => e.bank === bank.name);
       if (!interests) {
         console.log("cannot find update for " + bank.name);
       } else {
@@ -64,7 +93,7 @@ exports.update = async (req, res, next) => {
     });
     res.status(200).json({ banks: results });
   } else {
-    rates.forEach(rate => {
+    rates.forEach((rate) => {
       if (rate.bank) {
         banks
           .findOne({ normalized: rate.bank.toLowerCase() })
