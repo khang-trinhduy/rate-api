@@ -7,6 +7,7 @@ var dataCtrl = require("../controllers/data");
 var userCtrl = require("../controllers/user");
 var updateCtrl = require("../controllers/update");
 var statCtrl = require("../controllers/stat");
+var downloadCtrl = require('../controllers/download')
 
 var router = express.Router();
 
@@ -41,5 +42,7 @@ router.post("/register", authCtrl.register);
 router.get("/update", updateCtrl.show);
 
 router.get("/stats", statCtrl.list);
+
+router.get('/download', downloadCtrl.get)
 
 module.exports = router;

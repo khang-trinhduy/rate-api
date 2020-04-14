@@ -59,7 +59,7 @@ function getLatestRate(rates, period) {
   return results[0];
 }
 
-exports.list = async (increase = true) => {
+exports.list = async (ascent = true) => {
   try {
     let result = await banks.find({}).exec();
     result = result.sort((a, b) => {
@@ -71,7 +71,7 @@ exports.list = async (increase = true) => {
         return 0;
       }
     });
-    if (!increase) {
+    if (!ascent) {
       result = result.sort((a, b) => {
         if (a.name < b.name) {
           return 1;
