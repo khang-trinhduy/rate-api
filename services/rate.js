@@ -47,19 +47,19 @@ exports.list = async () => {
   try {
     let results = await banks.aggregate([
       {
-        $unwind: "$interests"
+        $unwind: "$interests",
       },
       {
         $group: {
           _id: null,
-          interests: { $push: "$interests" }
-        }
+          interests: { $push: "$interests" },
+        },
       },
       {
         $project: {
-          _id: 0
-        }
-      }
+          _id: 0,
+        },
+      },
     ]);
     results = results[0].interests;
     return results;
@@ -69,12 +69,13 @@ exports.list = async () => {
   }
 };
 
-exports.parseFromBody = req => {
+exports.parseFromBody = (req) => {
   try {
     return {
       value: req.body.value,
       threshold: req.body.threshold,
-      period: req.body.period
+      period: req.body.period,
+      bank: req.body.bank,
     };
   } catch (error) {
     console.error(error);
@@ -88,7 +89,7 @@ exports.filter = (value, rates) => {
       const rate = rates[i];
       if (rate.value == value) {
         let index = result.findIndex(
-          e => e.bank === rate.bank && e.value == value
+          (e) => e.bank === rate.bank && e.value == value
         );
         if (index >= 0) {
           let d1 = new Date(rate.lastUpdate);
@@ -110,7 +111,7 @@ exports.filter = (value, rates) => {
   }
 };
 
-exports.populate = async rates => {
+exports.populate = async (rates) => {
   try {
     for (let i = 0; i < rates.length; i++) {
       const rate = rates[i];
