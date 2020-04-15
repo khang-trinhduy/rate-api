@@ -76,6 +76,7 @@ exports.parseFromBody = (req) => {
       threshold: req.body.threshold,
       period: req.body.period,
       bank: req.body.bank,
+      online: req.body.online
     };
   } catch (error) {
     console.error(error);
