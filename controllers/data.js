@@ -6,6 +6,9 @@ var { fools } = require('../models/rate/aprilfool')
 var { after } = require('../models/rate/afternoon')
 const { horizons } = require('../models/rate/horizon')
 const { bs } = require('../models/rate/bs')
+const { twilight } = require('../models/rate/twilight')
+const { shinichi } = require('../models/rate/shinichi')
+const { kagura } = require('../models/rate/kagura')
 var bankService = require('../services/bank')
 
 exports.import = (req, res, next) => {
@@ -71,6 +74,90 @@ exports.update = async (req, res, next) => {
     let results = []
     banks.forEach((bank) => {
       let interests = horizons.filter((e) => e.bank === bank.name)
+      if (!interests) {
+        console.log('cannot find update for ' + bank.name)
+      } else {
+        if (!bank.interests) {
+          bank.interests = []
+        }
+        bank.interests = bank.interests.concat(interests)
+        bank.save()
+        results.push(bank)
+        updates.findOneAndUpdate(
+          {},
+          { date: Date.now() },
+          { upsert: true, new: true },
+          (error, update) => {
+            if (error) {
+              console.log(error)
+            } else {
+            }
+          }
+        )
+      }
+    })
+    res.status(200).json({ banks: results })
+  } else if (req.query.shinichi) {
+    let banks = await bankService.list()
+    let results = []
+    banks.forEach((bank) => {
+      let interests = shinichi.filter((e) => e.bank === bank.name)
+      if (!interests) {
+        console.log('cannot find update for ' + bank.name)
+      } else {
+        if (!bank.interests) {
+          bank.interests = []
+        }
+        bank.interests = bank.interests.concat(interests)
+        bank.save()
+        results.push(bank)
+        updates.findOneAndUpdate(
+          {},
+          { date: Date.now() },
+          { upsert: true, new: true },
+          (error, update) => {
+            if (error) {
+              console.log(error)
+            } else {
+            }
+          }
+        )
+      }
+    })
+    res.status(200).json({ banks: results })
+  } else if (req.query.kagura) {
+    let banks = await bankService.list()
+    let results = []
+    banks.forEach((bank) => {
+      let interests = kagura.filter((e) => e.bank === bank.name)
+      if (!interests) {
+        console.log('cannot find update for ' + bank.name)
+      } else {
+        if (!bank.interests) {
+          bank.interests = []
+        }
+        bank.interests = bank.interests.concat(interests)
+        bank.save()
+        results.push(bank)
+        updates.findOneAndUpdate(
+          {},
+          { date: Date.now() },
+          { upsert: true, new: true },
+          (error, update) => {
+            if (error) {
+              console.log(error)
+            } else {
+            }
+          }
+        )
+      }
+    })
+    res.status(200).json({ banks: results })
+  } else if (req.query.twilight) {
+    let banks = await bankService.list()
+    let results = []
+    banks.forEach((bank) => {
+      let interests = twilight.filter((e) => e.bank === bank.name)
       if (!interests) {
         console.log('cannot find update for ' + bank.name)
       } else {
@@ -191,5 +278,33 @@ exports.update = async (req, res, next) => {
       }
     })
     res.status(200).send({ updated: updated, total: rates.length })
+  }
+}
+
+exports.purge = async (req, res, next) => {
+  try {
+    let results = []
+    let banks = await bankService.list()
+    for (let i = 0; i < banks.length; i++) {
+      let result = {}
+      let bank = banks[i]
+      let rates = bank.interests
+      result.total = rates.length
+      result.name = bank.name
+      let newRates = []
+      for (let j = 0; j < rates.length; j++) {
+        let rate = rates[j]
+        if (!rate.online) {
+          newRates.push(rate)
+        }
+      }
+      result.new = newRates.length
+      bank.interests = newRates
+      bank.save()
+      results.push(result)
+    }
+    res.status(200).json(results)
+  } catch (error) {
+    res.status(500).json(error.message)
   }
 }

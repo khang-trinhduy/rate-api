@@ -1,0 +1,30 @@
+version: '3'
+services:
+  interest-rate-api:
+    image: 'interest-rate-api'
+    container_name: 'interest-rate-api'
+    ports:
+      - '3000:3000'
+    networks:
+      - api-network
+    env_file:
+      - docker.env
+  mongodb:
+    image: 'mongo'
+    container_name: 'interest-rate-db'
+    ports:
+      - '27017:27017'
+    networks:
+      - api-network
+  interest-rate-client:
+    image: 'interest-rate-client'
+    container_name: 'interest-rate-client'
+    ports:
+      - '5000:8080'
+    networks:
+      - api-network
+    env_file:
+      - docker.env
+networks:
+  api-network:
+    driver: bridge
