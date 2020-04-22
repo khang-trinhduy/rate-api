@@ -4,7 +4,7 @@ var gracefulShutdown
 var dbURI = 'mongodb://localhost/interestrate'
 
 if (process.env.NODE_ENV === 'production') {
-  dbURI = process.env.MONGODB_URL
+  dbURI = process.env.MONGOLAB_URI
 } else if (process.env.NODE_ENV === 'docker') {
   dbURI = process.env.DOCKER_DB_URL
 }
