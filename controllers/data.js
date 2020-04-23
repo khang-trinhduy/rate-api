@@ -9,6 +9,7 @@ const { bs } = require('../models/rate/bs')
 const { twilight } = require('../models/rate/twilight')
 const { shinichi } = require('../models/rate/shinichi')
 const { kagura } = require('../models/rate/kagura')
+const { okay } = require('../models/rate/okay')
 var bankService = require('../services/bank')
 
 exports.import = (req, res, next) => {
@@ -74,6 +75,34 @@ exports.update = async (req, res, next) => {
     let results = []
     banks.forEach((bank) => {
       let interests = horizons.filter((e) => e.bank === bank.name)
+      if (!interests) {
+        console.log('cannot find update for ' + bank.name)
+      } else {
+        if (!bank.interests) {
+          bank.interests = []
+        }
+        bank.interests = bank.interests.concat(interests)
+        bank.save()
+        results.push(bank)
+        updates.findOneAndUpdate(
+          {},
+          { date: Date.now() },
+          { upsert: true, new: true },
+          (error, update) => {
+            if (error) {
+              console.log(error)
+            } else {
+            }
+          }
+        )
+      }
+    })
+    res.status(200).json({ banks: results })
+  } else if (req.query.okay) {
+    let banks = await bankService.list()
+    let results = []
+    banks.forEach((bank) => {
+      let interests = okay.filter((e) => e.bank == bank.code)
       if (!interests) {
         console.log('cannot find update for ' + bank.name)
       } else {
