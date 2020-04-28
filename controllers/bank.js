@@ -91,7 +91,7 @@ exports.show = (req, res, next) => {
   if (!req.query.code) {
     render(res, "error", { error: "id required" });
   } else {
-    banks.findOne({ code: req.query.code }, (error, bank) => {
+    banks.findOne({ normalized: req.query.code }, (error, bank) => {
       if (error) {
         res.status(500).json({ error: "not found" });
       } else if (!bank) {
