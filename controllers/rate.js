@@ -200,21 +200,19 @@ exports.deleteMultiples = async (req, res, next) => {
   result.total = ratesToDelete.length
   let removed = 0
   let errors = 0
+  let banks = await bankService.list()
   for (let i = 0; i < ratesToDelete.length; i++) {
     const rate = ratesToDelete[i]
-    const bank = await banks.findOne({ $or: [{ name: rate.bank }, { normalized: rate.bank }] })
-    if (!bank) {
-      errors++
-      continue
+    for (let i = 0; i < banks.length; i++) {
+      let bank = banks[i]
+      const idx = bank.interests.findIndex((item) => item._id == rate._id)
+      if (idx < 0) {
+        continue
+      }
+      removed++
+      bank.interests.splice(idx, 1)
+      await bank.save()
     }
-    const idx = bank.interests.findIndex((item) => item._id == rate._id)
-    if (idx < 0) {
-      errors++
-      continue
-    }
-    removed++
-    bank.interests.splice(idx, 1)
-    await bank.save()
   }
   result.removed = removed
   result.errors = errors

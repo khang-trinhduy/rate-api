@@ -435,6 +435,7 @@ exports.generate = async (req, res, next) => {
             lastUpdate: date,
             online: rate.online,
             threshold: rate.threshold,
+            bank: rate.bank
           }
       if (bank && copy) {
         count++
