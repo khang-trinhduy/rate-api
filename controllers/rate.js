@@ -202,7 +202,7 @@ exports.deleteMultiples = async (req, res, next) => {
   let errors = 0
   for (let i = 0; i < ratesToDelete.length; i++) {
     const rate = ratesToDelete[i]
-    const bank = await banks.findOne({ name: rate.bank })
+    const bank = await banks.findOne({ $or: [{ name: rate.bank }, { normalized: rate.bank }] })
     if (!bank) {
       errors++
       continue
