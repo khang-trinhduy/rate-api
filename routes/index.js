@@ -11,6 +11,12 @@ var downloadCtrl = require('../controllers/download')
 
 var router = express.Router()
 
+function handleError(fn) {
+  return function (req, res, next) {
+    return fn(req, res, next).catch(next)
+  }
+}
+
 // bank controller
 router.get('/banks', bankCtrl.list)
 router.delete('/banks/:id', bankCtrl.delete)
@@ -22,17 +28,20 @@ router.get('/banks/:id', bankCtrl.detail)
 
 // rate controller
 router.get('/rates/all', rateCtrl.list)
-router.get('/rates', rateCtrl.show)
+router.get('/rates', handleError(rateCtrl.show))
 router.post('/rates', rateCtrl.create)
 router.get('/rates/top', rateCtrl.top)
 router.get('/rates/search', rateCtrl.search)
 router.get('/rates/recommend', rateCtrl.recommend)
 router.get('/rates/:id', rateCtrl.getById)
+router.put('/rates', handleError(rateCtrl.deleteMultiples))
 
 // data controller
 router.get('/data/import', dataCtrl.import)
 router.get('/data/update', dataCtrl.update)
 router.get('/data/purge', dataCtrl.purge)
+router.get('/data/latest', handleError(dataCtrl.latest))
+router.get('/data/generate', handleError(dataCtrl.generate))
 
 router.post('/users', userCtrl.subscribe)
 

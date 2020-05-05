@@ -337,3 +337,134 @@ exports.purge = async (req, res, next) => {
     res.status(500).json(error.message)
   }
 }
+
+function transform(rate) {
+  return {
+    period: rate.period,
+    value: rate.value,
+    id: rate._id,
+    online: rate.online,
+    threshold: rate.threshold,
+    created: rate.lastUpdate,
+  }
+}
+
+function getRate(period, array) {
+  return array.find((e) => e.period === period)
+    ? transform(array.find((e) => e.period === period))
+    : { period: period, status: 'unsupport' }
+}
+
+function getLatestRates(rates) {
+  const onlines = rates.filter((e) => e.online)
+  const offlines = rates.filter((e) => !e.online)
+  onlines.sort((a, b) => {
+    const date1 = new Date(a.lastUpdate)
+    const date2 = new Date(b.lastUpdate)
+    return date1 > date2 ? -1 : 1
+  })
+  offlines.sort((a, b) => {
+    const date1 = new Date(a.lastUpdate)
+    const date2 = new Date(b.lastUpdate)
+    return date1 > date2 ? -1 : 1
+  })
+  const results = {
+    online: [
+      getRate(0, onlines),
+      getRate(1, onlines),
+      getRate(2, onlines),
+      getRate(3, onlines),
+      getRate(6, onlines),
+      getRate(9, onlines),
+      getRate(12, onlines),
+      getRate(13, onlines),
+      getRate(18, onlines),
+      getRate(24, onlines),
+      getRate(36, onlines),
+    ],
+    offline: [
+      getRate(0, offlines),
+      getRate(1, offlines),
+      getRate(2, offlines),
+      getRate(3, offlines),
+      getRate(6, offlines),
+      getRate(9, offlines),
+      getRate(12, offlines),
+      getRate(13, offlines),
+      getRate(18, offlines),
+      getRate(24, offlines),
+      getRate(36, offlines),
+    ],
+  }
+  return results
+}
+
+getData = async () => {
+  const banks = await bankService.list()
+  let results = []
+  for (let i = 0; i < banks.length; i++) {
+    const bank = banks[i]
+    let result = {}
+    result = { bank: bank.name, rates: {} }
+    result.rates = getLatestRates(bank.interests)
+    results.push(result)
+  }
+  return results
+}
+
+exports.latest = async (req, res, next) => {
+  const result = await getData()
+  res.status(200).json(result)
+}
+
+exports.generate = async (req, res, next) => {
+  const latestRates = await getData()
+  const date = new Date(req.query.date)
+  let count = 0
+  let errors = 0
+  for (let i = 0; i < latestRates.length; i++) {
+    const item = latestRates[i]
+    let bank = await banks.findOne({ name: item.bank })
+    for (let j = 0; j < item.rates.online.length; j++) {
+      const rate = item.rates.online[j]
+      const copy = rate.status
+        ? {}
+        : {
+            period: rate.period,
+            value: rate.value,
+            lastUpdate: date,
+            online: rate.online,
+            threshold: rate.threshold,
+          }
+      if (bank && copy) {
+        count++
+        bank.interests.push(copy)
+        await bank.save()
+      } else {
+        errors++
+        console.log(`bank ${rate.bank} not found or rate unsupported`)
+      }
+    }
+    for (let j = 0; j < item.rates.offline.length; j++) {
+      const rate = item.rates.offline[j]
+      const copy = rate.status
+        ? {}
+        : {
+            period: rate.period,
+            value: rate.value,
+            lastUpdate: date,
+            online: rate.online,
+            threshold: rate.threshold,
+          }
+      if (bank && copy) {
+        count++
+        bank.interests.push(copy)
+        await bank.save()
+      } else {
+        errors++
+        console.log(`bank ${rate.bank} not found or rate unsupported`)
+      }
+    }
+  }
+  res.status(200).json({ updated: count, skipped: errors })
+}

@@ -4,6 +4,7 @@ var path = require('path')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 var cors = require('cors')
+var bodyParser = require('body-parser')
 
 var dotenv = require('dotenv')
 
@@ -16,6 +17,8 @@ if (result.error) {
 var indexRouter = require('./routes/index')
 
 var app = express()
+
+app.use(bodyParser({ limit: '50mb' }))
 
 app.use(cors())
 
