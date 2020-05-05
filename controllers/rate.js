@@ -15,7 +15,7 @@ exports.show = async (req, res, next) => {
   const date = new Date(req.query.date)
   let result = rates.filter((rate) => {
     const lastUpdate = new Date(rate.lastUpdate)
-    return date.getDate() === lastUpdate.getDate()
+    return date.toDateString() === lastUpdate.toDateString()
   })
   res.status(200).json(result)
 }
