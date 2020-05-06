@@ -435,7 +435,7 @@ exports.generate = async (req, res, next) => {
             lastUpdate: date,
             online: rate.online,
             threshold: rate.threshold,
-            bank: rate.bank,
+            bank: bank.name,
           }
       if (bank && copy) {
         count++
@@ -443,7 +443,7 @@ exports.generate = async (req, res, next) => {
         await bank.save()
       } else {
         errors++
-        console.log(`bank ${rate.bank} not found or rate unsupported`)
+        console.log(`bank ${bank.name} not found or rate unsupported`)
       }
     }
     for (let j = 0; j < item.rates.offline.length; j++) {
@@ -456,7 +456,7 @@ exports.generate = async (req, res, next) => {
             lastUpdate: date,
             online: rate.online,
             threshold: rate.threshold,
-            bank: rate.bank,
+            bank: bank.name,
           }
       if (bank && copy) {
         count++
@@ -464,7 +464,7 @@ exports.generate = async (req, res, next) => {
         await bank.save()
       } else {
         errors++
-        console.log(`bank ${rate.bank} not found or rate unsupported`)
+        console.log(`bank ${bank.name} not found or rate unsupported`)
       }
     }
   }

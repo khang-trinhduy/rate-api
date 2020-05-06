@@ -218,3 +218,28 @@ exports.deleteMultiples = async (req, res, next) => {
   result.errors = errors
   res.status(200).json(result)
 }
+
+exports.import = async (req, res, next) => {
+  const rates = req.body.rates
+  const result = { total: 0, success: 0, fail: 0 }
+  for (let i = 0; i < rates.length; i++) {
+    const rate = rates[i]
+    let bank = await banks.findOne({ $or: [{ normalized: rate.bank }, { name: rate.bank }] })
+    result.total++
+    if (bank && rate) {
+      bank.interests.push(rate)
+      bank.save().then(
+        (ok) => {
+          result.success++
+        },
+        (reject) => {
+          result.fail++
+        }
+      )
+      continue
+    }
+    result.fail++
+  }
+  console.log(result)
+  res.status(200).json(result)
+}

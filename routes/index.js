@@ -33,6 +33,7 @@ router.post('/rates', rateCtrl.create)
 router.get('/rates/top', rateCtrl.top)
 router.get('/rates/search', rateCtrl.search)
 router.get('/rates/recommend', rateCtrl.recommend)
+router.post('/rates/import', rateCtrl.import)
 router.get('/rates/:id', rateCtrl.getById)
 router.put('/rates', handleError(rateCtrl.deleteMultiples))
 
